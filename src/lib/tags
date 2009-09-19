@@ -1,0 +1,738 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_add(frl_hash_t* hash, frl_key_t key, void* pointer)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_create(frl_hash_t** newhash, apr_pool_t* mempool, apr_size_t capacity, frl_lock_u lock, frl_slab_pool_t* pool = 0)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_remove(frl_hash_t* hash, frl_key_t key)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_set(frl_hash_t* hash, frl_key_t key, void* pointer)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_uint32_t) frl_hash_func(frl_key_t key, apr_uint32_t nelts)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(apr_status_t) frl_list_create(frl_list_t** newlist, apr_pool_t* mempool, apr_uint32_t capacity, frl_lock_u lock, frl_slab_pool_t* pool)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(apr_status_t) frl_list_remove(frl_list_entry_t* elts)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(apr_status_t) frl_list_remove_lock_free(frl_list_entry_t* elts)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(apr_status_t) frl_list_remove_lock_with(frl_list_entry_t* elts)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(frl_list_stat_t) frl_list_stat(frl_list_t* list)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_create(frl_queue_t** newqueue, apr_pool_t* mempool, apr_uint32_t capacity, frl_lock_u lock, frl_slab_pool_t* pool)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_push(frl_queue_t* queue, void* pointer)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_push_lock_free(frl_queue_t* queue, void* pointer)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_push_lock_with(frl_queue_t* queue, void* pointer)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_trypush(frl_queue_t* queue, void* pointer)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_trypush_lock_free(frl_queue_t* queue, void* pointer)$/;"	f
+APR_DECLARE	frl_queue.c	/^APR_DECLARE(apr_status_t) frl_queue_trypush_lock_with(frl_queue_t* queue, void* pointer)$/;"	f
+APR_DECLARE	frl_radix_tree.c	/^APR_DECLARE(apr_status_t) frl_radix_tree_create(frl_radix_tree_t** newtree, apr_pool_t* mempool, apr_uint32_t key_size, apr_size_t capacity, frl_lock_u lock, frl_slab_pool_t* pool)$/;"	f
+APR_DECLARE	frl_radix_tree.c	/^APR_DECLARE(apr_status_t) frl_radix_tree_remove(frl_radix_tree_entry_t* elts)$/;"	f
+APR_DECLARE	frl_radix_tree.c	/^APR_DECLARE(apr_status_t) frl_radix_tree_remove_lock_free(frl_radix_tree_entry_t* elts)$/;"	f
+APR_DECLARE	frl_radix_tree.c	/^APR_DECLARE(apr_status_t) frl_radix_tree_remove_lock_with(frl_radix_tree_entry_t* elts)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_block_create(frl_slab_block_t** newblock, frl_slab_pool_t* pool, apr_size_t capacity)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_block_destory(frl_slab_block_t* block)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_pool_create(frl_slab_pool_t** newpool, apr_pool_t *mempool, apr_uint32_t capacity, apr_uint32_t per_size, frl_lock_u lock)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_pool_destroy(frl_slab_pool_t* pool)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_pool_safe(frl_slab_pool_t* pool)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(frl_mem_stat_t) frl_slab_pool_stat(frl_slab_pool_t* pool)$/;"	f
+DCAS_BUSY_VAL	frl_list.c	12;"	d	file:
+DCAS_BUSY_VAL	frl_slab_pool.c	55;"	d	file:
+DCAS_EXIT_VAL	frl_list.c	13;"	d	file:
+EVENT_STATE_TO_COMPLETE	frl_util_server_event.h	16;"	d
+EVENT_STATE_TO_START	frl_util_server_event.h	15;"	d
+FLOG	frl_logging.h	7;"	d
+FLOG_IF	frl_logging.h	20;"	d
+FLOG_IF_RUN	frl_logging.h	25;"	d
+FRL_EVENT_DISABLED	frl_util_server_event.h	22;"	d
+FRL_EVENT_READ_COMPLETE	frl_util_server_event.h	19;"	d
+FRL_EVENT_READ_START	frl_util_server_event.h	18;"	d
+FRL_EVENT_SEND_COMPLETE	frl_util_server_event.h	21;"	d
+FRL_EVENT_SEND_START	frl_util_server_event.h	20;"	d
+FRL_EVENT_WAIT_RESPONSE	frl_util_server_event.h	23;"	d
+FRL_HAS_GLOG	frl_config.h	4;"	d
+FRL_INSERT_AFTER	frl_base.h	/^	FRL_INSERT_AFTER$/;"	e	enum:frl_insert_u
+FRL_INSERT_BEFORE	frl_base.h	/^	FRL_INSERT_BEFORE,$/;"	e	enum:frl_insert_u
+FRL_LEVEL_ERROR	frl_base.h	/^	FRL_LEVEL_ERROR,$/;"	e	enum:frl_level_u
+FRL_LEVEL_INFO	frl_base.h	/^	FRL_LEVEL_INFO$/;"	e	enum:frl_level_u
+FRL_LEVEL_WARNING	frl_base.h	/^	FRL_LEVEL_WARNING,$/;"	e	enum:frl_level_u
+FRL_LOCK_FREE	frl_base.h	/^	FRL_LOCK_FREE$/;"	e	enum:frl_lock_u
+FRL_LOCK_WITH	frl_base.h	/^	FRL_LOCK_WITH,$/;"	e	enum:frl_lock_u
+FRL_MEMLEAK	frl_slab_pool.h	13;"	d
+FRL_MEMORY_GLOBAL	frl_base.h	/^	FRL_MEMORY_GLOBAL$/;"	e	enum:frl_memory_u
+FRL_MEMORY_SELF	frl_base.h	/^	FRL_MEMORY_SELF,$/;"	e	enum:frl_memory_u
+FRL_PIPE_DISABLED	frl_util_socket_pipe.h	53;"	d
+FRL_PIPE_READ_BLOCK_COMPLETE	frl_util_socket_pipe.h	50;"	d
+FRL_PIPE_READ_BLOCK_START	frl_util_socket_pipe.h	49;"	d
+FRL_PIPE_READ_HEADER_COMPLETE	frl_util_socket_pipe.h	46;"	d
+FRL_PIPE_READ_HEADER_START	frl_util_socket_pipe.h	45;"	d
+FRL_PIPE_SEND_BLOCK_COMPLETE	frl_util_socket_pipe.h	52;"	d
+FRL_PIPE_SEND_BLOCK_START	frl_util_socket_pipe.h	51;"	d
+FRL_PIPE_SEND_HEADER_COMPLETE	frl_util_socket_pipe.h	48;"	d
+FRL_PIPE_SEND_HEADER_START	frl_util_socket_pipe.h	47;"	d
+FRL_PIPE_WAIT_RESPONSE	frl_util_socket_pipe.h	54;"	d
+FRL_PROGRESS_COMLETE	frl_base.h	15;"	d
+FRL_PROGRESS_CONTINUE	frl_base.h	17;"	d
+FRL_PROGRESS_INTERRUPT	frl_base.h	14;"	d
+FRL_PROGRESS_IS_COMLETE	frl_base.h	20;"	d
+FRL_PROGRESS_IS_CONTINUE	frl_base.h	22;"	d
+FRL_PROGRESS_IS_INTERRUPT	frl_base.h	19;"	d
+FRL_PROGRESS_IS_RESTART	frl_base.h	23;"	d
+FRL_PROGRESS_IS_WAIT_SIGNAL	frl_base.h	21;"	d
+FRL_PROGRESS_RESTART	frl_base.h	18;"	d
+FRL_PROGRESS_WAIT_SIGNAL	frl_base.h	16;"	d
+FRL_STACKBUSY	frl_slab_pool.h	15;"	d
+FRL_STACKERR	frl_slab_pool.h	14;"	d
+FRL_THREAD_CONSUMER_PRODUCER	frl_base.h	/^	FRL_THREAD_CONSUMER_PRODUCER$/;"	e	enum:frl_thread_model_u
+FRL_THREAD_LEADER_FOLLOWER	frl_base.h	/^	FRL_THREAD_LEADER_FOLLOWER,$/;"	e	enum:frl_thread_model_u
+F_ERROR	frl_logging.h	31;"	d
+F_ERROR_IF	frl_logging.h	34;"	d
+F_ERROR_IF_RUN	frl_logging.h	37;"	d
+F_INFO	frl_logging.h	49;"	d
+F_INFO_IF	frl_logging.h	52;"	d
+F_INFO_IF_RUN	frl_logging.h	55;"	d
+F_WARNING	frl_logging.h	40;"	d
+F_WARNING_IF	frl_logging.h	43;"	d
+F_WARNING_IF_RUN	frl_logging.h	46;"	d
+GUARD_frl_base_h	frl_base.h	2;"	d
+GUARD_frl_config_h	frl_config.h	2;"	d
+GUARD_frl_h	frl.h	2;"	d
+GUARD_frl_hash_func_h	frl_hash_func.h	2;"	d
+GUARD_frl_hash_h	frl_hash.h	2;"	d
+GUARD_frl_list_h	frl_list.h	2;"	d
+GUARD_frl_logging_h	frl_logging.h	2;"	d
+GUARD_frl_managed_mem_h	frl_managed_mem.h	2;"	d
+GUARD_frl_queue_h	frl_queue.h	2;"	d
+GUARD_frl_radix_tree_h	frl_radix_tree.h	2;"	d
+GUARD_frl_slab_pool_h	frl_slab_pool.h	8;"	d
+GUARD_frl_util_h	frl_util.h	2;"	d
+GUARD_frl_util_md5_h	frl_util_md5.h	2;"	d
+GUARD_frl_util_server_event_h	frl_util_server_event.h	8;"	d
+GUARD_frl_util_socket_pipe_h	frl_util_socket_pipe.h	8;"	d
+GUARD_frl_util_threads_h	frl_util_threads.h	8;"	d
+GUARD_multi_sock_h	frl_util_multi_sock.h	2;"	d
+HASHLEN	frl_hash_func.c	789;"	d	file:
+HASHSTATE	frl_hash_func.c	788;"	d	file:
+HASH_BIG_ENDIAN	frl_hash_func.c	55;"	d	file:
+HASH_BIG_ENDIAN	frl_hash_func.c	60;"	d	file:
+HASH_BIG_ENDIAN	frl_hash_func.c	63;"	d	file:
+HASH_LITTLE_ENDIAN	frl_hash_func.c	54;"	d	file:
+HASH_LITTLE_ENDIAN	frl_hash_func.c	59;"	d	file:
+HASH_LITTLE_ENDIAN	frl_hash_func.c	62;"	d	file:
+MAXLEN	frl_hash_func.c	791;"	d	file:
+MAXPAIR	frl_hash_func.c	790;"	d	file:
+PIPE_STATE_TO_COMPLETE	frl_util_socket_pipe.h	43;"	d
+PIPE_STATE_TO_START	frl_util_socket_pipe.h	42;"	d
+SERVER_EVENT_POLL_TIMEOUT	frl_util_server_event.h	13;"	d
+SIZEOF_APR_UINT32_T	frl_base.h	/^const apr_uint32_t SIZEOF_APR_UINT32_T = sizeof(apr_uint32_t);$/;"	v
+SIZEOF_FRL_EVENTINFO_T	frl_util_server_event.h	/^const apr_uint32_t SIZEOF_FRL_EVENTINFO_T = sizeof(frl_eventinfo_t);$/;"	v
+SIZEOF_FRL_HASH_T	frl_hash.h	/^const apr_uint32_t SIZEOF_FRL_HASH_T = sizeof(frl_hash_t);$/;"	v
+SIZEOF_FRL_LIST_ENTRY_T	frl_list.h	/^const apr_uint32_t SIZEOF_FRL_LIST_ENTRY_T = sizeof(frl_list_entry_t);$/;"	v
+SIZEOF_FRL_LIST_STAT_T	frl_list.h	/^const apr_uint32_t SIZEOF_FRL_LIST_STAT_T = sizeof(frl_list_stat_t);$/;"	v
+SIZEOF_FRL_LIST_T	frl_list.h	/^const apr_uint32_t SIZEOF_FRL_LIST_T = sizeof(frl_list_t);$/;"	v
+SIZEOF_FRL_MD5	frl_util_md5.h	/^const unsigned int SIZEOF_FRL_MD5 = sizeof(frl_md5);$/;"	v
+SIZEOF_FRL_MEM_SAFE_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_MEM_SAFE_T = sizeof(frl_mem_safe_t);$/;"	v
+SIZEOF_FRL_MEM_STAT_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_MEM_STAT_T = sizeof(frl_mem_stat_t);$/;"	v
+SIZEOF_FRL_MEM_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_MEM_T = sizeof(frl_mem_t);$/;"	v
+SIZEOF_FRL_NOTIFY_T	frl_util_server_event.h	/^const apr_uint32_t SIZEOF_FRL_NOTIFY_T = sizeof(frl_notify_t);$/;"	v
+SIZEOF_FRL_PIPE_BLOCK_BUFFER	frl_util_socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPE_BLOCK_BUFFER = SOCKET_PACKAGE_SIZE-SIZEOF_FRL_PIPE_HEADER_T;$/;"	v
+SIZEOF_FRL_PIPE_BLOCK_T	frl_util_socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPE_BLOCK_T = sizeof(frl_pipe_block_t);$/;"	v
+SIZEOF_FRL_PIPE_DATA_T	frl_util_socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPE_DATA_T = sizeof(frl_pipe_data_t);$/;"	v
+SIZEOF_FRL_PIPE_HEADER_T	frl_util_socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPE_HEADER_T = sizeof(frl_pipe_header_t);$/;"	v
+SIZEOF_FRL_PIPE_STATE_T	frl_util_socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPE_STATE_T = sizeof(frl_pipe_state_t);$/;"	v
+SIZEOF_FRL_QUEUE_ENTRY_T	frl_queue.h	/^const apr_uint32_t SIZEOF_FRL_QUEUE_ENTRY_T = sizeof(frl_queue_entry_t);$/;"	v
+SIZEOF_FRL_QUEUE_T	frl_queue.h	/^const apr_uint32_t SIZEOF_FRL_QUEUE_T = sizeof(frl_queue_t);$/;"	v
+SIZEOF_FRL_RADIX_TREE_ENTRY_T	frl_radix_tree.h	/^const apr_uint32_t SIZEOF_FRL_RADIX_TREE_ENTRY_T = sizeof(frl_radix_tree_entry_t);$/;"	v
+SIZEOF_FRL_RADIX_TREE_T	frl_radix_tree.h	/^const apr_uint32_t SIZEOF_FRL_RADIX_TREE_T = sizeof(frl_radix_tree_t);$/;"	v
+SIZEOF_FRL_SERVER_LABOR_T	frl_util_server_event.h	/^const apr_uint32_t SIZEOF_FRL_SERVER_LABOR_T = sizeof(frl_server_labor_t);$/;"	v
+SIZEOF_FRL_SLAB_BLOCK_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_SLAB_BLOCK_T = sizeof(frl_slab_block_t);$/;"	v
+SIZEOF_FRL_SLAB_POOL_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_SLAB_POOL_T = sizeof(frl_slab_pool_t);$/;"	v
+SIZEOF_FRL_THREAD_CONFIG_T	frl_util_threads.h	/^const apr_uint32_t SIZEOF_FRL_THREAD_CONFIG_T = sizeof(frl_thread_config_t);$/;"	v
+SIZEOF_FRL_THREAD_SELECT_T	frl_util_threads.h	/^const apr_uint32_t SIZEOF_FRL_THREAD_SELECT_T = sizeof(frl_thread_select_t);$/;"	v
+SIZEOF_FRL_THREAD_STAT_T	frl_util_threads.h	/^const apr_uint32_t SIZEOF_FRL_THREAD_STAT_T = sizeof(frl_thread_stat_t);$/;"	v
+SIZEOF_POINTER	frl_base.h	/^const apr_uint32_t SIZEOF_POINTER = sizeof(void*);$/;"	v
+SOCKET_PACKAGE_SIZE	frl_util_socket_pipe.h	16;"	d
+SOCKET_PIPE_POLL_TIMEOUT	frl_util_socket_pipe.h	15;"	d
+SOCKET_PIPE_RECEIVER	frl_util_socket_pipe.h	18;"	d
+SOCKET_PIPE_SENDER	frl_util_socket_pipe.h	17;"	d
+_accept	frl_util_multi_sock.h	/^		apr_thread_t* _accept;$/;"	m	class:frl_multi_sock	access:private
+_reader_queue	frl_util_multi_sock.h	/^		apr_queue_t* _reader_queue;$/;"	m	class:frl_multi_sock	access:private
+_reader_tasks	frl_util_multi_sock.h	/^		frl_task_t* _reader_tasks;$/;"	m	class:frl_multi_sock	access:private
+_readers	frl_util_multi_sock.h	/^		apr_thread_t** _readers;$/;"	m	class:frl_multi_sock	access:private
+_sockpool	frl_util_multi_sock.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_multi_sock	access:private
+_thd_attr	frl_util_multi_sock.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_multi_sock	access:private
+arena	frl_slab_pool.h	/^	apr_byte_t* arena;$/;"	m	struct:frl_slab_block_t	access:public
+assign	frl_util_threads.cpp	/^APR_DECLARE(apr_status_t) frl_threads::assign(void* pointer)$/;"	f	class:frl_threads	signature:(void* pointer)
+assign	frl_util_threads.h	/^		apr_status_t assign(void* pointer);$/;"	p	class:frl_threads	access:public	signature:(void* pointer)
+balance	frl_util_server_event.h	/^		apr_uint32_t* balance;$/;"	m	class:frl_server_event	access:private
+base64_decode	frl_util_md5.cpp	/^int frl_md5::base64_decode(const apr_byte_t* x)$/;"	f	class:frl_md5	signature:(const apr_byte_t* x)
+base64_decode	frl_util_md5.h	/^		int base64_decode(const apr_byte_t* x);$/;"	p	class:frl_md5	access:public	signature:(const apr_byte_t* x)
+base64_encode	frl_util_md5.cpp	/^int frl_md5::base64_encode(apr_byte_t* q)$/;"	f	class:frl_md5	signature:(apr_byte_t* q)
+base64_encode	frl_util_md5.h	/^		int base64_encode(apr_byte_t* q);$/;"	p	class:frl_md5	access:public	signature:(apr_byte_t* q)
+base64_index	frl_util_md5.cpp	/^inline unsigned long long base64_index(const apr_byte_t& x)$/;"	f	signature:(const apr_byte_t& x)
+base64table	frl_util_md5.cpp	/^const apr_byte_t base64table[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";$/;"	v
+block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_mem_t	access:public
+block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_slab_pool_t	access:public
+block	frl_util_socket_pipe.h	/^		frl_pipe_block_t block;$/;"	m	union:frl_pipe_state_t::__anon4	access:public
+block_size	frl_slab_pool.h	/^	apr_uint32_t block_size;$/;"	m	struct:frl_mem_stat_t	access:public
+buf	frl_util_socket_pipe.h	/^	char* buf;$/;"	m	struct:frl_pipe_data_t	access:public
+buffer	frl_util_server_event.h	/^	char* buffer;$/;"	m	struct:frl_notify_t	access:public
+buffer	frl_util_socket_pipe.h	/^		char buffer[SOCKET_PACKAGE_SIZE];$/;"	m	union:frl_pipe_state_t::__anon4	access:public
+busy	frl_list.h	/^	apr_uint32_t busy;$/;"	m	struct:frl_list_stat_t	access:public
+capacity	frl_slab_pool.h	/^	apr_uint32_t capacity;$/;"	m	struct:frl_mem_stat_t	access:public
+capacity	frl_slab_pool.h	/^	apr_uint32_t capacity;$/;"	m	struct:frl_slab_block_t	access:public
+capacity	frl_util_server_event.h	/^		apr_uint32_t capacity;$/;"	m	class:frl_server_event	access:public
+children	frl_radix_tree.h	/^	frl_radix_tree_entry_t* children[256];$/;"	m	struct:frl_radix_tree_entry_t	access:public
+cond	frl_util_multi_sock.h	/^	apr_thread_cond_t* cond;$/;"	m	struct:frl_task_t	access:public
+consumer_queue	frl_util_threads.h	/^		apr_queue_t* consumer_queue;$/;"	m	class:frl_threads	access:private
+consumers	frl_util_threads.h	/^		frl_thread_select_t* consumers;$/;"	m	class:frl_threads	access:private
+data	frl_util_socket_pipe.h	/^	frl_pipe_data_t data;$/;"	m	struct:frl_pipe_state_t	access:public
+datapool	frl_util_socket_pipe.h	/^		frl_slab_pool_t* datapool;$/;"	m	class:frl_socket_pipe	access:private
+depth	frl_radix_tree.h	/^	apr_uint32_t depth;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+destroyed	frl_queue.h	/^	apr_int32_t destroyed;$/;"	m	struct:frl_queue_t	access:public
+destroyed	frl_util_server_event.h	/^		bool destroyed;$/;"	m	class:frl_server_event	access:private
+destroyed	frl_util_socket_pipe.h	/^		bool destroyed;$/;"	m	class:frl_socket_pipe	access:private
+destroyed	frl_util_threads.h	/^		bool destroyed;$/;"	m	class:frl_threads	access:private
+digest	frl_util_md5.h	/^			apr_byte_t digest[16];$/;"	m	union:frl_md5::__anon1	access:public
+driver1	frl_hash_func.c	/^void driver1()$/;"	f
+driver2	frl_hash_func.c	/^void driver2()$/;"	f
+driver3	frl_hash_func.c	/^void driver3()$/;"	f
+driver4	frl_hash_func.c	/^ void driver4()$/;"	f
+elts	frl_list.h	/^APR_DECLARE(apr_status_t) frl_list_remove(frl_list_entry_t* elts);$/;"	v
+elts	frl_radix_tree.h	/^APR_DECLARE(apr_status_t) frl_radix_tree_remove(frl_radix_tree_entry_t* elts);$/;"	v
+empty	frl_radix_tree.c	/^inline void empty(frl_radix_tree_entry_t* elts)$/;"	f	signature:(frl_radix_tree_entry_t* elts)
+empty_waiters	frl_queue.h	/^	apr_uint32_t empty_waiters;$/;"	m	struct:frl_queue_t	access:public
+entry	frl_hash.h	/^	frl_list_t** entry;$/;"	m	struct:frl_hash_t	access:public
+eventpool	frl_util_server_event.h	/^		frl_slab_pool_t* eventpool;$/;"	m	class:frl_server_event	access:private
+execute	frl_util_threads.h	/^		virtual apr_status_t execute(void* pointer) = 0;$/;"	p	class:frl_threads	access:private	signature:(void* pointer)
+failed	frl_util_threads.h	/^	apr_uint32_t failed;$/;"	m	struct:frl_thread_stat_t	access:public
+final	frl_hash_func.c	149;"	d	file:
+flag	frl_slab_pool.h	/^	apr_uint32_t flag;$/;"	m	struct:frl_mem_safe_t	access:public
+frl_eventinfo_t	frl_util_server_event.h	/^struct frl_eventinfo_t$/;"	s
+frl_eventinfo_t::notify	frl_util_server_event.h	/^	frl_notify_t notify;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::offset	frl_util_server_event.h	/^	apr_off_t offset;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::reader	frl_util_server_event.h	/^	char* reader;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::size	frl_util_server_event.h	/^	apr_size_t size;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::state	frl_util_server_event.h	/^	int state;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_hash_destroy	frl_hash.c	/^APR_DECLARE(void*) frl_hash_destroy(frl_hash_t* hash)$/;"	f	signature:(frl_hash_t* hash)
+frl_hash_get	frl_hash.c	/^APR_DECLARE(void*) frl_hash_get(frl_hash_t* hash, frl_key_t key)$/;"	f	signature:(frl_hash_t* hash, frl_key_t key)
+frl_hash_t	frl_hash.h	/^struct frl_hash_t$/;"	s
+frl_hash_t::entry	frl_hash.h	/^	frl_list_t** entry;$/;"	m	struct:frl_hash_t	access:public
+frl_hash_t::memory	frl_hash.h	/^	frl_memory_u memory;$/;"	m	struct:frl_hash_t	access:public
+frl_hash_t::nelts	frl_hash.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_hash_t	access:public
+frl_hash_t::pool	frl_hash.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_hash_t	access:public
+frl_insert_u	frl_base.h	/^enum frl_insert_u$/;"	g
+frl_key_t	frl_config.h	5;"	d
+frl_level_u	frl_base.h	/^enum frl_level_u$/;"	g
+frl_list_add	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_add(frl_list_entry_t* entry, frl_insert_u insert, frl_key_t key, void* pointer)$/;"	f	signature:(frl_list_entry_t* entry, frl_insert_u insert, frl_key_t key, void* pointer)
+frl_list_add_lock_free	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_add_lock_free(frl_list_entry_t* entry, frl_insert_u insert, apr_uint32_t key, void* pointer)$/;"	f	signature:(frl_list_entry_t* entry, frl_insert_u insert, apr_uint32_t key, void* pointer)
+frl_list_add_lock_with	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_add_lock_with(frl_list_entry_t* entry, frl_insert_u insert, frl_key_t key, void* pointer)$/;"	f	signature:(frl_list_entry_t* entry, frl_insert_u insert, frl_key_t key, void* pointer)
+frl_list_destroy	frl_list.c	/^APR_DECLARE(void) frl_list_destroy(frl_list_t* list)$/;"	f	signature:(frl_list_t* list)
+frl_list_entry_t	frl_list.h	/^struct frl_list_entry_t$/;"	s
+frl_list_entry_t::key	frl_list.h	/^	frl_key_t key;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::list	frl_list.h	/^	frl_list_t* list;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::next	frl_list.h	/^	frl_list_entry_t* next;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::pointer	frl_list.h	/^	void* pointer;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::prev	frl_list.h	/^	frl_list_entry_t* prev;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_get	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_get(frl_list_t* list, frl_key_t key)$/;"	f	signature:(frl_list_t* list, frl_key_t key)
+frl_list_get_lock_free	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_get_lock_free(frl_list_t* list, frl_key_t key)$/;"	f	signature:(frl_list_t* list, frl_key_t key)
+frl_list_get_lock_with	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_get_lock_with(frl_list_t* list, frl_key_t key)$/;"	f	signature:(frl_list_t* list, frl_key_t key)
+frl_list_set	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_set(frl_list_t* list, frl_key_t key, void* pointer)$/;"	f	signature:(frl_list_t* list, frl_key_t key, void* pointer)
+frl_list_set_lock_free	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_set_lock_free(frl_list_t* list, frl_key_t key, void* pointer)$/;"	f	signature:(frl_list_t* list, frl_key_t key, void* pointer)
+frl_list_set_lock_with	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_set_lock_with(frl_list_t* list, frl_key_t key, void* pointer)$/;"	f	signature:(frl_list_t* list, frl_key_t key, void* pointer)
+frl_list_stat_t	frl_list.h	/^struct frl_list_stat_t$/;"	s
+frl_list_stat_t::busy	frl_list.h	/^	apr_uint32_t busy;$/;"	m	struct:frl_list_stat_t	access:public
+frl_list_stat_t::nelts	frl_list.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_list_stat_t	access:public
+frl_list_t	frl_list.h	/^struct frl_list_t$/;"	s
+frl_list_t::head	frl_list.h	/^	frl_list_entry_t* head;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::lock	frl_list.h	/^	frl_lock_u lock;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::memory	frl_list.h	/^	frl_memory_u memory;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::nelts	frl_list.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::pool	frl_list.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::rwlock	frl_list.h	/^	apr_thread_rwlock_t* rwlock;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::tail	frl_list.h	/^	frl_list_entry_t* tail;$/;"	m	struct:frl_list_t	access:public
+frl_lock_u	frl_base.h	/^enum frl_lock_u$/;"	g
+frl_managed_free	frl_managed_mem.c	/^void frl_managed_free(void* pointer)$/;"	f	signature:(void* pointer)
+frl_managed_free	frl_managed_mem.h	/^void frl_managed_free(void* pointer);$/;"	p	signature:(void* pointer)
+frl_managed_malloc	frl_managed_mem.c	/^void* frl_managed_malloc(apr_uint32_t size)$/;"	f	signature:(apr_uint32_t size)
+frl_managed_malloc	frl_managed_mem.h	/^void* frl_managed_malloc(apr_uint32_t size);$/;"	p	signature:(apr_uint32_t size)
+frl_managed_ref	frl_managed_mem.c	/^void frl_managed_ref(void* pointer)$/;"	f	signature:(void* pointer)
+frl_managed_ref	frl_managed_mem.h	/^void frl_managed_ref(void* pointer);$/;"	p	signature:(void* pointer)
+frl_managed_unref	frl_managed_mem.c	/^void frl_managed_unref(void* pointer)$/;"	f	signature:(void* pointer)
+frl_managed_unref	frl_managed_mem.h	/^void frl_managed_unref(void* pointer);$/;"	p	signature:(void* pointer)
+frl_md5	frl_util_md5.h	/^		frl_md5()$/;"	f	class:frl_md5	access:public	signature:()
+frl_md5	frl_util_md5.h	/^		frl_md5(const apr_byte_t* x)$/;"	f	class:frl_md5	access:public	signature:(const apr_byte_t* x)
+frl_md5	frl_util_md5.h	/^		frl_md5(const void* s, const apr_size_t size)$/;"	f	class:frl_md5	access:public	signature:(const void* s, const apr_size_t size)
+frl_md5	frl_util_md5.h	/^class frl_md5$/;"	c
+frl_md5::__anon1::digest	frl_util_md5.h	/^			apr_byte_t digest[16];$/;"	m	union:frl_md5::__anon1	access:public
+frl_md5::__anon1::uid	frl_util_md5.h	/^			apr_uint64_t uid[2];$/;"	m	union:frl_md5::__anon1	access:public
+frl_md5::base64_decode	frl_util_md5.cpp	/^int frl_md5::base64_decode(const apr_byte_t* x)$/;"	f	class:frl_md5	signature:(const apr_byte_t* x)
+frl_md5::base64_decode	frl_util_md5.h	/^		int base64_decode(const apr_byte_t* x);$/;"	p	class:frl_md5	access:public	signature:(const apr_byte_t* x)
+frl_md5::base64_encode	frl_util_md5.cpp	/^int frl_md5::base64_encode(apr_byte_t* q)$/;"	f	class:frl_md5	signature:(apr_byte_t* q)
+frl_md5::base64_encode	frl_util_md5.h	/^		int base64_encode(apr_byte_t* q);$/;"	p	class:frl_md5	access:public	signature:(apr_byte_t* q)
+frl_md5::frl_md5	frl_util_md5.h	/^		frl_md5()$/;"	f	class:frl_md5	access:public	signature:()
+frl_md5::frl_md5	frl_util_md5.h	/^		frl_md5(const apr_byte_t* x)$/;"	f	class:frl_md5	access:public	signature:(const apr_byte_t* x)
+frl_md5::frl_md5	frl_util_md5.h	/^		frl_md5(const void* s, const apr_size_t size)$/;"	f	class:frl_md5	access:public	signature:(const void* s, const apr_size_t size)
+frl_md5::hash	frl_util_md5.cpp	/^int frl_md5::hash(const void* s, const apr_size_t size)$/;"	f	class:frl_md5	signature:(const void* s, const apr_size_t size)
+frl_md5::hash	frl_util_md5.h	/^		int hash(const void* s, const apr_size_t size);$/;"	p	class:frl_md5	access:public	signature:(const void* s, const apr_size_t size)
+frl_mem_safe_t	frl_slab_pool.h	/^struct frl_mem_safe_t$/;"	s
+frl_mem_safe_t::flag	frl_slab_pool.h	/^	apr_uint32_t flag;$/;"	m	struct:frl_mem_safe_t	access:public
+frl_mem_stat_t	frl_slab_pool.h	/^struct frl_mem_stat_t$/;"	s
+frl_mem_stat_t::block_size	frl_slab_pool.h	/^	apr_uint32_t block_size;$/;"	m	struct:frl_mem_stat_t	access:public
+frl_mem_stat_t::capacity	frl_slab_pool.h	/^	apr_uint32_t capacity;$/;"	m	struct:frl_mem_stat_t	access:public
+frl_mem_stat_t::per_size	frl_slab_pool.h	/^	apr_uint32_t per_size;$/;"	m	struct:frl_mem_stat_t	access:public
+frl_mem_stat_t::usage	frl_slab_pool.h	/^	apr_size_t usage;$/;"	m	struct:frl_mem_stat_t	access:public
+frl_mem_t	frl_slab_pool.h	/^struct frl_mem_t$/;"	s
+frl_mem_t::block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::id	frl_slab_pool.h	/^	apr_uint32_t id;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::occupied	frl_slab_pool.h	/^	volatile apr_uint32_t occupied;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::pointer	frl_slab_pool.h	/^	void* pointer;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::refcount	frl_slab_pool.h	/^	volatile apr_uint32_t refcount;$/;"	m	struct:frl_mem_t	access:public
+frl_memory_u	frl_base.h	/^enum frl_memory_u$/;"	g
+frl_multi_sock	frl_util_multi_sock.h	/^		frl_multi_sock( apr_uint32_t _port, apr_pool_t* _mempool )$/;"	f	class:frl_multi_sock	access:public	signature:( apr_uint32_t _port, apr_pool_t* _mempool )
+frl_multi_sock	frl_util_multi_sock.h	/^class frl_multi_sock$/;"	c
+frl_multi_sock::_accept	frl_util_multi_sock.h	/^		apr_thread_t* _accept;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_reader_queue	frl_util_multi_sock.h	/^		apr_queue_t* _reader_queue;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_reader_tasks	frl_util_multi_sock.h	/^		frl_task_t* _reader_tasks;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_readers	frl_util_multi_sock.h	/^		apr_thread_t** _readers;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_sockpool	frl_util_multi_sock.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_thd_attr	frl_util_multi_sock.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::frl_multi_sock	frl_util_multi_sock.h	/^		frl_multi_sock( apr_uint32_t _port, apr_pool_t* _mempool )$/;"	f	class:frl_multi_sock	access:public	signature:( apr_uint32_t _port, apr_pool_t* _mempool )
+frl_multi_sock::mempool	frl_util_multi_sock.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_multi_sock	access:public
+frl_multi_sock::port	frl_util_multi_sock.h	/^		apr_uint32_t port;$/;"	m	class:frl_multi_sock	access:public
+frl_multi_sock::proc	frl_util_multi_sock.h	/^		virtual int proc( apr_socket_t* reader, int who ) = 0;$/;"	p	class:frl_multi_sock	access:private	signature:( apr_socket_t* reader, int who )
+frl_multi_sock::spawn	frl_util_multi_sock.cpp	/^apr_thread_t* frl_multi_sock::spawn( int n )$/;"	f	class:frl_multi_sock	signature:( int n )
+frl_multi_sock::spawn	frl_util_multi_sock.h	/^		apr_thread_t* spawn( int n );$/;"	p	class:frl_multi_sock	access:public	signature:( int n )
+frl_multi_sock::thread_accept	frl_util_multi_sock.h	/^	friend void* thread_accept( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+frl_multi_sock::thread_read	frl_util_multi_sock.h	/^	friend void* thread_read( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+frl_multi_sock::~frl_multi_sock	frl_util_multi_sock.h	/^		virtual ~frl_multi_sock()$/;"	f	class:frl_multi_sock	access:public	signature:()
+frl_notify_t	frl_util_server_event.h	/^struct frl_notify_t$/;"	s
+frl_notify_t::buffer	frl_util_server_event.h	/^	char* buffer;$/;"	m	struct:frl_notify_t	access:public
+frl_notify_t::size	frl_util_server_event.h	/^	apr_size_t size;$/;"	m	struct:frl_notify_t	access:public
+frl_notify_t::state	frl_util_server_event.h	/^	int state;$/;"	m	struct:frl_notify_t	access:public
+frl_notify_t::timeout	frl_util_server_event.h	/^	apr_time_t timeout;$/;"	m	struct:frl_notify_t	access:public
+frl_pipe_block_t	frl_util_socket_pipe.h	/^struct frl_pipe_block_t$/;"	s
+frl_pipe_block_t::header	frl_util_socket_pipe.h	/^	frl_pipe_header_t header;$/;"	m	struct:frl_pipe_block_t	access:public
+frl_pipe_block_t::start	frl_util_socket_pipe.h	/^	char start;$/;"	m	struct:frl_pipe_block_t	access:public
+frl_pipe_data_t	frl_util_socket_pipe.h	/^struct frl_pipe_data_t$/;"	s
+frl_pipe_data_t::__anon3::hash	frl_util_socket_pipe.h	/^		apr_uint32_t hash;$/;"	m	union:frl_pipe_data_t::__anon3	access:public
+frl_pipe_data_t::__anon3::offset	frl_util_socket_pipe.h	/^		apr_off_t offset;$/;"	m	union:frl_pipe_data_t::__anon3	access:public
+frl_pipe_data_t::buf	frl_util_socket_pipe.h	/^	char* buf;$/;"	m	struct:frl_pipe_data_t	access:public
+frl_pipe_data_t::size	frl_util_socket_pipe.h	/^	apr_size_t size;$/;"	m	struct:frl_pipe_data_t	access:public
+frl_pipe_header_t	frl_util_socket_pipe.h	/^struct frl_pipe_header_t$/;"	s
+frl_pipe_header_t::hash	frl_util_socket_pipe.h	/^	apr_uint32_t hash;$/;"	m	struct:frl_pipe_header_t	access:public
+frl_pipe_header_t::size	frl_util_socket_pipe.h	/^	apr_uint32_t size;$/;"	m	struct:frl_pipe_header_t	access:public
+frl_pipe_state_t	frl_util_socket_pipe.h	/^struct frl_pipe_state_t$/;"	s
+frl_pipe_state_t::__anon4::block	frl_util_socket_pipe.h	/^		frl_pipe_block_t block;$/;"	m	union:frl_pipe_state_t::__anon4	access:public
+frl_pipe_state_t::__anon4::buffer	frl_util_socket_pipe.h	/^		char buffer[SOCKET_PACKAGE_SIZE];$/;"	m	union:frl_pipe_state_t::__anon4	access:public
+frl_pipe_state_t::data	frl_util_socket_pipe.h	/^	frl_pipe_data_t data;$/;"	m	struct:frl_pipe_state_t	access:public
+frl_pipe_state_t::header	frl_util_socket_pipe.h	/^	frl_pipe_header_t header;$/;"	m	struct:frl_pipe_state_t	access:public
+frl_pipe_state_t::offset	frl_util_socket_pipe.h	/^	apr_off_t offset;$/;"	m	struct:frl_pipe_state_t	access:public
+frl_pipe_state_t::reader	frl_util_socket_pipe.h	/^	char* reader;$/;"	m	struct:frl_pipe_state_t	access:public
+frl_pipe_state_t::size	frl_util_socket_pipe.h	/^	apr_size_t size;$/;"	m	struct:frl_pipe_state_t	access:public
+frl_pipe_state_t::state	frl_util_socket_pipe.h	/^	int state;$/;"	m	struct:frl_pipe_state_t	access:public
+frl_queue_destroy	frl_queue.c	/^APR_DECLARE(void) frl_queue_destroy(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_entry_t	frl_queue.h	/^struct frl_queue_entry_t {$/;"	s
+frl_queue_entry_t::next	frl_queue.h	/^	frl_queue_entry_t* next;$/;"	m	struct:frl_queue_entry_t	access:public
+frl_queue_entry_t::pointer	frl_queue.h	/^	void* pointer;$/;"	m	struct:frl_queue_entry_t	access:public
+frl_queue_peek	frl_queue.c	/^APR_DECLARE(void*) frl_queue_peek(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_pop	frl_queue.c	/^APR_DECLARE(void*) frl_queue_pop(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_pop_lock_free	frl_queue.c	/^APR_DECLARE(void*) frl_queue_pop_lock_free(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_pop_lock_with	frl_queue.c	/^APR_DECLARE(void*) frl_queue_pop_lock_with(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_t	frl_queue.h	/^struct frl_queue_t {$/;"	s
+frl_queue_t::destroyed	frl_queue.h	/^	apr_int32_t destroyed;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::empty_waiters	frl_queue.h	/^	apr_uint32_t empty_waiters;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::head	frl_queue.h	/^	frl_queue_entry_t* head;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::lock	frl_queue.h	/^	frl_lock_u lock;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::memory	frl_queue.h	/^	frl_memory_u memory;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::mutex	frl_queue.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::nelts	frl_queue.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::not_empty	frl_queue.h	/^	apr_thread_cond_t* not_empty; $/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::pool	frl_queue.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_t::tail	frl_queue.h	/^	frl_queue_entry_t* tail;$/;"	m	struct:frl_queue_t	access:public
+frl_queue_trypop	frl_queue.c	/^APR_DECLARE(void*) frl_queue_trypop(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_trypop_lock_free	frl_queue.c	/^APR_DECLARE(void*) frl_queue_trypop_lock_free(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_queue_trypop_lock_with	frl_queue.c	/^APR_DECLARE(void*) frl_queue_trypop_lock_with(frl_queue_t* queue)$/;"	f	signature:(frl_queue_t* queue)
+frl_radix_tree_add	frl_radix_tree.c	/^APR_DECLARE(frl_radix_tree_entry_t*) frl_radix_tree_add(frl_radix_tree_t* tree, apr_byte_t* key, void* pointer)$/;"	f	signature:(frl_radix_tree_t* tree, apr_byte_t* key, void* pointer)
+frl_radix_tree_add_lock_free	frl_radix_tree.c	/^APR_DECLARE(frl_radix_tree_entry_t*) frl_radix_tree_add_lock_free(frl_radix_tree_t* tree, apr_byte_t* key, void* pointer)$/;"	f	signature:(frl_radix_tree_t* tree, apr_byte_t* key, void* pointer)
+frl_radix_tree_add_lock_with	frl_radix_tree.c	/^APR_DECLARE(frl_radix_tree_entry_t*) frl_radix_tree_add_lock_with(frl_radix_tree_t* tree, apr_byte_t* key, void* pointer)$/;"	f	signature:(frl_radix_tree_t* tree, apr_byte_t* key, void* pointer)
+frl_radix_tree_destroy	frl_radix_tree.c	/^APR_DECLARE(void*) frl_radix_tree_destroy(frl_radix_tree_t* tree)$/;"	f	signature:(frl_radix_tree_t* tree)
+frl_radix_tree_entry_t	frl_radix_tree.h	/^struct frl_radix_tree_entry_t$/;"	s
+frl_radix_tree_entry_t::children	frl_radix_tree.h	/^	frl_radix_tree_entry_t* children[256];$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_entry_t::depth	frl_radix_tree.h	/^	apr_uint32_t depth;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_entry_t::key	frl_radix_tree.h	/^	apr_byte_t key[32];$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_entry_t::nelts	frl_radix_tree.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_entry_t::parent	frl_radix_tree.h	/^	frl_radix_tree_entry_t* parent;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_entry_t::pointer	frl_radix_tree.h	/^	void* pointer;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_entry_t::tree	frl_radix_tree.h	/^	frl_radix_tree_t* tree;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+frl_radix_tree_get	frl_radix_tree.c	/^APR_DECLARE(frl_radix_tree_entry_t*) frl_radix_tree_get(frl_radix_tree_t* tree, apr_byte_t* key)$/;"	f	signature:(frl_radix_tree_t* tree, apr_byte_t* key)
+frl_radix_tree_get_lock_free	frl_radix_tree.c	/^APR_DECLARE(frl_radix_tree_entry_t*) frl_radix_tree_get_lock_free(frl_radix_tree_t* tree, apr_byte_t* key)$/;"	f	signature:(frl_radix_tree_t* tree, apr_byte_t* key)
+frl_radix_tree_get_lock_with	frl_radix_tree.c	/^APR_DECLARE(frl_radix_tree_entry_t*) frl_radix_tree_get_lock_with(frl_radix_tree_t* tree, apr_byte_t* key)$/;"	f	signature:(frl_radix_tree_t* tree, apr_byte_t* key)
+frl_radix_tree_t	frl_radix_tree.h	/^struct frl_radix_tree_t$/;"	s
+frl_radix_tree_t::key_size	frl_radix_tree.h	/^	apr_uint32_t key_size;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_radix_tree_t::lock	frl_radix_tree.h	/^	frl_lock_u lock;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_radix_tree_t::memory	frl_radix_tree.h	/^	frl_memory_u memory;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_radix_tree_t::nelts	frl_radix_tree.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_radix_tree_t::pool	frl_radix_tree.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_radix_tree_t::root	frl_radix_tree.h	/^	frl_radix_tree_entry_t* root;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_radix_tree_t::rwlock	frl_radix_tree.h	/^	apr_thread_rwlock_t* rwlock;$/;"	m	struct:frl_radix_tree_t	access:public
+frl_server_event	frl_util_server_event.h	/^		frl_server_event(apr_uint32_t _capacity, frl_lock_u lock, apr_pool_t* _mempool)$/;"	f	class:frl_server_event	access:public	signature:(apr_uint32_t _capacity, frl_lock_u lock, apr_pool_t* _mempool)
+frl_server_event	frl_util_server_event.h	/^class frl_server_event$/;"	c
+frl_server_event::balance	frl_util_server_event.h	/^		apr_uint32_t* balance;$/;"	m	class:frl_server_event	access:private
+frl_server_event::capacity	frl_util_server_event.h	/^		apr_uint32_t capacity;$/;"	m	class:frl_server_event	access:public
+frl_server_event::destroyed	frl_util_server_event.h	/^		bool destroyed;$/;"	m	class:frl_server_event	access:private
+frl_server_event::eventpool	frl_util_server_event.h	/^		frl_slab_pool_t* eventpool;$/;"	m	class:frl_server_event	access:private
+frl_server_event::frl_server_event	frl_util_server_event.h	/^		frl_server_event(apr_uint32_t _capacity, frl_lock_u lock, apr_pool_t* _mempool)$/;"	f	class:frl_server_event	access:public	signature:(apr_uint32_t _capacity, frl_lock_u lock, apr_pool_t* _mempool)
+frl_server_event::labor	frl_util_server_event.h	/^		frl_server_labor_t* labor;$/;"	m	class:frl_server_event	access:private
+frl_server_event::max	frl_util_server_event.h	/^		apr_uint32_t max;$/;"	m	class:frl_server_event	access:private
+frl_server_event::mempool	frl_util_server_event.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_server_event	access:private
+frl_server_event::min	frl_util_server_event.h	/^		apr_uint32_t min;$/;"	m	class:frl_server_event	access:private
+frl_server_event::open	frl_util_server_event.h	/^		apr_uint32_t open;$/;"	m	class:frl_server_event	access:private
+frl_server_event::pollset	frl_util_server_event.h	/^		apr_pollset_t** pollset;$/;"	m	class:frl_server_event	access:private
+frl_server_event::recv_before	frl_util_server_event.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len)$/;"	f	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len)
+frl_server_event::recv_send	frl_util_server_event.h	/^		virtual apr_status_t recv_send(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)$/;"	f	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)
+frl_server_event::send_after	frl_util_server_event.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len)$/;"	f	class:frl_server_event	access:private	signature:(char* buf, apr_size_t len)
+frl_server_event::server_event_handler_thds	frl_util_server_event.h	/^		apr_thread_t** server_event_handler_thds;$/;"	m	class:frl_server_event	access:private
+frl_server_event::server_event_listen_thd	frl_util_server_event.h	/^		apr_thread_t* server_event_listen_thd;$/;"	m	class:frl_server_event	access:private
+frl_server_event::sock_addr	frl_util_server_event.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_server_event	access:private
+frl_server_event::sockpool	frl_util_server_event.h	/^		apr_pool_t* sockpool;$/;"	m	class:frl_server_event	access:private
+frl_server_event::spawn	frl_util_server_event.cpp	/^void frl_server_event::spawn(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr)$/;"	f	class:frl_server_event	signature:(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr)
+frl_server_event::spawn	frl_util_server_event.h	/^		void spawn(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr);$/;"	p	class:frl_server_event	access:public	signature:(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr)
+frl_server_event::thd_attr	frl_util_server_event.h	/^		apr_threadattr_t* thd_attr;$/;"	m	class:frl_server_event	access:private
+frl_server_event::thread_server_event_handler	frl_util_server_event.h	/^	friend void* thread_server_event_handler(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_server_event::thread_server_event_listener	frl_util_server_event.h	/^	friend void* thread_server_event_listener(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_server_event::wait	frl_util_server_event.cpp	/^void frl_server_event::wait()$/;"	f	class:frl_server_event	signature:()
+frl_server_event::wait	frl_util_server_event.h	/^		void wait();$/;"	p	class:frl_server_event	access:public	signature:()
+frl_server_event::~frl_server_event	frl_util_server_event.h	/^		virtual ~frl_server_event()$/;"	f	class:frl_server_event	access:public	signature:()
+frl_server_labor_t	frl_util_server_event.h	/^struct frl_server_labor_t$/;"	s
+frl_server_labor_t::master	frl_util_server_event.h	/^	frl_server_event* master;$/;"	m	struct:frl_server_labor_t	access:public
+frl_server_labor_t::no	frl_util_server_event.h	/^	apr_uint32_t no;$/;"	m	struct:frl_server_labor_t	access:public
+frl_slab_block_t	frl_slab_pool.h	/^struct frl_slab_block_t$/;"	s
+frl_slab_block_t::arena	frl_slab_pool.h	/^	apr_byte_t* arena;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::capacity	frl_slab_pool.h	/^	apr_uint32_t capacity;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::next	frl_slab_pool.h	/^	frl_slab_block_t* next;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::pool	frl_slab_pool.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::stack_pointer	frl_slab_pool.h	/^	apr_byte_t** stack_pointer;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::usage_stack	frl_slab_pool.h	/^	apr_byte_t** usage_stack;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_palloc	frl_slab_pool.c	/^APR_DECLARE(void*) frl_slab_palloc(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_palloc_lock_free	frl_slab_pool.c	/^APR_DECLARE(void*) frl_slab_palloc_lock_free(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_palloc_lock_with	frl_slab_pool.c	/^APR_DECLARE(void*) frl_slab_palloc_lock_with(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_pcalloc	frl_slab_pool.c	/^APR_DECLARE(void*) frl_slab_pcalloc(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_pfree	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_pfree(void* pointer)$/;"	f	signature:(void* pointer)
+frl_slab_pfree_lock_free	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_pfree_lock_free(void* pointer)$/;"	f	signature:(void* pointer)
+frl_slab_pfree_lock_with	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_pfree_lock_with(void* pointer)$/;"	f	signature:(void* pointer)
+frl_slab_pool_clear	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_pool_clear(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_pool_t	frl_slab_pool.h	/^struct frl_slab_pool_t$/;"	s
+frl_slab_pool_t::block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_pool_t::lock	frl_slab_pool.h	/^	frl_lock_u lock;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_pool_t::max_capacity	frl_slab_pool.h	/^	apr_uint32_t max_capacity;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_pool_t::mutex	frl_slab_pool.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_pool_t::per_size	frl_slab_pool.h	/^	apr_uint32_t per_size;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_ref	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_ref(void* pointer)$/;"	f	signature:(void* pointer)
+frl_slab_unref	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_unref(void* pointer)$/;"	f	signature:(void* pointer)
+frl_socket_pipe	frl_util_socket_pipe.h	/^		frl_socket_pipe(apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)$/;"	f	class:frl_socket_pipe	access:public	signature:(apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)
+frl_socket_pipe	frl_util_socket_pipe.h	/^class frl_socket_pipe$/;"	c
+frl_socket_pipe::datapool	frl_util_socket_pipe.h	/^		frl_slab_pool_t* datapool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::destroyed	frl_util_socket_pipe.h	/^		bool destroyed;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::frl_socket_pipe	frl_util_socket_pipe.h	/^		frl_socket_pipe(apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)$/;"	f	class:frl_socket_pipe	access:public	signature:(apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)
+frl_socket_pipe::mempool	frl_util_socket_pipe.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::recv_after	frl_util_socket_pipe.h	/^		virtual apr_status_t recv_after(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::recv_before	frl_util_socket_pipe.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len)$/;"	f	class:frl_socket_pipe	access:private	signature:(char** buf, apr_size_t* len)
+frl_socket_pipe::recv_state	frl_util_socket_pipe.h	/^		apr_status_t recv_state;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::replicate	frl_util_socket_pipe.h	/^		apr_uint32_t replicate;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::send	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::send(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::send	frl_util_socket_pipe.h	/^		void send(char* buf, apr_size_t len);$/;"	p	class:frl_socket_pipe	access:public	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::send_after	frl_util_socket_pipe.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::send_queue	frl_util_socket_pipe.h	/^		frl_queue_t* send_queue;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::send_state	frl_util_socket_pipe.h	/^		apr_status_t send_state;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::shutdown	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::shutdown()$/;"	f	class:frl_socket_pipe	signature:()
+frl_socket_pipe::shutdown	frl_util_socket_pipe.h	/^		void shutdown();$/;"	p	class:frl_socket_pipe	access:public	signature:()
+frl_socket_pipe::sock_addr	frl_util_socket_pipe.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::socket_pipe_receiver	frl_util_socket_pipe.h	/^		apr_thread_t* socket_pipe_receiver;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::socket_pipe_sender	frl_util_socket_pipe.h	/^		apr_thread_t* socket_pipe_sender;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::sockpool	frl_util_socket_pipe.h	/^		apr_pool_t* sockpool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::spawn	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::spawn(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode)$/;"	f	class:frl_socket_pipe	signature:(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode)
+frl_socket_pipe::spawn	frl_util_socket_pipe.h	/^		void spawn(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode);$/;"	p	class:frl_socket_pipe	access:public	signature:(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode)
+frl_socket_pipe::state	frl_util_socket_pipe.cpp	/^apr_status_t frl_socket_pipe::state()$/;"	f	class:frl_socket_pipe	signature:()
+frl_socket_pipe::state	frl_util_socket_pipe.h	/^		apr_status_t state();$/;"	p	class:frl_socket_pipe	access:public	signature:()
+frl_socket_pipe::statepool	frl_util_socket_pipe.h	/^		frl_slab_pool_t* statepool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::thd_attr	frl_util_socket_pipe.h	/^		apr_threadattr_t* thd_attr;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::thread_socket_pipe_receiver	frl_util_socket_pipe.h	/^	friend void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_socket_pipe::thread_socket_pipe_sender	frl_util_socket_pipe.h	/^	friend void* thread_socket_pipe_sender(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_socket_pipe::wait	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::wait()$/;"	f	class:frl_socket_pipe	signature:()
+frl_socket_pipe::wait	frl_util_socket_pipe.h	/^		void wait();$/;"	p	class:frl_socket_pipe	access:public	signature:()
+frl_socket_pipe::~frl_socket_pipe	frl_util_socket_pipe.h	/^		virtual ~frl_socket_pipe()$/;"	f	class:frl_socket_pipe	access:public	signature:()
+frl_task_t	frl_util_multi_sock.h	/^struct frl_task_t$/;"	s
+frl_task_t::cond	frl_util_multi_sock.h	/^	apr_thread_cond_t* cond;$/;"	m	struct:frl_task_t	access:public
+frl_task_t::mutex	frl_util_multi_sock.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_task_t	access:public
+frl_task_t::socket	frl_util_multi_sock.h	/^	apr_socket_t* socket;$/;"	m	struct:frl_task_t	access:public
+frl_task_t::status	frl_util_multi_sock.h	/^	bool status;$/;"	m	struct:frl_task_t	access:public
+frl_thread_config_t	frl_util_threads.h	/^struct frl_thread_config_t$/;"	s
+frl_thread_config_t::master	frl_util_threads.h	/^	frl_threads* master;$/;"	m	struct:frl_thread_config_t	access:public
+frl_thread_config_t::no	frl_util_threads.h	/^	apr_uint32_t no;$/;"	m	struct:frl_thread_config_t	access:public
+frl_thread_model_u	frl_base.h	/^enum frl_thread_model_u$/;"	g
+frl_thread_select_t	frl_util_threads.h	/^struct frl_thread_select_t$/;"	s
+frl_thread_select_t::__anon2::no	frl_util_threads.h	/^		apr_int32_t no;$/;"	m	union:frl_thread_select_t::__anon2	access:public
+frl_thread_select_t::__anon2::pointer	frl_util_threads.h	/^		void* pointer;$/;"	m	union:frl_thread_select_t::__anon2	access:public
+frl_thread_select_t::mutex	frl_util_threads.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_thread_select_t	access:public
+frl_thread_select_t::select	frl_util_threads.h	/^	apr_thread_cond_t* select;$/;"	m	struct:frl_thread_select_t	access:public
+frl_thread_stat_t	frl_util_threads.h	/^struct frl_thread_stat_t$/;"	s
+frl_thread_stat_t::failed	frl_util_threads.h	/^	apr_uint32_t failed;$/;"	m	struct:frl_thread_stat_t	access:public
+frl_thread_stat_t::handled	frl_util_threads.h	/^	apr_uint32_t handled;$/;"	m	struct:frl_thread_stat_t	access:public
+frl_thread_stat_t::start	frl_util_threads.h	/^	apr_time_t start;$/;"	m	struct:frl_thread_stat_t	access:public
+frl_thread_stat_t::status	frl_util_threads.h	/^	apr_status_t status;$/;"	m	struct:frl_thread_stat_t	access:public
+frl_threads	frl_util_threads.h	/^		frl_threads(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)$/;"	f	class:frl_threads	access:public	signature:(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)
+frl_threads	frl_util_threads.h	/^class frl_threads$/;"	c
+frl_threads::assign	frl_util_threads.cpp	/^APR_DECLARE(apr_status_t) frl_threads::assign(void* pointer)$/;"	f	class:frl_threads	signature:(void* pointer)
+frl_threads::assign	frl_util_threads.h	/^		apr_status_t assign(void* pointer);$/;"	p	class:frl_threads	access:public	signature:(void* pointer)
+frl_threads::consumer_queue	frl_util_threads.h	/^		apr_queue_t* consumer_queue;$/;"	m	class:frl_threads	access:private
+frl_threads::consumers	frl_util_threads.h	/^		frl_thread_select_t* consumers;$/;"	m	class:frl_threads	access:private
+frl_threads::destroyed	frl_util_threads.h	/^		bool destroyed;$/;"	m	class:frl_threads	access:private
+frl_threads::execute	frl_util_threads.h	/^		virtual apr_status_t execute(void* pointer) = 0;$/;"	p	class:frl_threads	access:private	signature:(void* pointer)
+frl_threads::frl_threads	frl_util_threads.h	/^		frl_threads(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)$/;"	f	class:frl_threads	access:public	signature:(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)
+frl_threads::leader	frl_util_threads.h	/^		frl_thread_select_t* leader;$/;"	m	class:frl_threads	access:private
+frl_threads::lock	frl_util_threads.h	/^		frl_lock_u lock;$/;"	m	class:frl_threads	access:private
+frl_threads::max	frl_util_threads.h	/^		apr_uint32_t max;$/;"	m	class:frl_threads	access:public
+frl_threads::mempool	frl_util_threads.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_threads	access:private
+frl_threads::min	frl_util_threads.h	/^		apr_uint32_t min;$/;"	m	class:frl_threads	access:public
+frl_threads::model	frl_util_threads.h	/^		frl_thread_model_u model;$/;"	m	class:frl_threads	access:private
+frl_threads::mutex	frl_util_threads.h	/^		apr_thread_mutex_t* mutex;$/;"	m	class:frl_threads	access:private
+frl_threads::open	frl_util_threads.h	/^		apr_uint32_t open;$/;"	m	class:frl_threads	access:public
+frl_threads::select	frl_util_threads.h	/^		apr_thread_cond_t* select;$/;"	m	class:frl_threads	access:private
+frl_threads::spawn	frl_util_threads.cpp	/^apr_status_t frl_threads::spawn(apr_uint32_t min, apr_uint32_t max)$/;"	f	class:frl_threads	signature:(apr_uint32_t min, apr_uint32_t max)
+frl_threads::spawn	frl_util_threads.h	/^		apr_status_t spawn(apr_uint32_t min, apr_uint32_t max);$/;"	p	class:frl_threads	access:public	signature:(apr_uint32_t min, apr_uint32_t max)
+frl_threads::state	frl_util_threads.cpp	/^APR_DECLARE(frl_thread_stat_t) frl_threads::state(apr_uint32_t no)$/;"	f	class:frl_threads	signature:(apr_uint32_t no)
+frl_threads::state	frl_util_threads.h	/^		frl_thread_stat_t state(apr_uint32_t no);$/;"	p	class:frl_threads	access:public	signature:(apr_uint32_t no)
+frl_threads::task_queue	frl_util_threads.h	/^		frl_queue_t* task_queue;$/;"	m	class:frl_threads	access:private
+frl_threads::thd_attr	frl_util_threads.h	/^		apr_threadattr_t* thd_attr;$/;"	m	class:frl_threads	access:private
+frl_threads::thd_config	frl_util_threads.h	/^		frl_thread_config_t* thd_config;$/;"	m	class:frl_threads	access:private
+frl_threads::thd_master	frl_util_threads.h	/^		apr_thread_t* thd_master;$/;"	m	class:frl_threads	access:private
+frl_threads::thd_stat	frl_util_threads.h	/^		frl_thread_stat_t* thd_stat;$/;"	m	class:frl_threads	access:private
+frl_threads::thd_worker	frl_util_threads.h	/^		apr_thread_t** thd_worker;$/;"	m	class:frl_threads	access:private
+frl_threads::thread_consumer	frl_util_threads.h	/^	friend void* thread_consumer(apr_thread_t* thd, void* data);$/;"	p	class:frl_threads	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_threads::thread_leader	frl_util_threads.h	/^	friend void* thread_leader(apr_thread_t* thd, void* data);$/;"	p	class:frl_threads	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_threads::thread_producer	frl_util_threads.h	/^	friend void* thread_producer(apr_thread_t* thd, void* data);$/;"	p	class:frl_threads	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_threads::wait	frl_util_threads.cpp	/^APR_DECLARE(apr_status_t) frl_threads::wait()$/;"	f	class:frl_threads	signature:()
+frl_threads::wait	frl_util_threads.h	/^		apr_status_t wait();$/;"	p	class:frl_threads	access:public	signature:()
+frl_threads::waiters	frl_util_threads.h	/^		apr_uint32_t waiters;$/;"	m	class:frl_threads	access:public
+frl_threads::~frl_threads	frl_util_threads.h	/^		virtual ~frl_threads()$/;"	f	class:frl_threads	access:public	signature:()
+handled	frl_util_threads.h	/^	apr_uint32_t handled;$/;"	m	struct:frl_thread_stat_t	access:public
+hash	frl_hash.h	/^APR_DECLARE(void*) frl_hash_destroy(frl_hash_t* hash);$/;"	v
+hash	frl_util_md5.cpp	/^int frl_md5::hash(const void* s, const apr_size_t size)$/;"	f	class:frl_md5	signature:(const void* s, const apr_size_t size)
+hash	frl_util_md5.h	/^		int hash(const void* s, const apr_size_t size);$/;"	p	class:frl_md5	access:public	signature:(const void* s, const apr_size_t size)
+hash	frl_util_socket_pipe.h	/^		apr_uint32_t hash;$/;"	m	union:frl_pipe_data_t::__anon3	access:public
+hash	frl_util_socket_pipe.h	/^	apr_uint32_t hash;$/;"	m	struct:frl_pipe_header_t	access:public
+hashbig	frl_hash_func.c	/^uint32_t hashbig( const void *key, size_t length, uint32_t initval)$/;"	f	signature:( const void *key, size_t length, uint32_t initval)
+hashbig	frl_hash_func.h	/^uint32_t hashbig( const void *key, size_t length, uint32_t initval = 0);$/;"	p	signature:( const void *key, size_t length, uint32_t initval = 0)
+hashlittle	frl_hash_func.c	/^uint32_t hashlittle( const void *key, size_t length, uint32_t initval)$/;"	f	signature:( const void *key, size_t length, uint32_t initval)
+hashlittle	frl_hash_func.h	/^uint32_t hashlittle( const void *key, size_t length, uint32_t initval = 0);$/;"	p	signature:( const void *key, size_t length, uint32_t initval = 0)
+hashlittle2	frl_hash_func.c	/^void hashlittle2( $/;"	f	signature:( const void *key, size_t length, uint32_t *pc, uint32_t *pb)
+hashlittle2	frl_hash_func.h	/^void hashlittle2( const void *key, size_t length, uint32_t *pc, uint32_t *pb);$/;"	p	signature:( const void *key, size_t length, uint32_t *pc, uint32_t *pb)
+hashmask	frl_hash_func.c	67;"	d	file:
+hashsize	frl_hash_func.c	66;"	d	file:
+hashword	frl_hash_func.c	/^uint32_t hashword($/;"	f	signature:( const uint32_t *k, size_t length, uint32_t initval)
+hashword	frl_hash_func.h	/^uint32_t hashword(const uint32_t *k, size_t length, uint32_t initval = 0);$/;"	p	signature:(const uint32_t *k, size_t length, uint32_t initval = 0)
+hashword2	frl_hash_func.c	/^void hashword2 ($/;"	f	signature:( const uint32_t *k, size_t length, uint32_t *pc, uint32_t *pb)
+hashword2	frl_hash_func.h	/^void hashword2 (const uint32_t *k, size_t length, uint32_t *pc, uint32_t *pb);$/;"	p	signature:(const uint32_t *k, size_t length, uint32_t *pc, uint32_t *pb)
+head	frl_list.h	/^	frl_list_entry_t* head;$/;"	m	struct:frl_list_t	access:public
+head	frl_queue.h	/^	frl_queue_entry_t* head;$/;"	m	struct:frl_queue_t	access:public
+header	frl_util_socket_pipe.h	/^	frl_pipe_header_t header;$/;"	m	struct:frl_pipe_block_t	access:public
+header	frl_util_socket_pipe.h	/^	frl_pipe_header_t header;$/;"	m	struct:frl_pipe_state_t	access:public
+id	frl_slab_pool.h	/^	apr_uint32_t id;$/;"	m	struct:frl_mem_t	access:public
+key	frl_list.h	/^	frl_key_t key;$/;"	m	struct:frl_list_entry_t	access:public
+key	frl_radix_tree.h	/^	apr_byte_t key[32];$/;"	m	struct:frl_radix_tree_entry_t	access:public
+key_size	frl_radix_tree.h	/^	apr_uint32_t key_size;$/;"	m	struct:frl_radix_tree_t	access:public
+keycmp	frl_radix_tree.c	/^inline bool keycmp(apr_byte_t* key1, apr_byte_t* key2, apr_uint32_t k, apr_uint32_t size)$/;"	f	signature:(apr_byte_t* key1, apr_byte_t* key2, apr_uint32_t k, apr_uint32_t size)
+labor	frl_util_server_event.h	/^		frl_server_labor_t* labor;$/;"	m	class:frl_server_event	access:private
+leader	frl_util_threads.h	/^		frl_thread_select_t* leader;$/;"	m	class:frl_threads	access:private
+list	frl_list.h	/^	frl_list_t* list;$/;"	m	struct:frl_list_entry_t	access:public
+list	frl_list.h	/^APR_DECLARE(frl_list_stat_t) frl_list_stat(frl_list_t* list);$/;"	v
+list	frl_list.h	/^APR_DECLARE(void) frl_list_destroy(frl_list_t* list);$/;"	v
+lock	frl_list.h	/^	frl_lock_u lock;$/;"	m	struct:frl_list_t	access:public
+lock	frl_queue.h	/^	frl_lock_u lock;$/;"	m	struct:frl_queue_t	access:public
+lock	frl_radix_tree.h	/^	frl_lock_u lock;$/;"	m	struct:frl_radix_tree_t	access:public
+lock	frl_slab_pool.h	/^	frl_lock_u lock;$/;"	m	struct:frl_slab_pool_t	access:public
+lock	frl_util_threads.h	/^		frl_lock_u lock;$/;"	m	class:frl_threads	access:private
+main	frl_hash_func.c	/^int main()$/;"	f
+master	frl_util_server_event.h	/^	frl_server_event* master;$/;"	m	struct:frl_server_labor_t	access:public
+master	frl_util_threads.h	/^	frl_threads* master;$/;"	m	struct:frl_thread_config_t	access:public
+max	frl_util_server_event.h	/^		apr_uint32_t max;$/;"	m	class:frl_server_event	access:private
+max	frl_util_threads.h	/^		apr_uint32_t max;$/;"	m	class:frl_threads	access:public
+max_capacity	frl_slab_pool.h	/^	apr_uint32_t max_capacity;$/;"	m	struct:frl_slab_pool_t	access:public
+memory	frl_hash.h	/^	frl_memory_u memory;$/;"	m	struct:frl_hash_t	access:public
+memory	frl_list.h	/^	frl_memory_u memory;$/;"	m	struct:frl_list_t	access:public
+memory	frl_queue.h	/^	frl_memory_u memory;$/;"	m	struct:frl_queue_t	access:public
+memory	frl_radix_tree.h	/^	frl_memory_u memory;$/;"	m	struct:frl_radix_tree_t	access:public
+mempool	frl_util_multi_sock.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_multi_sock	access:public
+mempool	frl_util_server_event.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_server_event	access:private
+mempool	frl_util_socket_pipe.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_socket_pipe	access:private
+mempool	frl_util_threads.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_threads	access:private
+min	frl_util_server_event.h	/^		apr_uint32_t min;$/;"	m	class:frl_server_event	access:private
+min	frl_util_threads.h	/^		apr_uint32_t min;$/;"	m	class:frl_threads	access:public
+mix	frl_hash_func.c	114;"	d	file:
+model	frl_util_threads.h	/^		frl_thread_model_u model;$/;"	m	class:frl_threads	access:private
+mutex	frl_queue.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_queue_t	access:public
+mutex	frl_slab_pool.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_slab_pool_t	access:public
+mutex	frl_util_multi_sock.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_task_t	access:public
+mutex	frl_util_threads.h	/^		apr_thread_mutex_t* mutex;$/;"	m	class:frl_threads	access:private
+mutex	frl_util_threads.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_thread_select_t	access:public
+nelts	frl_hash.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_hash_t	access:public
+nelts	frl_list.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_list_stat_t	access:public
+nelts	frl_list.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_list_t	access:public
+nelts	frl_queue.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_queue_t	access:public
+nelts	frl_radix_tree.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+nelts	frl_radix_tree.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_radix_tree_t	access:public
+next	frl_list.h	/^	frl_list_entry_t* next;$/;"	m	struct:frl_list_entry_t	access:public
+next	frl_queue.h	/^	frl_queue_entry_t* next;$/;"	m	struct:frl_queue_entry_t	access:public
+next	frl_slab_pool.h	/^	frl_slab_block_t* next;$/;"	m	struct:frl_slab_block_t	access:public
+no	frl_util_server_event.h	/^	apr_uint32_t no;$/;"	m	struct:frl_server_labor_t	access:public
+no	frl_util_threads.h	/^		apr_int32_t no;$/;"	m	union:frl_thread_select_t::__anon2	access:public
+no	frl_util_threads.h	/^	apr_uint32_t no;$/;"	m	struct:frl_thread_config_t	access:public
+not_empty	frl_queue.h	/^	apr_thread_cond_t* not_empty; $/;"	m	struct:frl_queue_t	access:public
+notify	frl_util_server_event.h	/^	frl_notify_t notify;$/;"	m	struct:frl_eventinfo_t	access:public
+occupied	frl_slab_pool.h	/^	volatile apr_uint32_t occupied;$/;"	m	struct:frl_mem_t	access:public
+offset	frl_util_server_event.h	/^	apr_off_t offset;$/;"	m	struct:frl_eventinfo_t	access:public
+offset	frl_util_socket_pipe.h	/^		apr_off_t offset;$/;"	m	union:frl_pipe_data_t::__anon3	access:public
+offset	frl_util_socket_pipe.h	/^	apr_off_t offset;$/;"	m	struct:frl_pipe_state_t	access:public
+open	frl_util_server_event.h	/^		apr_uint32_t open;$/;"	m	class:frl_server_event	access:private
+open	frl_util_threads.h	/^		apr_uint32_t open;$/;"	m	class:frl_threads	access:public
+operator !=	frl_util_md5.h	/^inline bool operator!=(const frl_md5& x, const frl_md5& y)$/;"	f	signature:(const frl_md5& x, const frl_md5& y)
+operator <	frl_util_md5.h	/^inline bool operator<(const frl_md5& x, const frl_md5& y)$/;"	f	signature:(const frl_md5& x, const frl_md5& y)
+operator <=	frl_util_md5.h	/^inline bool operator<=(const frl_md5& x, const frl_md5& y)$/;"	f	signature:(const frl_md5& x, const frl_md5& y)
+operator ==	frl_util_md5.h	/^inline bool operator==(const frl_md5& x, const frl_md5& y)$/;"	f	signature:(const frl_md5& x, const frl_md5& y)
+operator >	frl_util_md5.h	/^inline bool operator>(const frl_md5& x, const frl_md5& y)$/;"	f	signature:(const frl_md5& x, const frl_md5& y)
+operator >=	frl_util_md5.h	/^inline bool operator>=(const frl_md5& x, const frl_md5& y)$/;"	f	signature:(const frl_md5& x, const frl_md5& y)
+parent	frl_radix_tree.h	/^	frl_radix_tree_entry_t* parent;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+per_size	frl_slab_pool.h	/^	apr_uint32_t per_size;$/;"	m	struct:frl_mem_stat_t	access:public
+per_size	frl_slab_pool.h	/^	apr_uint32_t per_size;$/;"	m	struct:frl_slab_pool_t	access:public
+pointer	frl_list.h	/^	void* pointer;$/;"	m	struct:frl_list_entry_t	access:public
+pointer	frl_queue.h	/^	void* pointer;$/;"	m	struct:frl_queue_entry_t	access:public
+pointer	frl_radix_tree.h	/^	void* pointer;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+pointer	frl_slab_pool.h	/^	void* pointer;$/;"	m	struct:frl_mem_t	access:public
+pointer	frl_util_threads.h	/^		void* pointer;$/;"	m	union:frl_thread_select_t::__anon2	access:public
+pollset	frl_util_server_event.h	/^		apr_pollset_t** pollset;$/;"	m	class:frl_server_event	access:private
+pool	frl_hash.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_hash_t	access:public
+pool	frl_list.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_list_t	access:public
+pool	frl_queue.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_queue_t	access:public
+pool	frl_radix_tree.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_radix_tree_t	access:public
+pool	frl_slab_pool.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_slab_block_t	access:public
+pool	frl_slab_pool.h	/^APR_DECLARE(apr_status_t) frl_slab_pool_destroy(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(apr_status_t) frl_slab_pool_safe(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(frl_mem_stat_t) frl_slab_pool_stat(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(void) frl_slab_pool_clear(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(void*) frl_slab_palloc(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(void*) frl_slab_pcalloc(frl_slab_pool_t* pool);$/;"	v
+port	frl_util_multi_sock.h	/^		apr_uint32_t port;$/;"	m	class:frl_multi_sock	access:public
+prev	frl_list.h	/^	frl_list_entry_t* prev;$/;"	m	struct:frl_list_entry_t	access:public
+proc	frl_util_multi_sock.h	/^		virtual int proc( apr_socket_t* reader, int who ) = 0;$/;"	p	class:frl_multi_sock	access:private	signature:( apr_socket_t* reader, int who )
+queue	frl_queue.h	/^APR_DECLARE(void) frl_queue_destroy(frl_queue_t* queue);$/;"	v
+queue	frl_queue.h	/^APR_DECLARE(void*) frl_queue_peek(frl_queue_t* queue);$/;"	v
+queue	frl_queue.h	/^APR_DECLARE(void*) frl_queue_pop(frl_queue_t* queue);$/;"	v
+queue	frl_queue.h	/^APR_DECLARE(void*) frl_queue_trypop(frl_queue_t* queue);$/;"	v
+reader	frl_util_server_event.h	/^	char* reader;$/;"	m	struct:frl_eventinfo_t	access:public
+reader	frl_util_socket_pipe.h	/^	char* reader;$/;"	m	struct:frl_pipe_state_t	access:public
+recv_after	frl_util_socket_pipe.h	/^		virtual apr_status_t recv_after(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len)
+recv_before	frl_util_server_event.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len)$/;"	f	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	frl_util_socket_pipe.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len)$/;"	f	class:frl_socket_pipe	access:private	signature:(char** buf, apr_size_t* len)
+recv_send	frl_util_server_event.h	/^		virtual apr_status_t recv_send(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)$/;"	f	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)
+recv_state	frl_util_socket_pipe.h	/^		apr_status_t recv_state;$/;"	m	class:frl_socket_pipe	access:private
+refcount	frl_slab_pool.h	/^	volatile apr_uint32_t refcount;$/;"	m	struct:frl_mem_t	access:public
+replicate	frl_util_socket_pipe.h	/^		apr_uint32_t replicate;$/;"	m	class:frl_socket_pipe	access:private
+root	frl_radix_tree.h	/^	frl_radix_tree_entry_t* root;$/;"	m	struct:frl_radix_tree_t	access:public
+rot	frl_hash_func.c	68;"	d	file:
+rwlock	frl_list.h	/^	apr_thread_rwlock_t* rwlock;$/;"	m	struct:frl_list_t	access:public
+rwlock	frl_radix_tree.h	/^	apr_thread_rwlock_t* rwlock;$/;"	m	struct:frl_radix_tree_t	access:public
+select	frl_util_threads.h	/^		apr_thread_cond_t* select;$/;"	m	class:frl_threads	access:private
+select	frl_util_threads.h	/^	apr_thread_cond_t* select;$/;"	m	struct:frl_thread_select_t	access:public
+send	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::send(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	signature:(char* buf, apr_size_t len)
+send	frl_util_socket_pipe.h	/^		void send(char* buf, apr_size_t len);$/;"	p	class:frl_socket_pipe	access:public	signature:(char* buf, apr_size_t len)
+send_after	frl_util_server_event.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len)$/;"	f	class:frl_server_event	access:private	signature:(char* buf, apr_size_t len)
+send_after	frl_util_socket_pipe.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len)
+send_queue	frl_util_socket_pipe.h	/^		frl_queue_t* send_queue;$/;"	m	class:frl_socket_pipe	access:private
+send_state	frl_util_socket_pipe.h	/^		apr_status_t send_state;$/;"	m	class:frl_socket_pipe	access:private
+server_event_handler_thds	frl_util_server_event.h	/^		apr_thread_t** server_event_handler_thds;$/;"	m	class:frl_server_event	access:private
+server_event_listen_thd	frl_util_server_event.h	/^		apr_thread_t* server_event_listen_thd;$/;"	m	class:frl_server_event	access:private
+shutdown	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::shutdown()$/;"	f	class:frl_socket_pipe	signature:()
+shutdown	frl_util_socket_pipe.h	/^		void shutdown();$/;"	p	class:frl_socket_pipe	access:public	signature:()
+size	frl_util_server_event.h	/^	apr_size_t size;$/;"	m	struct:frl_eventinfo_t	access:public
+size	frl_util_server_event.h	/^	apr_size_t size;$/;"	m	struct:frl_notify_t	access:public
+size	frl_util_socket_pipe.h	/^	apr_size_t size;$/;"	m	struct:frl_pipe_data_t	access:public
+size	frl_util_socket_pipe.h	/^	apr_size_t size;$/;"	m	struct:frl_pipe_state_t	access:public
+size	frl_util_socket_pipe.h	/^	apr_uint32_t size;$/;"	m	struct:frl_pipe_header_t	access:public
+sock_addr	frl_util_server_event.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_server_event	access:private
+sock_addr	frl_util_socket_pipe.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_socket_pipe	access:private
+socket	frl_util_multi_sock.h	/^	apr_socket_t* socket;$/;"	m	struct:frl_task_t	access:public
+socket_pipe_receiver	frl_util_socket_pipe.h	/^		apr_thread_t* socket_pipe_receiver;$/;"	m	class:frl_socket_pipe	access:private
+socket_pipe_sender	frl_util_socket_pipe.h	/^		apr_thread_t* socket_pipe_sender;$/;"	m	class:frl_socket_pipe	access:private
+sockpool	frl_util_server_event.h	/^		apr_pool_t* sockpool;$/;"	m	class:frl_server_event	access:private
+sockpool	frl_util_socket_pipe.h	/^		apr_pool_t* sockpool;$/;"	m	class:frl_socket_pipe	access:private
+spawn	frl_util_multi_sock.cpp	/^apr_thread_t* frl_multi_sock::spawn( int n )$/;"	f	class:frl_multi_sock	signature:( int n )
+spawn	frl_util_multi_sock.h	/^		apr_thread_t* spawn( int n );$/;"	p	class:frl_multi_sock	access:public	signature:( int n )
+spawn	frl_util_server_event.cpp	/^void frl_server_event::spawn(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr)$/;"	f	class:frl_server_event	signature:(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr)
+spawn	frl_util_server_event.h	/^		void spawn(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr);$/;"	p	class:frl_server_event	access:public	signature:(apr_uint32_t _min, apr_uint32_t _max, apr_sockaddr_t* _sock_addr)
+spawn	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::spawn(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode)$/;"	f	class:frl_socket_pipe	signature:(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode)
+spawn	frl_util_socket_pipe.h	/^		void spawn(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode);$/;"	p	class:frl_socket_pipe	access:public	signature:(apr_uint32_t _replicate, apr_sockaddr_t* _sock_addr, int mode)
+spawn	frl_util_threads.cpp	/^apr_status_t frl_threads::spawn(apr_uint32_t min, apr_uint32_t max)$/;"	f	class:frl_threads	signature:(apr_uint32_t min, apr_uint32_t max)
+spawn	frl_util_threads.h	/^		apr_status_t spawn(apr_uint32_t min, apr_uint32_t max);$/;"	p	class:frl_threads	access:public	signature:(apr_uint32_t min, apr_uint32_t max)
+stack_pointer	frl_slab_pool.h	/^	apr_byte_t** stack_pointer;$/;"	m	struct:frl_slab_block_t	access:public
+start	frl_util_socket_pipe.h	/^	char start;$/;"	m	struct:frl_pipe_block_t	access:public
+start	frl_util_threads.h	/^	apr_time_t start;$/;"	m	struct:frl_thread_stat_t	access:public
+state	frl_util_server_event.h	/^	int state;$/;"	m	struct:frl_eventinfo_t	access:public
+state	frl_util_server_event.h	/^	int state;$/;"	m	struct:frl_notify_t	access:public
+state	frl_util_socket_pipe.cpp	/^apr_status_t frl_socket_pipe::state()$/;"	f	class:frl_socket_pipe	signature:()
+state	frl_util_socket_pipe.h	/^		apr_status_t state();$/;"	p	class:frl_socket_pipe	access:public	signature:()
+state	frl_util_socket_pipe.h	/^	int state;$/;"	m	struct:frl_pipe_state_t	access:public
+state	frl_util_threads.cpp	/^APR_DECLARE(frl_thread_stat_t) frl_threads::state(apr_uint32_t no)$/;"	f	class:frl_threads	signature:(apr_uint32_t no)
+state	frl_util_threads.h	/^		frl_thread_stat_t state(apr_uint32_t no);$/;"	p	class:frl_threads	access:public	signature:(apr_uint32_t no)
+statepool	frl_util_socket_pipe.h	/^		frl_slab_pool_t* statepool;$/;"	m	class:frl_socket_pipe	access:private
+status	frl_util_multi_sock.h	/^	bool status;$/;"	m	struct:frl_task_t	access:public
+status	frl_util_threads.h	/^	apr_status_t status;$/;"	m	struct:frl_thread_stat_t	access:public
+tail	frl_list.h	/^	frl_list_entry_t* tail;$/;"	m	struct:frl_list_t	access:public
+tail	frl_queue.h	/^	frl_queue_entry_t* tail;$/;"	m	struct:frl_queue_t	access:public
+task_queue	frl_util_threads.h	/^		frl_queue_t* task_queue;$/;"	m	class:frl_threads	access:private
+thd_attr	frl_util_server_event.h	/^		apr_threadattr_t* thd_attr;$/;"	m	class:frl_server_event	access:private
+thd_attr	frl_util_socket_pipe.h	/^		apr_threadattr_t* thd_attr;$/;"	m	class:frl_socket_pipe	access:private
+thd_attr	frl_util_threads.h	/^		apr_threadattr_t* thd_attr;$/;"	m	class:frl_threads	access:private
+thd_config	frl_util_threads.h	/^		frl_thread_config_t* thd_config;$/;"	m	class:frl_threads	access:private
+thd_master	frl_util_threads.h	/^		apr_thread_t* thd_master;$/;"	m	class:frl_threads	access:private
+thd_stat	frl_util_threads.h	/^		frl_thread_stat_t* thd_stat;$/;"	m	class:frl_threads	access:private
+thd_worker	frl_util_threads.h	/^		apr_thread_t** thd_worker;$/;"	m	class:frl_threads	access:private
+thread_accept	frl_util_multi_sock.cpp	/^void* thread_accept( apr_thread_t* thd, void* data )$/;"	f	signature:( apr_thread_t* thd, void* data )
+thread_accept	frl_util_multi_sock.h	/^	friend void* thread_accept( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+thread_accept	frl_util_multi_sock.h	/^void* thread_accept( apr_thread_t* thd, void* data );$/;"	p	signature:( apr_thread_t* thd, void* data )
+thread_consumer	frl_util_threads.cpp	/^void* thread_consumer(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_consumer	frl_util_threads.h	/^	friend void* thread_consumer(apr_thread_t* thd, void* data);$/;"	p	class:frl_threads	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_consumer	frl_util_threads.h	/^void* thread_consumer(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_leader	frl_util_threads.cpp	/^void* thread_leader(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_leader	frl_util_threads.h	/^	friend void* thread_leader(apr_thread_t* thd, void* data);$/;"	p	class:frl_threads	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_leader	frl_util_threads.h	/^void* thread_leader(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_producer	frl_util_threads.cpp	/^void* thread_producer(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_producer	frl_util_threads.h	/^	friend void* thread_producer(apr_thread_t* thd, void* data);$/;"	p	class:frl_threads	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_producer	frl_util_threads.h	/^void* thread_producer(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_read	frl_util_multi_sock.cpp	/^void* thread_read( apr_thread_t* thd, void* data )$/;"	f	signature:( apr_thread_t* thd, void* data )
+thread_read	frl_util_multi_sock.h	/^	friend void* thread_read( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+thread_read	frl_util_multi_sock.h	/^void* thread_read( apr_thread_t* thd, void* data );$/;"	p	signature:( apr_thread_t* thd, void* data )
+thread_server_event_handler	frl_util_server_event.cpp	/^void* thread_server_event_handler(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_server_event_handler	frl_util_server_event.h	/^	friend void* thread_server_event_handler(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_server_event_handler	frl_util_server_event.h	/^void* thread_server_event_handler(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_server_event_listener	frl_util_server_event.cpp	/^void* thread_server_event_listener(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_server_event_listener	frl_util_server_event.h	/^	friend void* thread_server_event_listener(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_server_event_listener	frl_util_server_event.h	/^void* thread_server_event_listener(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_receiver	frl_util_socket_pipe.cpp	/^void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_receiver	frl_util_socket_pipe.h	/^	friend void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_receiver	frl_util_socket_pipe.h	/^void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_sender	frl_util_socket_pipe.cpp	/^void* thread_socket_pipe_sender(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_sender	frl_util_socket_pipe.h	/^	friend void* thread_socket_pipe_sender(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_sender	frl_util_socket_pipe.h	/^void* thread_socket_pipe_sender(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+timeout	frl_util_server_event.h	/^	apr_time_t timeout;$/;"	m	struct:frl_notify_t	access:public
+tree	frl_radix_tree.h	/^	frl_radix_tree_t* tree;$/;"	m	struct:frl_radix_tree_entry_t	access:public
+tree	frl_radix_tree.h	/^APR_DECLARE(void*) frl_radix_tree_destroy(frl_radix_tree_t* tree);$/;"	v
+uid	frl_util_md5.h	/^			apr_uint64_t uid[2];$/;"	m	union:frl_md5::__anon1	access:public
+usage	frl_slab_pool.h	/^	apr_size_t usage;$/;"	m	struct:frl_mem_stat_t	access:public
+usage_stack	frl_slab_pool.h	/^	apr_byte_t** usage_stack;$/;"	m	struct:frl_slab_block_t	access:public
+wait	frl_util_server_event.cpp	/^void frl_server_event::wait()$/;"	f	class:frl_server_event	signature:()
+wait	frl_util_server_event.h	/^		void wait();$/;"	p	class:frl_server_event	access:public	signature:()
+wait	frl_util_socket_pipe.cpp	/^void frl_socket_pipe::wait()$/;"	f	class:frl_socket_pipe	signature:()
+wait	frl_util_socket_pipe.h	/^		void wait();$/;"	p	class:frl_socket_pipe	access:public	signature:()
+wait	frl_util_threads.cpp	/^APR_DECLARE(apr_status_t) frl_threads::wait()$/;"	f	class:frl_threads	signature:()
+wait	frl_util_threads.h	/^		apr_status_t wait();$/;"	p	class:frl_threads	access:public	signature:()
+waiters	frl_util_threads.h	/^		apr_uint32_t waiters;$/;"	m	class:frl_threads	access:public
+~frl_multi_sock	frl_util_multi_sock.h	/^		virtual ~frl_multi_sock()$/;"	f	class:frl_multi_sock	access:public	signature:()
+~frl_server_event	frl_util_server_event.h	/^		virtual ~frl_server_event()$/;"	f	class:frl_server_event	access:public	signature:()
+~frl_socket_pipe	frl_util_socket_pipe.h	/^		virtual ~frl_socket_pipe()$/;"	f	class:frl_socket_pipe	access:public	signature:()
+~frl_threads	frl_util_threads.h	/^		virtual ~frl_threads()$/;"	f	class:frl_threads	access:public	signature:()

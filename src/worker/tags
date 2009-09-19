@@ -1,0 +1,301 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+Allocator	alter.h	/^			Allocator(apr_size_t _min, apt_size_t _total, frl_lock_u lock, apr_pool_t* mempool)$/;"	f	class:Alter::Allocator	access:public	signature:(apr_size_t _min, apt_size_t _total, frl_lock_u lock, apr_pool_t* mempool)
+Allocator	alter.h	/^	class Allocator$/;"	c	class:Alter	access:private
+Alter	alter.h	/^		Alter(apr_pool_t* _mempool)$/;"	f	class:Alter	access:public	signature:(apr_pool_t* _mempool)
+Alter	alter.h	/^class Alter$/;"	c
+Alter::Allocator	alter.h	/^	class Allocator$/;"	c	class:Alter	access:private
+Alter::Allocator::Allocator	alter.h	/^			Allocator(apr_size_t _min, apt_size_t _total, frl_lock_u lock, apr_pool_t* mempool)$/;"	f	class:Alter::Allocator	access:public	signature:(apr_size_t _min, apt_size_t _total, frl_lock_u lock, apr_pool_t* mempool)
+Alter::Allocator::alloc	alter.cpp	/^void* Alter::Allocator::alloc(apr_uint32_t size)$/;"	f	class:Alter::Allocator	signature:(apr_uint32_t size)
+Alter::Allocator::alloc	alter.h	/^			void* alloc(apr_size_t size);$/;"	p	class:Alter::Allocator	access:public	signature:(apr_size_t size)
+Alter::Allocator::chain	alter.h	/^			frl_slab_pool_t** chain;$/;"	m	class:Alter::Allocator	access:private
+Alter::Allocator::clear	alter.cpp	/^void Alter::Allocator::clear()$/;"	f	class:Alter::Allocator	signature:()
+Alter::Allocator::free	alter.cpp	/^void Alter::Allocator::free(void* ptr)$/;"	f	class:Alter::Allocator	signature:(void* ptr)
+Alter::Allocator::free	alter.h	/^			void free(void* ptr);$/;"	p	class:Alter::Allocator	access:public	signature:(void* ptr)
+Alter::Allocator::min	alter.h	/^			apr_size_t min;$/;"	m	class:Alter::Allocator	access:private
+Alter::Allocator::total	alter.h	/^			apr_size_t total;$/;"	m	class:Alter::Allocator	access:private
+Alter::Allocator::~Allocator	alter.h	/^			~Allocator()$/;"	f	class:Alter::Allocator	access:public	signature:()
+Alter::Alter	alter.h	/^		Alter(apr_pool_t* _mempool)$/;"	f	class:Alter	access:public	signature:(apr_pool_t* _mempool)
+Alter::Configurator	alter.h	/^	class Configurator : public frl_server_event$/;"	c	class:Alter	inherits:frl_server_event	access:private
+Alter::Configurator::Configurator	alter.h	/^			Configurator(Alter* _alter)$/;"	f	class:Alter::Configurator	access:public	signature:(Alter* _alter)
+Alter::Configurator::alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Configurator	access:private
+Alter::Configurator::recv_before	alter.cpp	/^apr_status_t Alter::Configurator::recv_before(char** buf, apr_size_t* len)$/;"	f	class:Alter::Configurator	signature:(char** buf, apr_size_t* len)
+Alter::Configurator::recv_before	alter.h	/^			virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:Alter::Configurator	access:private	signature:(char** buf, apr_size_t* len)
+Alter::Configurator::recv_send	alter.cpp	/^apr_status_t Alter::Configurator::recv_send(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)$/;"	f	class:Alter::Configurator	signature:(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)
+Alter::Configurator::recv_send	alter.h	/^			virtual apr_status_t recv_send(char** buf, apr_size_t* len, int* state, apr_time_t* timeout);$/;"	p	class:Alter::Configurator	access:private	signature:(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)
+Alter::Configurator::rgtpool	alter.h	/^			frl_slab_pool_t* rgtpool;$/;"	m	class:Alter::Configurator	access:private
+Alter::Configurator::rptpool	alter.h	/^			frl_slab_pool_t* rptpool;$/;"	m	class:Alter::Configurator	access:private
+Alter::Configurator::send_after	alter.cpp	/^apr_status_t Alter::Configurator::send_after(char* buf, apr_size_t len)$/;"	f	class:Alter::Configurator	signature:(char* buf, apr_size_t len)
+Alter::Configurator::send_after	alter.h	/^			virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Configurator	access:private	signature:(char* buf, apr_size_t len)
+Alter::Configurator::signup	alter.cpp	/^apr_status_t Alter::Configurator::signup(apr_sockaddr_t sockaddr)$/;"	f	class:Alter::Configurator	signature:(apr_sockaddr_t sockaddr)
+Alter::Configurator::signup	alter.h	/^			apr_status_t signup();$/;"	p	class:Alter::Configurator	access:public	signature:()
+Alter::Configurator::~Configurator	alter.h	/^			virtual ~Configurator()$/;"	f	class:Alter::Configurator	access:public	signature:()
+Alter::Handler	alter.h	/^	class Handler : public frl_threads$/;"	c	class:Alter	inherits:frl_threads	access:private
+Alter::Handler::Handler	alter.h	/^			Handler(Alter* _alter)$/;"	f	class:Alter::Handler	access:public	signature:(Alter* _alter)
+Alter::Handler::alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Handler	access:private
+Alter::Handler::execute	alter.cpp	/^apr_status_t Alter::Handler::execute(void* pointer)$/;"	f	class:Alter::Handler	signature:(void* pointer)
+Alter::Handler::execute	alter.h	/^			virtual apr_status_t execute(void* pointer);$/;"	p	class:Alter::Handler	access:private	signature:(void* pointer)
+Alter::Handler::~Handler	alter.h	/^			virtual ~Handler()$/;"	f	class:Alter::Handler	access:public	signature:()
+Alter::Reflector	alter.h	/^	class Reflector : public frl_socket_pipe$/;"	c	class:Alter	inherits:frl_socket_pipe	access:private
+Alter::Reflector::Reflector	alter.h	/^			Reflector(Alter* _alter)$/;"	f	class:Alter::Reflector	access:public	signature:(Alter* _alter)
+Alter::Reflector::alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Reflector	access:private
+Alter::Reflector::recv_after	alter.cpp	/^apr_status_t Alter::Reflector::recv_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Reflector	signature:(char* buf, apr_uint32_t len)
+Alter::Reflector::recv_after	alter.h	/^			virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Reflector	access:private	signature:(char* buf, apr_size_t len)
+Alter::Reflector::recv_before	alter.cpp	/^apr_status_t Alter::Reflector::recv_before(char** buf, apr_uint32_t* len)$/;"	f	class:Alter::Reflector	signature:(char** buf, apr_uint32_t* len)
+Alter::Reflector::recv_before	alter.h	/^			virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:Alter::Reflector	access:private	signature:(char** buf, apr_size_t* len)
+Alter::Reflector::send_after	alter.cpp	/^apr_status_t Alter::Reflector::send_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Reflector	signature:(char* buf, apr_uint32_t len)
+Alter::Reflector::send_after	alter.h	/^			virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Reflector	access:private	signature:(char* buf, apr_size_t len)
+Alter::Reflector::~Reflector	alter.h	/^			virtual ~Reflector()$/;"	f	class:Alter::Reflector	access:public	signature:()
+Alter::Synthesizer	alter.h	/^	class Synthesizer : public frl_threads$/;"	c	class:Alter	inherits:frl_threads	access:private
+Alter::Synthesizer::Synthesizer	alter.h	/^			Synthesizer(Alter* _alter)$/;"	f	class:Alter::Synthesizer	access:public	signature:(Alter* _alter)
+Alter::Synthesizer::alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::call	alter.cpp	/^apr_status_t Alter::Synthesizer::call(frl_map_task_t* map)$/;"	f	class:Alter::Synthesizer	signature:(frl_map_task_t* map)
+Alter::Synthesizer::call	alter.h	/^			apr_status_t call(frl_map_task_t* map);$/;"	p	class:Alter::Synthesizer	access:public	signature:(frl_map_task_t* map)
+Alter::Synthesizer::execute	alter.cpp	/^apr_status_t Alter::Synthesizer::execute(void* pointer)$/;"	f	class:Alter::Synthesizer	signature:(void* pointer)
+Alter::Synthesizer::execute	alter.h	/^			virtual apr_status_t execute(void* pointer);$/;"	p	class:Alter::Synthesizer	access:private	signature:(void* pointer)
+Alter::Synthesizer::hash	alter.h	/^			frl_hash_t* hash;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::mapool	alter.h	/^			frl_slab_pool_t* mapool;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::packages	alter.h	/^			frl_queue_t* packages;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::synthepool	alter.h	/^			frl_slab_pool_t* synthepool;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::synthesize	alter.cpp	/^apr_status_t Alter::Synthesizer::synthesize(void* pointer)$/;"	f	class:Alter::Synthesizer	signature:(void* pointer)
+Alter::Synthesizer::synthesize	alter.h	/^			apr_status_t synthesize(void* pointer);$/;"	p	class:Alter::Synthesizer	access:public	signature:(void* pointer)
+Alter::Synthesizer::taskpool	alter.h	/^			frl_slab_pool_t* taskpool;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::thread_alter_synthesizer	alter.h	/^		friend void* thread_alter_synthesizer(apr_thread_t* thd, void* data);$/;"	p	class:Alter::Synthesizer	access:friend	signature:(apr_thread_t* thd, void* data)
+Alter::Synthesizer::thread_ttl_watcher	alter.h	/^		friend void* thread_ttl_watcher(apr_thread_t* thd, void* data);$/;"	p	class:Alter::Synthesizer	access:friend	signature:(apr_thread_t* thd, void* data)
+Alter::Synthesizer::timers	alter.h	/^			frl_queue_t* timers;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::watchpool	alter.h	/^			frl_slab_pool_t* watchpool;$/;"	m	class:Alter::Synthesizer	access:private
+Alter::Synthesizer::~Synthesizer	alter.h	/^			virtual ~Synthesizer()$/;"	f	class:Alter::Synthesizer	access:public	signature:()
+Alter::Transporter	alter.h	/^	class Transporter : public frl_socket_pipe$/;"	c	class:Alter	inherits:frl_socket_pipe	access:private
+Alter::Transporter::Transporter	alter.h	/^			Transporter(Alter* _alter)$/;"	f	class:Alter::Transporter	access:public	signature:(Alter* _alter)
+Alter::Transporter::alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Transporter	access:private
+Alter::Transporter::recv_after	alter.cpp	/^apr_status_t Alter::Transporter::recv_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Transporter	signature:(char* buf, apr_uint32_t len)
+Alter::Transporter::recv_after	alter.h	/^			virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Transporter	access:private	signature:(char* buf, apr_size_t len)
+Alter::Transporter::recv_before	alter.cpp	/^apr_status_t Alter::Transporter::recv_before(char** buf, apr_uint32_t* len)$/;"	f	class:Alter::Transporter	signature:(char** buf, apr_uint32_t* len)
+Alter::Transporter::recv_before	alter.h	/^			virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:Alter::Transporter	access:private	signature:(char** buf, apr_size_t* len)
+Alter::Transporter::send_after	alter.cpp	/^apr_status_t Alter::Transporter::send_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Transporter	signature:(char* buf, apr_uint32_t len)
+Alter::Transporter::send_after	alter.h	/^			virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Transporter	access:private	signature:(char* buf, apr_size_t len)
+Alter::Transporter::~Transporter	alter.h	/^			virtual ~Transporter()$/;"	f	class:Alter::Transporter	access:public	signature:()
+Alter::conf	alter.h	/^		alter_conf_t conf;$/;"	m	class:Alter	access:private
+Alter::configurator	alter.h	/^		Configurator* configurator;$/;"	m	class:Alter	access:private
+Alter::handle	alter.h	/^		virtual int handle(char** response, apr_uint32_t* response_size, char* request, apr_uint32_t request_size) = 0;$/;"	p	class:Alter	access:private	signature:(char** response, apr_uint32_t* response_size, char* request, apr_uint32_t request_size)
+Alter::handler	alter.h	/^		Handler* handler;$/;"	m	class:Alter	access:private
+Alter::ima	alter.h	/^		Allocator* ima;$/;"	m	class:Alter	access:private
+Alter::memory	alter.h	/^		Allocator* memory;$/;"	m	class:Alter	access:public
+Alter::mempool	alter.h	/^		apr_pool_t* mempool;$/;"	m	class:Alter	access:private
+Alter::reflector	alter.h	/^		Reflector* reflector;$/;"	m	class:Alter	access:private
+Alter::spawn	alter.cpp	/^void Alter::spawn()$/;"	f	class:Alter	signature:()
+Alter::spawn	alter.h	/^		void spawn();$/;"	p	class:Alter	access:public	signature:()
+Alter::synthesize	alter.h	/^		virtual int synthesize(char** response, apr_uint32_t* response_size, char** synthe, apr_uint32_t* synthe_size, apr_uint32_t total) = 0;$/;"	p	class:Alter	access:private	signature:(char** response, apr_uint32_t* response_size, char** synthe, apr_uint32_t* synthe_size, apr_uint32_t total)
+Alter::synthesizer	alter.h	/^		Synthesizer* synthesizer;$/;"	m	class:Alter	access:private
+Alter::transporter	alter.h	/^		Transporter** transporter;$/;"	m	class:Alter	access:private
+Alter::wait	alter.cpp	/^void Alter::wait()$/;"	f	class:Alter	signature:()
+Alter::wait	alter.h	/^		void wait();$/;"	p	class:Alter	access:public	signature:()
+Alter::~Alter	alter.h	/^		virtual ~Alter()$/;"	f	class:Alter	access:public	signature:()
+Configurator	alter.h	/^			Configurator(Alter* _alter)$/;"	f	class:Alter::Configurator	access:public	signature:(Alter* _alter)
+Configurator	alter.h	/^	class Configurator : public frl_server_event$/;"	c	class:Alter	inherits:frl_server_event	access:private
+FRL_INVALID_REQUEST	alter.h	114;"	d
+FRL_VALID_REQUEST	alter.h	115;"	d
+GUARD_cluscom_h	alter.h	2;"	d
+Handler	alter.h	/^			Handler(Alter* _alter)$/;"	f	class:Alter::Handler	access:public	signature:(Alter* _alter)
+Handler	alter.h	/^	class Handler : public frl_threads$/;"	c	class:Alter	inherits:frl_threads	access:private
+Reflector	alter.h	/^			Reflector(Alter* _alter)$/;"	f	class:Alter::Reflector	access:public	signature:(Alter* _alter)
+Reflector	alter.h	/^	class Reflector : public frl_socket_pipe$/;"	c	class:Alter	inherits:frl_socket_pipe	access:private
+SIZEOF_ALTER_CONF_T	alter.h	/^const apr_uint32_t SIZEOF_ALTER_CONF_T = sizeof(alter_conf_t);$/;"	v
+SIZEOF_ALTER_RECEIPT_T	alter.h	/^const apr_uint32_t SIZEOF_ALTER_RECEIPT_T = sizeof(alter_receipt_t);$/;"	v
+SIZEOF_ALTER_REGISTER_T	alter.h	/^const apr_uint32_t SIZEOF_ALTER_REGISTER_T = sizeof(alter_register_t);$/;"	v
+SIZEOF_ALTER_REQUEST_CONF_T	alter.h	/^const apr_uint32_t SIZEOF_ALTER_REQUEST_CONF_T = sizeof(alter_request_conf_t);$/;"	v
+SIZEOF_FRL_MAP_TASK_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_MAP_TASK_T = sizeof(frl_map_task_t);$/;"	v
+SIZEOF_FRL_REQUEST_HEADER_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_REQUEST_HEADER_T = sizeof(frl_request_header_t);$/;"	v
+SIZEOF_FRL_REQUEST_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_REQUEST_T = sizeof(frl_request_t);$/;"	v
+SIZEOF_FRL_RESPONSE_HEADER_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_RESPONSE_HEADER_T = sizeof(frl_response_header_t);$/;"	v
+SIZEOF_FRL_RESPONSE_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_RESPONSE_T = sizeof(frl_response_t);$/;"	v
+SIZEOF_FRL_SMART_POINTER_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_SMART_POINTER_T = sizeof(frl_smart_pointer_t);$/;"	v
+SIZEOF_FRL_SYNTHESIZE_HEADER_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_SYNTHESIZE_HEADER_T = sizeof(frl_synthesize_header_t);$/;"	v
+SIZEOF_FRL_TASK_LIST_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_TASK_LIST_T = sizeof(frl_task_list_t);$/;"	v
+SIZEOF_FRL_TTL_WATCHER_T	alter.h	/^const apr_uint32_t SIZEOF_FRL_TTL_WATCHER_T = sizeof(frl_ttl_watcher_t);$/;"	v
+Synthesizer	alter.h	/^			Synthesizer(Alter* _alter)$/;"	f	class:Alter::Synthesizer	access:public	signature:(Alter* _alter)
+Synthesizer	alter.h	/^	class Synthesizer : public frl_threads$/;"	c	class:Alter	inherits:frl_threads	access:private
+Transporter	alter.h	/^			Transporter(Alter* _alter)$/;"	f	class:Alter::Transporter	access:public	signature:(Alter* _alter)
+Transporter	alter.h	/^	class Transporter : public frl_socket_pipe$/;"	c	class:Alter	inherits:frl_socket_pipe	access:private
+address	alter.h	/^	char address[40];$/;"	m	struct:alter_register_t	access:public
+alloc	alter.cpp	/^void* Alter::Allocator::alloc(apr_uint32_t size)$/;"	f	class:Alter::Allocator	signature:(apr_uint32_t size)
+alloc	alter.h	/^			void* alloc(apr_size_t size);$/;"	p	class:Alter::Allocator	access:public	signature:(apr_size_t size)
+alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Configurator	access:private
+alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Handler	access:private
+alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Reflector	access:private
+alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Synthesizer	access:private
+alter	alter.h	/^			Alter* alter;$/;"	m	class:Alter::Transporter	access:private
+alter_conf_t	alter.h	/^struct alter_conf_t$/;"	s
+alter_conf_t::__anon1::backup	alter.h	/^		apr_uint32_t backup;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon1::follow	alter.h	/^		apr_uint32_t follow;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon1::max	alter.h	/^		apr_uint32_t max;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon1::sid	alter.h	/^		apr_uint32_t sid;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon1::tos	alter.h	/^		apr_uint64_t tos;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon1::ttl	alter.h	/^		apr_uint64_t ttl;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon1::uid	alter.h	/^		apr_uint32_t uid;$/;"	m	struct:alter_conf_t::__anon1	access:public
+alter_conf_t::__anon2::server	alter.h	/^		char server[40];$/;"	m	struct:alter_conf_t::__anon2	access:public
+alter_conf_t::__anon3::capacity	alter.h	/^		apr_uint32_t capacity;$/;"	m	struct:alter_conf_t::__anon3	access:public
+alter_conf_t::__anon3::lock	alter.h	/^		frl_lock_u lock;$/;"	m	struct:alter_conf_t::__anon3	access:public
+alter_conf_t::__anon3::model	alter.h	/^		frl_thread_model_u model;$/;"	m	struct:alter_conf_t::__anon3	access:public
+alter_conf_t::local	alter.h	/^	} local;$/;"	m	struct:alter_conf_t	typeref:struct:alter_conf_t::__anon2	access:public
+alter_conf_t::network	alter.h	/^	} network;$/;"	m	struct:alter_conf_t	typeref:struct:alter_conf_t::__anon1	access:public
+alter_conf_t::performance	alter.h	/^	} performance;$/;"	m	struct:alter_conf_t	typeref:struct:alter_conf_t::__anon3	access:public
+alter_receipt_t	alter.h	/^struct alter_receipt_t$/;"	s
+alter_receipt_t::sid	alter.h	/^	apr_uint32_t sid;$/;"	m	struct:alter_receipt_t	access:public
+alter_receipt_t::status	alter.h	/^	apr_uint32_t status;$/;"	m	struct:alter_receipt_t	access:public
+alter_receipt_t::ticket	alter.h	/^	apr_uint32_t ticket;$/;"	m	struct:alter_receipt_t	access:public
+alter_register_t	alter.h	/^struct alter_register_t$/;"	s
+alter_register_t::address	alter.h	/^	char address[40];$/;"	m	struct:alter_register_t	access:public
+alter_register_t::port	alter.h	/^	apr_uint32_t port;$/;"	m	struct:alter_register_t	access:public
+alter_register_t::ticket	alter.h	/^	apr_uint32_t ticket;$/;"	m	struct:alter_register_t	access:public
+backup	alter.h	/^		apr_uint32_t backup;$/;"	m	struct:alter_conf_t::__anon1	access:public
+call	alter.cpp	/^apr_status_t Alter::Synthesizer::call(frl_map_task_t* map)$/;"	f	class:Alter::Synthesizer	signature:(frl_map_task_t* map)
+call	alter.h	/^			apr_status_t call(frl_map_task_t* map);$/;"	p	class:Alter::Synthesizer	access:public	signature:(frl_map_task_t* map)
+capacity	alter.h	/^		apr_uint32_t capacity;$/;"	m	struct:alter_conf_t::__anon3	access:public
+chain	alter.h	/^			frl_slab_pool_t** chain;$/;"	m	class:Alter::Allocator	access:private
+clear	alter.cpp	/^void Alter::Allocator::clear()$/;"	f	class:Alter::Allocator	signature:()
+conf	alter.h	/^		alter_conf_t conf;$/;"	m	class:Alter	access:private
+configurator	alter.h	/^		Configurator* configurator;$/;"	m	class:Alter	access:private
+entry	alter.h	/^	char** entry;$/;"	m	struct:frl_synthesize_header_t	access:public
+execute	alter.cpp	/^apr_status_t Alter::Handler::execute(void* pointer)$/;"	f	class:Alter::Handler	signature:(void* pointer)
+execute	alter.cpp	/^apr_status_t Alter::Synthesizer::execute(void* pointer)$/;"	f	class:Alter::Synthesizer	signature:(void* pointer)
+execute	alter.h	/^			virtual apr_status_t execute(void* pointer);$/;"	p	class:Alter::Handler	access:private	signature:(void* pointer)
+execute	alter.h	/^			virtual apr_status_t execute(void* pointer);$/;"	p	class:Alter::Synthesizer	access:private	signature:(void* pointer)
+follow	alter.h	/^		apr_uint32_t follow;$/;"	m	struct:alter_conf_t::__anon1	access:public
+free	alter.cpp	/^void Alter::Allocator::free(void* ptr)$/;"	f	class:Alter::Allocator	signature:(void* ptr)
+free	alter.h	/^			void free(void* ptr);$/;"	p	class:Alter::Allocator	access:public	signature:(void* ptr)
+frl_map_task_t	alter.h	/^struct frl_map_task_t$/;"	s
+frl_map_task_t::node	alter.h	/^	frl_task_list_t* node;$/;"	m	struct:frl_map_task_t	access:public
+frl_map_task_t::size	alter.h	/^	apr_uint32_t size;$/;"	m	struct:frl_map_task_t	access:public
+frl_map_task_t::tos	alter.h	/^	apr_uint64_t tos;$/;"	m	struct:frl_map_task_t	access:public
+frl_map_task_t::uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_map_task_t	access:public
+frl_request_header_t	alter.h	/^struct frl_request_header_t$/;"	s
+frl_request_header_t::size	alter.h	/^	apr_uint32_t size;$/;"	m	struct:frl_request_header_t	access:public
+frl_request_header_t::uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_request_header_t	access:public
+frl_request_t	alter.h	/^struct frl_request_t$/;"	s
+frl_request_t::header	alter.h	/^	frl_request_header_t header;$/;"	m	struct:frl_request_t	access:public
+frl_request_t::start	alter.h	/^	char start;$/;"	m	struct:frl_request_t	access:public
+frl_response_header_t	alter.h	/^struct frl_response_header_t$/;"	s
+frl_response_header_t::size	alter.h	/^	apr_uint32_t size;$/;"	m	struct:frl_response_header_t	access:public
+frl_response_header_t::tos	alter.h	/^	apr_uint64_t tos;$/;"	m	struct:frl_response_header_t	access:public
+frl_response_header_t::uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_response_header_t	access:public
+frl_response_t	alter.h	/^struct frl_response_t$/;"	s
+frl_response_t::header	alter.h	/^	frl_response_header_t header;$/;"	m	struct:frl_response_t	access:public
+frl_response_t::start	alter.h	/^	char start;$/;"	m	struct:frl_response_t	access:public
+frl_smart_pointer_t	alter.h	/^struct frl_smart_pointer_t$/;"	s
+frl_smart_pointer_t::pointer	alter.h	/^	void* pointer;$/;"	m	struct:frl_smart_pointer_t	access:public
+frl_smart_pointer_t::ref	alter.h	/^	apr_uint32_t ref;$/;"	m	struct:frl_smart_pointer_t	access:public
+frl_synthesize_header_t	alter.h	/^struct frl_synthesize_header_t$/;"	s
+frl_synthesize_header_t::entry	alter.h	/^	char** entry;$/;"	m	struct:frl_synthesize_header_t	access:public
+frl_synthesize_header_t::response	alter.h	/^	frl_response_t** response;$/;"	m	struct:frl_synthesize_header_t	access:public
+frl_synthesize_header_t::size	alter.h	/^	apr_uint32_t* size;$/;"	m	struct:frl_synthesize_header_t	access:public
+frl_synthesize_header_t::total	alter.h	/^	apr_uint32_t total;$/;"	m	struct:frl_synthesize_header_t	access:public
+frl_synthesize_header_t::uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_synthesize_header_t	access:public
+frl_task_list_t	alter.h	/^struct frl_task_list_t$/;"	s
+frl_task_list_t::next	alter.h	/^	frl_task_list_t* next;$/;"	m	struct:frl_task_list_t	access:public
+frl_task_list_t::task	alter.h	/^	void* task;$/;"	m	struct:frl_task_list_t	access:public
+frl_ttl_watcher_t	alter.h	/^struct frl_ttl_watcher_t$/;"	s
+frl_ttl_watcher_t::ttl	alter.h	/^	apr_time_t ttl;$/;"	m	struct:frl_ttl_watcher_t	access:public
+frl_ttl_watcher_t::uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_ttl_watcher_t	access:public
+handle	alter.h	/^		virtual int handle(char** response, apr_uint32_t* response_size, char* request, apr_uint32_t request_size) = 0;$/;"	p	class:Alter	access:private	signature:(char** response, apr_uint32_t* response_size, char* request, apr_uint32_t request_size)
+handler	alter.h	/^		Handler* handler;$/;"	m	class:Alter	access:private
+hash	alter.h	/^			frl_hash_t* hash;$/;"	m	class:Alter::Synthesizer	access:private
+header	alter.h	/^	frl_request_header_t header;$/;"	m	struct:frl_request_t	access:public
+header	alter.h	/^	frl_response_header_t header;$/;"	m	struct:frl_response_t	access:public
+ima	alter.h	/^		Allocator* ima;$/;"	m	class:Alter	access:private
+local	alter.h	/^	} local;$/;"	m	struct:alter_conf_t	typeref:struct:alter_conf_t::__anon2	access:public
+lock	alter.h	/^		frl_lock_u lock;$/;"	m	struct:alter_conf_t::__anon3	access:public
+mapool	alter.h	/^			frl_slab_pool_t* mapool;$/;"	m	class:Alter::Synthesizer	access:private
+max	alter.h	/^		apr_uint32_t max;$/;"	m	struct:alter_conf_t::__anon1	access:public
+memory	alter.h	/^		Allocator* memory;$/;"	m	class:Alter	access:public
+mempool	alter.h	/^		apr_pool_t* mempool;$/;"	m	class:Alter	access:private
+min	alter.h	/^			apr_size_t min;$/;"	m	class:Alter::Allocator	access:private
+model	alter.h	/^		frl_thread_model_u model;$/;"	m	struct:alter_conf_t::__anon3	access:public
+network	alter.h	/^	} network;$/;"	m	struct:alter_conf_t	typeref:struct:alter_conf_t::__anon1	access:public
+next	alter.h	/^	frl_task_list_t* next;$/;"	m	struct:frl_task_list_t	access:public
+node	alter.h	/^	frl_task_list_t* node;$/;"	m	struct:frl_map_task_t	access:public
+packages	alter.h	/^			frl_queue_t* packages;$/;"	m	class:Alter::Synthesizer	access:private
+performance	alter.h	/^	} performance;$/;"	m	struct:alter_conf_t	typeref:struct:alter_conf_t::__anon3	access:public
+pointer	alter.h	/^	void* pointer;$/;"	m	struct:frl_smart_pointer_t	access:public
+port	alter.h	/^	apr_uint32_t port;$/;"	m	struct:alter_register_t	access:public
+recv_after	alter.cpp	/^apr_status_t Alter::Reflector::recv_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Reflector	signature:(char* buf, apr_uint32_t len)
+recv_after	alter.cpp	/^apr_status_t Alter::Transporter::recv_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Transporter	signature:(char* buf, apr_uint32_t len)
+recv_after	alter.h	/^			virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Reflector	access:private	signature:(char* buf, apr_size_t len)
+recv_after	alter.h	/^			virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Transporter	access:private	signature:(char* buf, apr_size_t len)
+recv_before	alter.cpp	/^apr_status_t Alter::Configurator::recv_before(char** buf, apr_size_t* len)$/;"	f	class:Alter::Configurator	signature:(char** buf, apr_size_t* len)
+recv_before	alter.cpp	/^apr_status_t Alter::Reflector::recv_before(char** buf, apr_uint32_t* len)$/;"	f	class:Alter::Reflector	signature:(char** buf, apr_uint32_t* len)
+recv_before	alter.cpp	/^apr_status_t Alter::Transporter::recv_before(char** buf, apr_uint32_t* len)$/;"	f	class:Alter::Transporter	signature:(char** buf, apr_uint32_t* len)
+recv_before	alter.h	/^			virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:Alter::Configurator	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	alter.h	/^			virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:Alter::Reflector	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	alter.h	/^			virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:Alter::Transporter	access:private	signature:(char** buf, apr_size_t* len)
+recv_send	alter.cpp	/^apr_status_t Alter::Configurator::recv_send(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)$/;"	f	class:Alter::Configurator	signature:(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)
+recv_send	alter.h	/^			virtual apr_status_t recv_send(char** buf, apr_size_t* len, int* state, apr_time_t* timeout);$/;"	p	class:Alter::Configurator	access:private	signature:(char** buf, apr_size_t* len, int* state, apr_time_t* timeout)
+ref	alter.h	/^	apr_uint32_t ref;$/;"	m	struct:frl_smart_pointer_t	access:public
+reflector	alter.h	/^		Reflector* reflector;$/;"	m	class:Alter	access:private
+response	alter.h	/^	frl_response_t** response;$/;"	m	struct:frl_synthesize_header_t	access:public
+rgtpool	alter.h	/^			frl_slab_pool_t* rgtpool;$/;"	m	class:Alter::Configurator	access:private
+rptpool	alter.h	/^			frl_slab_pool_t* rptpool;$/;"	m	class:Alter::Configurator	access:private
+send_after	alter.cpp	/^apr_status_t Alter::Configurator::send_after(char* buf, apr_size_t len)$/;"	f	class:Alter::Configurator	signature:(char* buf, apr_size_t len)
+send_after	alter.cpp	/^apr_status_t Alter::Reflector::send_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Reflector	signature:(char* buf, apr_uint32_t len)
+send_after	alter.cpp	/^apr_status_t Alter::Transporter::send_after(char* buf, apr_uint32_t len)$/;"	f	class:Alter::Transporter	signature:(char* buf, apr_uint32_t len)
+send_after	alter.h	/^			virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Configurator	access:private	signature:(char* buf, apr_size_t len)
+send_after	alter.h	/^			virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Reflector	access:private	signature:(char* buf, apr_size_t len)
+send_after	alter.h	/^			virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:Alter::Transporter	access:private	signature:(char* buf, apr_size_t len)
+server	alter.h	/^		char server[40];$/;"	m	struct:alter_conf_t::__anon2	access:public
+sid	alter.h	/^		apr_uint32_t sid;$/;"	m	struct:alter_conf_t::__anon1	access:public
+sid	alter.h	/^	apr_uint32_t sid;$/;"	m	struct:alter_receipt_t	access:public
+signup	alter.cpp	/^apr_status_t Alter::Configurator::signup(apr_sockaddr_t sockaddr)$/;"	f	class:Alter::Configurator	signature:(apr_sockaddr_t sockaddr)
+signup	alter.h	/^			apr_status_t signup();$/;"	p	class:Alter::Configurator	access:public	signature:()
+size	alter.h	/^	apr_uint32_t size;$/;"	m	struct:frl_map_task_t	access:public
+size	alter.h	/^	apr_uint32_t size;$/;"	m	struct:frl_request_header_t	access:public
+size	alter.h	/^	apr_uint32_t size;$/;"	m	struct:frl_response_header_t	access:public
+size	alter.h	/^	apr_uint32_t* size;$/;"	m	struct:frl_synthesize_header_t	access:public
+spawn	alter.cpp	/^void Alter::spawn()$/;"	f	class:Alter	signature:()
+spawn	alter.h	/^		void spawn();$/;"	p	class:Alter	access:public	signature:()
+start	alter.h	/^	char start;$/;"	m	struct:frl_request_t	access:public
+start	alter.h	/^	char start;$/;"	m	struct:frl_response_t	access:public
+status	alter.h	/^	apr_uint32_t status;$/;"	m	struct:alter_receipt_t	access:public
+synthepool	alter.h	/^			frl_slab_pool_t* synthepool;$/;"	m	class:Alter::Synthesizer	access:private
+synthesize	alter.cpp	/^apr_status_t Alter::Synthesizer::synthesize(void* pointer)$/;"	f	class:Alter::Synthesizer	signature:(void* pointer)
+synthesize	alter.h	/^			apr_status_t synthesize(void* pointer);$/;"	p	class:Alter::Synthesizer	access:public	signature:(void* pointer)
+synthesize	alter.h	/^		virtual int synthesize(char** response, apr_uint32_t* response_size, char** synthe, apr_uint32_t* synthe_size, apr_uint32_t total) = 0;$/;"	p	class:Alter	access:private	signature:(char** response, apr_uint32_t* response_size, char** synthe, apr_uint32_t* synthe_size, apr_uint32_t total)
+synthesizer	alter.h	/^		Synthesizer* synthesizer;$/;"	m	class:Alter	access:private
+task	alter.h	/^	void* task;$/;"	m	struct:frl_task_list_t	access:public
+taskpool	alter.h	/^			frl_slab_pool_t* taskpool;$/;"	m	class:Alter::Synthesizer	access:private
+thread_alter_synthesizer	alter.cpp	/^void* thread_alter_synthesizer(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_alter_synthesizer	alter.h	/^		friend void* thread_alter_synthesizer(apr_thread_t* thd, void* data);$/;"	p	class:Alter::Synthesizer	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_alter_synthesizer	alter.h	/^void* thread_alter_synthesizer(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_ttl_watcher	alter.cpp	/^void* thread_ttl_watcher(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_ttl_watcher	alter.h	/^		friend void* thread_ttl_watcher(apr_thread_t* thd, void* data);$/;"	p	class:Alter::Synthesizer	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_ttl_watcher	alter.h	/^void* thread_ttl_watcher(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+ticket	alter.h	/^	apr_uint32_t ticket;$/;"	m	struct:alter_receipt_t	access:public
+ticket	alter.h	/^	apr_uint32_t ticket;$/;"	m	struct:alter_register_t	access:public
+timers	alter.h	/^			frl_queue_t* timers;$/;"	m	class:Alter::Synthesizer	access:private
+tos	alter.h	/^		apr_uint64_t tos;$/;"	m	struct:alter_conf_t::__anon1	access:public
+tos	alter.h	/^	apr_uint64_t tos;$/;"	m	struct:frl_map_task_t	access:public
+tos	alter.h	/^	apr_uint64_t tos;$/;"	m	struct:frl_response_header_t	access:public
+total	alter.h	/^			apr_size_t total;$/;"	m	class:Alter::Allocator	access:private
+total	alter.h	/^	apr_uint32_t total;$/;"	m	struct:frl_synthesize_header_t	access:public
+transporter	alter.h	/^		Transporter** transporter;$/;"	m	class:Alter	access:private
+ttl	alter.h	/^		apr_uint64_t ttl;$/;"	m	struct:alter_conf_t::__anon1	access:public
+ttl	alter.h	/^	apr_time_t ttl;$/;"	m	struct:frl_ttl_watcher_t	access:public
+uid	alter.h	/^		apr_uint32_t uid;$/;"	m	struct:alter_conf_t::__anon1	access:public
+uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_map_task_t	access:public
+uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_request_header_t	access:public
+uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_response_header_t	access:public
+uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_synthesize_header_t	access:public
+uid	alter.h	/^	apr_uint64_t uid;$/;"	m	struct:frl_ttl_watcher_t	access:public
+wait	alter.cpp	/^void Alter::wait()$/;"	f	class:Alter	signature:()
+wait	alter.h	/^		void wait();$/;"	p	class:Alter	access:public	signature:()
+watchpool	alter.h	/^			frl_slab_pool_t* watchpool;$/;"	m	class:Alter::Synthesizer	access:private
+~Allocator	alter.h	/^			~Allocator()$/;"	f	class:Alter::Allocator	access:public	signature:()
+~Alter	alter.h	/^		virtual ~Alter()$/;"	f	class:Alter	access:public	signature:()
+~Configurator	alter.h	/^			virtual ~Configurator()$/;"	f	class:Alter::Configurator	access:public	signature:()
+~Handler	alter.h	/^			virtual ~Handler()$/;"	f	class:Alter::Handler	access:public	signature:()
+~Reflector	alter.h	/^			virtual ~Reflector()$/;"	f	class:Alter::Reflector	access:public	signature:()
+~Synthesizer	alter.h	/^			virtual ~Synthesizer()$/;"	f	class:Alter::Synthesizer	access:public	signature:()
+~Transporter	alter.h	/^			virtual ~Transporter()$/;"	f	class:Alter::Transporter	access:public	signature:()

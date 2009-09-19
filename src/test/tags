@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+COMPFLAG	makefile	/^COMPFLAG=-O1$/;"	m
+CXXFLAGS	makefile	/^CXXFLAGS=-I"\/opt\/apr\/include" -I"\/opt\/apr-util\/include"$/;"	m
+FileTransfer	socket_pipe_test.cpp	/^		FileTransfer(char* _file, apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)$/;"	f	class:FileTransfer	access:public	signature:(char* _file, apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)
+FileTransfer	socket_pipe_test.cpp	/^class FileTransfer : public frl_socket_pipe {$/;"	c	file:	inherits:frl_socket_pipe
+FileTransfer::FileTransfer	socket_pipe_test.cpp	/^		FileTransfer(char* _file, apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)$/;"	f	class:FileTransfer	access:public	signature:(char* _file, apr_size_t capacity, frl_lock_u lock, apr_pool_t* _mempool)
+FileTransfer::file	socket_pipe_test.cpp	/^		char* file;$/;"	m	class:FileTransfer	file:	access:private
+FileTransfer::recv_after	socket_pipe_test.cpp	/^		virtual apr_status_t recv_after(char* buf, apr_size_t len)$/;"	f	class:FileTransfer	file:	access:private	signature:(char* buf, apr_size_t len)
+FileTransfer::recv_before	socket_pipe_test.cpp	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len)$/;"	f	class:FileTransfer	file:	access:private	signature:(char** buf, apr_size_t* len)
+FileTransfer::send_after	socket_pipe_test.cpp	/^		virtual apr_status_t send_after(char* buf, apr_size_t len)$/;"	f	class:FileTransfer	file:	access:private	signature:(char* buf, apr_size_t len)
+LINKFLAG	makefile	/^LINKFLAG=-ldl -lpthread -lrt$/;"	m
+LINKLIB	makefile	/^LINKLIB=-lapr-1 -laprutil-1$/;"	m
+TestCase	thread_test.cpp	/^		TestCase(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)$/;"	f	class:TestCase	access:public	signature:(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)
+TestCase	thread_test.cpp	/^class TestCase : public frl_threads$/;"	c	file:	inherits:frl_threads
+TestCase::TestCase	thread_test.cpp	/^		TestCase(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)$/;"	f	class:TestCase	access:public	signature:(frl_thread_model_u _model, frl_lock_u _lock, apr_pool_t* _mempool)
+TestCase::execute	thread_test.cpp	/^		virtual apr_status_t execute(void* pointer)$/;"	f	class:TestCase	file:	access:private	signature:(void* pointer)
+execute	thread_test.cpp	/^		virtual apr_status_t execute(void* pointer)$/;"	f	class:TestCase	file:	access:private	signature:(void* pointer)
+file	socket_pipe_test.cpp	/^		char* file;$/;"	m	class:FileTransfer	file:	access:private
+global_pool	list_test.cpp	/^apr_pool_t* global_pool;$/;"	v
+global_pool	queue_test.cpp	/^apr_pool_t* global_pool;$/;"	v
+global_pool	slab_test.cpp	/^apr_pool_t* global_pool;$/;"	v
+global_pool	thread_test.cpp	/^apr_pool_t* global_pool;$/;"	v
+list	list_test.cpp	/^frl_list_t* list;$/;"	v
+main	list_test.cpp	/^int main()$/;"	f	signature:()
+main	queue_test.cpp	/^int main()$/;"	f	signature:()
+main	radix_tree_test.cpp	/^int main()$/;"	f	signature:()
+main	slab_test.cpp	/^int main()$/;"	f	signature:()
+main	socket_pipe_test.cpp	/^int main(int argc, char** argv)$/;"	f	signature:(int argc, char** argv)
+main	thread_test.cpp	/^int main()$/;"	f	signature:()
+mempool	radix_tree_test.cpp	/^apr_pool_t* mempool;$/;"	v
+pool	slab_test.cpp	/^frl_slab_pool_t* pool;$/;"	v
+queue	queue_test.cpp	/^frl_queue_t* queue;$/;"	v
+recv_after	socket_pipe_test.cpp	/^		virtual apr_status_t recv_after(char* buf, apr_size_t len)$/;"	f	class:FileTransfer	file:	access:private	signature:(char* buf, apr_size_t len)
+recv_before	socket_pipe_test.cpp	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len)$/;"	f	class:FileTransfer	file:	access:private	signature:(char** buf, apr_size_t* len)
+send_after	socket_pipe_test.cpp	/^		virtual apr_status_t send_after(char* buf, apr_size_t len)$/;"	f	class:FileTransfer	file:	access:private	signature:(char* buf, apr_size_t len)
+thread_watch	list_test.cpp	/^void* thread_watch(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+threadsafe_test	list_test.cpp	/^void* threadsafe_test(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+threadsafe_test	radix_tree_test.cpp	/^void* threadsafe_test(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+threadsafe_test	slab_test.cpp	/^void* threadsafe_test(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+threadsafe_test_pop	queue_test.cpp	/^void* threadsafe_test_pop(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+threadsafe_test_push	queue_test.cpp	/^void* threadsafe_test_push(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+threadsafe_watch	slab_test.cpp	/^void* threadsafe_watch(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+tree	radix_tree_test.cpp	/^frl_radix_tree_t* tree;$/;"	v
+uniqid	list_test.cpp	/^apr_uint32_t uniqid = 0;$/;"	v

@@ -1,0 +1,669 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_add(frl_hash_t* hash, apr_uint32_t key, void* pointer)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_create(frl_hash_t** hash, frl_slab_pool_t* pool, apr_pool_t* mempool, apr_uint32_t length)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_remove(frl_hash_t* hash, apr_uint32_t key)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_status_t) frl_hash_set(frl_hash_t* hash, apr_uint32_t key, void* pointer)$/;"	f
+APR_DECLARE	frl_hash.c	/^APR_DECLARE(apr_uint32_t) frl_hash_func(apr_uint32_t key, apr_uint32_t nelts)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(apr_status_t) frl_list_create(frl_list_t** newlist, frl_slab_pool_t* pool, apr_pool_t* mempool)$/;"	f
+APR_DECLARE	frl_list.c	/^APR_DECLARE(apr_status_t) frl_list_remove(frl_list_t* list, frl_list_entry_t* elts)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_block_alloc(frl_slab_block_t* block, apr_size_t block_size, apr_uint32_t new_n)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_block_create(frl_slab_block_t** newblock)$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_pool_create(frl_slab_pool_t** newpool, apr_pool_t *mempool, apr_uint32_t initial_n, apr_size_t block_size )$/;"	f
+APR_DECLARE	frl_slab_pool.c	/^APR_DECLARE(apr_status_t) frl_slab_pool_destroy(frl_slab_pool_t* pool)$/;"	f
+CREATE_CLUSCOM_WITH_FILE	cluscom.h	245;"	d
+CXXFLAGS	Makefile	/^CXXFLAGS=-I"\/opt\/apr\/include" -I"\/opt\/apr-util\/include"$/;"	m
+ClusCom	cluscom.h	/^		ClusCom(apr_int32_t _id, apr_uint32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool)$/;"	f	class:ClusCom	access:public	signature:(apr_int32_t _id, apr_uint32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool)
+ClusCom	cluscom.h	/^class ClusCom$/;"	c
+ClusCom::ClusCom	cluscom.h	/^		ClusCom(apr_int32_t _id, apr_uint32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool)$/;"	f	class:ClusCom	access:public	signature:(apr_int32_t _id, apr_uint32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool)
+ClusCom::LF_TP_Handler	cluscom.h	/^		class LF_TP_Handler : public frl_lf_threadpool$/;"	c	class:ClusCom	inherits:frl_lf_threadpool	access:private
+ClusCom::LF_TP_Handler::LF_TP_Handler	cluscom.h	/^				LF_TP_Handler(ClusCom* manager, apr_pool_t* mempool)$/;"	f	class:ClusCom::LF_TP_Handler	access:public	signature:(ClusCom* manager, apr_pool_t* mempool)
+ClusCom::LF_TP_Handler::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::LF_TP_Handler	access:private
+ClusCom::LF_TP_Handler::proc	cluscom.cpp	/^ClusCom::LF_TP_Handler::proc(void* pointer)$/;"	f	class:ClusCom::LF_TP_Handler	signature:(void* pointer)
+ClusCom::LF_TP_Handler::proc	cluscom.h	/^				virtual int proc(void* pointer);$/;"	p	class:ClusCom::LF_TP_Handler	access:private	signature:(void* pointer)
+ClusCom::LF_TP_Synthesizer	cluscom.h	/^		class LF_TP_Synthesizer : public frl_lf_threadpool$/;"	c	class:ClusCom	inherits:frl_lf_threadpool	access:private
+ClusCom::LF_TP_Synthesizer::LF_TP_Synthesizer	cluscom.h	/^				LF_TP_Synthesizer(ClusCom* manager, apr_pool_t* mempool)$/;"	f	class:ClusCom::LF_TP_Synthesizer	access:public	signature:(ClusCom* manager, apr_pool_t* mempool)
+ClusCom::LF_TP_Synthesizer::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::LF_TP_Synthesizer	access:private
+ClusCom::LF_TP_Synthesizer::proc	cluscom.cpp	/^ClusCom::LF_TP_Synthesizer::proc(void* pointer)$/;"	f	class:ClusCom::LF_TP_Synthesizer	signature:(void* pointer)
+ClusCom::LF_TP_Synthesizer::proc	cluscom.h	/^				virtual int proc(void* pointer);$/;"	p	class:ClusCom::LF_TP_Synthesizer	access:private	signature:(void* pointer)
+ClusCom::SE_TP_Manipulator	cluscom.h	/^		class SE_TP_Manipulator : public frl_server_event$/;"	c	class:ClusCom	inherits:frl_server_event	access:private
+ClusCom::SE_TP_Manipulator::SE_TP_Manipulator	cluscom.h	/^				SE_TP_Manipulator(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SE_TP_Manipulator	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom::SE_TP_Manipulator::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SE_TP_Manipulator	access:private
+ClusCom::SE_TP_Manipulator::_prc_pool	cluscom.h	/^				frl_slab_pool_t* _prc_pool;$/;"	m	class:ClusCom::SE_TP_Manipulator	access:private
+ClusCom::SE_TP_Manipulator::_req_pool	cluscom.h	/^				frl_slab_pool_t* _req_pool;$/;"	m	class:ClusCom::SE_TP_Manipulator	access:private
+ClusCom::SE_TP_Manipulator::recv_before	cluscom.cpp	/^ClusCom::SE_TP_Manipulator::recv_before(char** buf,$/;"	f	class:ClusCom::SE_TP_Manipulator	signature:(char** buf, apr_size_t* len)
+ClusCom::SE_TP_Manipulator::recv_before	cluscom.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SE_TP_Manipulator	access:private	signature:(char** buf, apr_size_t* len)
+ClusCom::SE_TP_Manipulator::recv_send	cluscom.cpp	/^ClusCom::SE_TP_Manipulator::recv_send(char** buf,$/;"	f	class:ClusCom::SE_TP_Manipulator	signature:(char** buf, apr_size_t* len)
+ClusCom::SE_TP_Manipulator::recv_send	cluscom.h	/^				virtual apr_status_t recv_send(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SE_TP_Manipulator	access:private	signature:(char** buf, apr_size_t* len)
+ClusCom::SE_TP_Manipulator::send_after	cluscom.cpp	/^ClusCom::SE_TP_Manipulator::send_after(char* buf,$/;"	f	class:ClusCom::SE_TP_Manipulator	signature:(char* buf, apr_size_t len)
+ClusCom::SE_TP_Manipulator::send_after	cluscom.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom::SE_TP_Manipulator	access:private	signature:(char* buf, apr_size_t len)
+ClusCom::SP_ST_Dispatch	cluscom.h	/^		class SP_ST_Dispatch : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+ClusCom::SP_ST_Dispatch::SP_ST_Dispatch	cluscom.h	/^				SP_ST_Dispatch(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Dispatch	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom::SP_ST_Dispatch::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Dispatch	access:private
+ClusCom::SP_ST_Dispatch::send_after	cluscom.cpp	/^ClusCom::SP_ST_Dispatch::send_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Dispatch	signature:(char* buf, apr_size_t len, apr_status_t status)
+ClusCom::SP_ST_Dispatch::send_after	cluscom.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:ClusCom::SP_ST_Dispatch	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+ClusCom::SP_ST_Repeater	cluscom.h	/^		class SP_ST_Repeater : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+ClusCom::SP_ST_Repeater::SP_ST_Repeater	cluscom.h	/^				SP_ST_Repeater(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Repeater	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom::SP_ST_Repeater::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Repeater	access:private
+ClusCom::SP_ST_Repeater::send_after	cluscom.cpp	/^ClusCom::SP_ST_Repeater::send_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Repeater	signature:(char* buf, apr_size_t len, apr_status_t status)
+ClusCom::SP_ST_Repeater::send_after	cluscom.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:ClusCom::SP_ST_Repeater	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+ClusCom::SP_ST_Reply	cluscom.h	/^		class SP_ST_Reply : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+ClusCom::SP_ST_Reply::SP_ST_Reply	cluscom.h	/^				SP_ST_Reply(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Reply	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom::SP_ST_Reply::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Reply	access:private
+ClusCom::SP_ST_Reply::_rep_pool	cluscom.h	/^				frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom::SP_ST_Reply	access:private
+ClusCom::SP_ST_Reply::recv_after	cluscom.cpp	/^ClusCom::SP_ST_Reply::recv_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Reply	signature:(char* buf, apr_size_t len)
+ClusCom::SP_ST_Reply::recv_after	cluscom.h	/^				virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom::SP_ST_Reply	access:private	signature:(char* buf, apr_size_t len)
+ClusCom::SP_ST_Reply::recv_before	cluscom.cpp	/^ClusCom::SP_ST_Reply::recv_before(char** buf,$/;"	f	class:ClusCom::SP_ST_Reply	signature:(char** buf, apr_size_t* len)
+ClusCom::SP_ST_Reply::recv_before	cluscom.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SP_ST_Reply	access:private	signature:(char** buf, apr_size_t* len)
+ClusCom::SP_ST_Request	cluscom.h	/^		class SP_ST_Request : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+ClusCom::SP_ST_Request::SP_ST_Request	cluscom.h	/^				SP_ST_Request(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Request	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom::SP_ST_Request::_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Request	access:private
+ClusCom::SP_ST_Request::_req_pool	cluscom.h	/^				frl_slab_pool_t* _req_pool;$/;"	m	class:ClusCom::SP_ST_Request	access:private
+ClusCom::SP_ST_Request::recv_after	cluscom.cpp	/^ClusCom::SP_ST_Request::recv_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Request	signature:(char* buf, apr_size_t len)
+ClusCom::SP_ST_Request::recv_after	cluscom.h	/^				virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom::SP_ST_Request	access:private	signature:(char* buf, apr_size_t len)
+ClusCom::SP_ST_Request::recv_before	cluscom.cpp	/^ClusCom::SP_ST_Request::recv_before(char** buf,$/;"	f	class:ClusCom::SP_ST_Request	signature:(char** buf, apr_size_t* len)
+ClusCom::SP_ST_Request::recv_before	cluscom.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SP_ST_Request	access:private	signature:(char** buf, apr_size_t* len)
+ClusCom::_child_addrs	cluscom.h	/^		char** _child_addrs;$/;"	m	class:ClusCom	access:private
+ClusCom::_cla_queue	cluscom.h	/^		apr_queue_t* _cla_queue;$/;"	m	class:ClusCom	access:private
+ClusCom::_dispatchers	cluscom.h	/^		SP_ST_Dispatch** _dispatchers;$/;"	m	class:ClusCom	access:private
+ClusCom::_handler	cluscom.h	/^		LF_TP_Handler* _handler;$/;"	m	class:ClusCom	access:private
+ClusCom::_hash	cluscom.h	/^		frl_hash_t* _hash;$/;"	m	class:ClusCom	access:private
+ClusCom::_hash_pool	cluscom.h	/^		frl_slab_pool_t* _hash_pool;$/;"	m	class:ClusCom	access:private
+ClusCom::_manipulator	cluscom.h	/^		SE_TP_Manipulator* _manipulator;$/;"	m	class:ClusCom	access:private
+ClusCom::_map_pool	cluscom.h	/^		frl_slab_pool_t* _map_pool;$/;"	m	class:ClusCom	access:private
+ClusCom::_maximum	cluscom.h	/^		apr_uint32_t _maximum;$/;"	m	class:ClusCom	access:private
+ClusCom::_package_filter_thd	cluscom.h	/^		apr_thread_t* _package_filter_thd;$/;"	m	class:ClusCom	access:private
+ClusCom::_parent_addr	cluscom.h	/^		char* _parent_addr;$/;"	m	class:ClusCom	access:private
+ClusCom::_rep_pool	cluscom.h	/^		frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom	access:private
+ClusCom::_repeater	cluscom.h	/^		SP_ST_Repeater* _repeater;$/;"	m	class:ClusCom	access:private
+ClusCom::_replies	cluscom.h	/^		SP_ST_Reply** _replies;$/;"	m	class:ClusCom	access:private
+ClusCom::_request	cluscom.h	/^		SP_ST_Request* _request;$/;"	m	class:ClusCom	access:private
+ClusCom::_signal_pool	cluscom.h	/^		frl_slab_pool_t* _signal_pool;$/;"	m	class:ClusCom	access:private
+ClusCom::_syn_pool	cluscom.h	/^		frl_slab_pool_t* _syn_pool;$/;"	m	class:ClusCom	access:private
+ClusCom::_synthesizer	cluscom.h	/^		LF_TP_Synthesizer* _synthesizer;$/;"	m	class:ClusCom	access:private
+ClusCom::_thd_attr	cluscom.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:ClusCom	access:private
+ClusCom::_timer_guard_thd	cluscom.h	/^		apr_thread_t* _timer_guard_thd;$/;"	m	class:ClusCom	access:private
+ClusCom::_timer_pool	cluscom.h	/^		frl_slab_pool_t* _timer_pool;$/;"	m	class:ClusCom	access:private
+ClusCom::_timer_queue	cluscom.h	/^		apr_queue_t* _timer_queue;$/;"	m	class:ClusCom	access:private
+ClusCom::handle	cluscom.h	/^		virtual int handle(char* to_request, char* to_reply) = 0;$/;"	p	class:ClusCom	access:private	signature:(char* to_request, char* to_reply)
+ClusCom::hold	cluscom.cpp	/^ClusCom::hold()$/;"	f	class:ClusCom	signature:()
+ClusCom::hold	cluscom.h	/^		int hold();$/;"	p	class:ClusCom	access:public	signature:()
+ClusCom::id	cluscom.h	/^		apr_int32_t id;$/;"	m	class:ClusCom	access:public
+ClusCom::layer	cluscom.h	/^		apr_int32_t layer;$/;"	m	class:ClusCom	access:public
+ClusCom::manipulate	cluscom.h	/^		virtual int manipulate(char* to_mani, apr_uint32_t& return_size, char* to_reply) = 0;$/;"	p	class:ClusCom	access:private	signature:(char* to_mani, apr_uint32_t& return_size, char* to_reply)
+ClusCom::mempool	cluscom.h	/^		apr_pool_t* mempool;$/;"	m	class:ClusCom	access:public
+ClusCom::node	cluscom.h	/^		apr_int32_t node;$/;"	m	class:ClusCom	access:public
+ClusCom::spawn	cluscom.cpp	/^ClusCom::spawn(int n)$/;"	f	class:ClusCom	signature:(int n)
+ClusCom::spawn	cluscom.h	/^		int spawn(int n);$/;"	p	class:ClusCom	access:public	signature:(int n)
+ClusCom::synthesize	cluscom.h	/^		virtual int synthesize(apr_uint32_t &node, char** to_synthe, char* to_reply) = 0;$/;"	p	class:ClusCom	access:private	signature:(apr_uint32_t &node, char** to_synthe, char* to_reply)
+ClusCom::thread_package_filter	cluscom.h	/^	friend void* thread_package_filter(apr_thread_t* thd, void* data);$/;"	p	class:ClusCom	access:friend	signature:(apr_thread_t* thd, void* data)
+ClusCom::thread_timer_guard	cluscom.h	/^	friend void* thread_timer_guard(apr_thread_t* thd, void* data);$/;"	p	class:ClusCom	access:friend	signature:(apr_thread_t* thd, void* data)
+ClusCom::~ClusCom	cluscom.h	/^		virtual ~ClusCom()$/;"	f	class:ClusCom	access:public	signature:()
+ClusComTest	main.cpp	/^		ClusComTest( apr_int32_t _id, apr_int32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool )$/;"	f	class:ClusComTest	access:public	signature:( apr_int32_t _id, apr_int32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool )
+ClusComTest	main.cpp	/^class ClusComTest : public ClusCom$/;"	c	file:	inherits:ClusCom
+ClusComTest::ClusComTest	main.cpp	/^		ClusComTest( apr_int32_t _id, apr_int32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool )$/;"	f	class:ClusComTest	access:public	signature:( apr_int32_t _id, apr_int32_t _node, apr_uint32_t _layer, apr_uint32_t maximum, char* parent_addr, char** child_addrs, apr_pool_t* _mempool )
+ClusComTest::handle	main.cpp	/^		virtual int handle( char* to_retrieve, char* to_reply )$/;"	f	class:ClusComTest	file:	access:private	signature:( char* to_retrieve, char* to_reply )
+ClusComTest::load	main.cpp	/^		int load( const char* filename )$/;"	f	class:ClusComTest	access:public	signature:( const char* filename )
+ClusComTest::manipulate	main.cpp	/^		virtual int manipulate( char* to_mani, apr_uint32_t& return_size, char* to_reply )$/;"	f	class:ClusComTest	file:	access:private	signature:( char* to_mani, apr_uint32_t& return_size, char* to_reply )
+ClusComTest::resource	main.cpp	/^		char* resource;$/;"	m	class:ClusComTest	file:	access:public
+ClusComTest::synthesize	main.cpp	/^		virtual int synthesize( apr_uint32_t &node, char** to_synthe, char* to_reply )$/;"	f	class:ClusComTest	file:	access:private	signature:( apr_uint32_t &node, char** to_synthe, char* to_reply )
+ClusComTest::~ClusComTest	main.cpp	/^		virtual ~ClusComTest()$/;"	f	class:ClusComTest	access:public	signature:()
+ClusCom_Daemon	cluscom-daemon.h	/^		ClusCom_Daemon(char* child_addr, apr_pool_t* _mempool)$/;"	f	class:ClusCom_Daemon	access:public	signature:(char* child_addr, apr_pool_t* _mempool)
+ClusCom_Daemon	cluscom-daemon.h	/^class ClusCom_Daemon$/;"	c
+ClusCom_Daemon::ClusCom_Daemon	cluscom-daemon.h	/^		ClusCom_Daemon(char* child_addr, apr_pool_t* _mempool)$/;"	f	class:ClusCom_Daemon	access:public	signature:(char* child_addr, apr_pool_t* _mempool)
+ClusCom_Daemon::MS_TP_Interface::proc	cluscom-daemon.cpp	/^ClusCom_Daemon::MS_TP_Interface::proc( apr_socket_t* reader,$/;"	f	class:ClusCom_Daemon::MS_TP_Interface	signature:( apr_socket_t* reader, int who )
+ClusCom_Daemon::SE_TP_Interface	cluscom-daemon.h	/^		class SE_TP_Interface : public frl_server_event$/;"	c	class:ClusCom_Daemon	inherits:frl_server_event	access:private
+ClusCom_Daemon::SE_TP_Interface::MS_TP_Interface	cluscom-daemon.h	/^				MS_TP_Interface(ClusCom_Daemon* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom_Daemon::SE_TP_Interface	access:public	signature:(ClusCom_Daemon* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom_Daemon::SE_TP_Interface::_manager	cluscom-daemon.h	/^				ClusCom_Daemon* _manager;$/;"	m	class:ClusCom_Daemon::SE_TP_Interface	access:private
+ClusCom_Daemon::SE_TP_Interface::_req_pool	cluscom-daemon.h	/^				frl_slab_pool_t* _req_pool;$/;"	m	class:ClusCom_Daemon::SE_TP_Interface	access:private
+ClusCom_Daemon::SE_TP_Interface::proc	cluscom-daemon.h	/^				virtual int proc(apr_socket_t* reader, int who);$/;"	p	class:ClusCom_Daemon::SE_TP_Interface	access:private	signature:(apr_socket_t* reader, int who)
+ClusCom_Daemon::SE_TP_Interface::recv_before	cluscom-daemon.cpp	/^ClusCom_Daemon::SE_TP_Interface::recv_before(char** buf,$/;"	f	class:ClusCom_Daemon::SE_TP_Interface	signature:(char** buf, apr_size_t* len)
+ClusCom_Daemon::SE_TP_Interface::recv_send	cluscom-daemon.cpp	/^ClusCom_Daemon::SE_TP_Interface::recv_send(char** buf,$/;"	f	class:ClusCom_Daemon::SE_TP_Interface	signature:(char** buf, apr_size_t* len, frl_notify_t* notify)
+ClusCom_Daemon::SP_ST_Dispatch	cluscom-daemon.h	/^		class SP_ST_Dispatch : public frl_socket_pipe$/;"	c	class:ClusCom_Daemon	inherits:frl_socket_pipe	access:private
+ClusCom_Daemon::SP_ST_Dispatch::SP_ST_Dispatch	cluscom-daemon.h	/^				SP_ST_Dispatch(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom_Daemon::SP_ST_Dispatch	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom_Daemon::SP_ST_Dispatch::_manager	cluscom-daemon.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom_Daemon::SP_ST_Dispatch	access:private
+ClusCom_Daemon::SP_ST_Dispatch::send_after	cluscom-daemon.cpp	/^ClusCom_Daemon::SP_ST_Dispatch::send_after(char* buf,$/;"	f	class:ClusCom_Daemon::SP_ST_Dispatch	signature:(char* buf, apr_size_t len, apr_status_t status)
+ClusCom_Daemon::SP_ST_Dispatch::send_after	cluscom-daemon.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:ClusCom_Daemon::SP_ST_Dispatch	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+ClusCom_Daemon::SP_ST_Reply	cluscom-daemon.h	/^		class SP_ST_Reply : public frl_socket_pipe$/;"	c	class:ClusCom_Daemon	inherits:frl_socket_pipe	access:private
+ClusCom_Daemon::SP_ST_Reply::SP_ST_Reply	cluscom-daemon.h	/^				SP_ST_Reply(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom_Daemon::SP_ST_Reply	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+ClusCom_Daemon::SP_ST_Reply::_manager	cluscom-daemon.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom_Daemon::SP_ST_Reply	access:private
+ClusCom_Daemon::SP_ST_Reply::_rep_pool	cluscom-daemon.h	/^				frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom_Daemon::SP_ST_Reply	access:private
+ClusCom_Daemon::SP_ST_Reply::recv_after	cluscom-daemon.cpp	/^ClusCom_Daemon::SP_ST_Reply::recv_after(char* buf,$/;"	f	class:ClusCom_Daemon::SP_ST_Reply	signature:(char* buf, apr_size_t len)
+ClusCom_Daemon::SP_ST_Reply::recv_after	cluscom-daemon.h	/^				virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom_Daemon::SP_ST_Reply	access:private	signature:(char* buf, apr_size_t len)
+ClusCom_Daemon::SP_ST_Reply::recv_before	cluscom-daemon.cpp	/^ClusCom_Daemon::SP_ST_Reply::recv_before(char** buf,$/;"	f	class:ClusCom_Daemon::SP_ST_Reply	signature:(char** buf, apr_size_t* len)
+ClusCom_Daemon::SP_ST_Reply::recv_before	cluscom-daemon.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom_Daemon::SP_ST_Reply	access:private	signature:(char** buf, apr_size_t* len)
+ClusCom_Daemon::_child_addr	cluscom-daemon.h	/^		char* _child_addr;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::_dispatcher	cluscom-daemon.h	/^		SP_ST_Dispatch* _dispatcher;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::_dispatcher_thd	cluscom-daemon.h	/^		apr_thread_t* _dispatcher_thd;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::_interface	cluscom-daemon.h	/^		SE_TP_Interface* _interface;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::_receive_reply_thd	cluscom-daemon.h	/^		apr_thread_t* _receive_reply_thd;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::_rep_pool	cluscom-daemon.h	/^		frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::_reply	cluscom-daemon.h	/^		SP_ST_Reply* _reply;$/;"	m	class:ClusCom_Daemon	access:private
+ClusCom_Daemon::hold	cluscom-daemon.cpp	/^ClusCom_Daemon::hold()$/;"	f	class:ClusCom_Daemon	signature:()
+ClusCom_Daemon::hold	cluscom-daemon.h	/^		int hold();$/;"	p	class:ClusCom_Daemon	access:public	signature:()
+ClusCom_Daemon::mempool	cluscom-daemon.h	/^		apr_pool_t* mempool;$/;"	m	class:ClusCom_Daemon	access:public
+ClusCom_Daemon::spawn	cluscom-daemon.cpp	/^ClusCom_Daemon::spawn(int n)$/;"	f	class:ClusCom_Daemon	signature:(int n)
+ClusCom_Daemon::spawn	cluscom-daemon.h	/^		int spawn(int n);$/;"	p	class:ClusCom_Daemon	access:public	signature:(int n)
+ClusCom_Daemon::~ClusCom_Daemon	cluscom-daemon.h	/^		~ClusCom_Daemon()$/;"	f	class:ClusCom_Daemon	access:public	signature:()
+DAEMON_PORT	cluscom-config.h	19;"	d
+DEF_ERROR_RETRY_TIME	cluscom-config.h	24;"	d
+DEF_ERROR_RETRY_TIME	server_event.h	19;"	d
+DEF_PROCESS_TIMEOUT	cluscom-config.h	25;"	d
+DEF_SOCKET_BACKLOG	cluscom-config.h	23;"	d
+DEF_SOCKET_TIMEOUT	cluscom-config.h	22;"	d
+DEF_SOCK_TIMEOUT	trigger.cpp	5;"	d	file:
+FEDRS_CONFIG_SIZE	cluscom-config.h	11;"	d
+FEDRS_CONTENT_SIZE	cluscom-config.h	12;"	d
+FEDRS_RETURN_SIZE	cluscom-config.h	13;"	d
+FRL_DEBUGGING	cluscom-config.h	28;"	d
+FRL_DEBUGGING	socket_pipe.h	31;"	d
+GUARD_cluscom_config_h	cluscom-config.h	2;"	d
+GUARD_cluscom_daemon_h	cluscom-daemon.h	2;"	d
+GUARD_cluscom_h	cluscom.h	2;"	d
+GUARD_cluscom_interface_h	cluscom-interface.h	2;"	d
+GUARD_crc32_h	crc32.h	2;"	d
+GUARD_frl_hash_h	frl_hash.h	2;"	d
+GUARD_frl_list_h	frl_list.h	2;"	d
+GUARD_frl_slab_pool_h	frl_slab_pool.h	8;"	d
+GUARD_lf_threadpool_h	lf_threadpool.h	8;"	d
+GUARD_multi_sock_h	multi_sock.h	2;"	d
+GUARD_server_event_h	server_event.h	8;"	d
+GUARD_socket_pipe_h	socket_pipe.h	8;"	d
+LF_TP_Handler	cluscom.h	/^				LF_TP_Handler(ClusCom* manager, apr_pool_t* mempool)$/;"	f	class:ClusCom::LF_TP_Handler	access:public	signature:(ClusCom* manager, apr_pool_t* mempool)
+LF_TP_Handler	cluscom.h	/^		class LF_TP_Handler : public frl_lf_threadpool$/;"	c	class:ClusCom	inherits:frl_lf_threadpool	access:private
+LF_TP_Synthesizer	cluscom.h	/^				LF_TP_Synthesizer(ClusCom* manager, apr_pool_t* mempool)$/;"	f	class:ClusCom::LF_TP_Synthesizer	access:public	signature:(ClusCom* manager, apr_pool_t* mempool)
+LF_TP_Synthesizer	cluscom.h	/^		class LF_TP_Synthesizer : public frl_lf_threadpool$/;"	c	class:ClusCom	inherits:frl_lf_threadpool	access:private
+LINKFLAG	Makefile	/^LINKFLAG=-ldl -lpthread -lrt -lapr-1 -laprutil-1$/;"	m
+LINKLIB	Makefile	/^LINKLIB=$/;"	m
+MANIPULATE_PORT	cluscom-config.h	18;"	d
+MANIPULATE_PROCESSED_SIZE	cluscom-config.h	8;"	d
+MANIPULATE_REQUEST_SIZE	cluscom-config.h	7;"	d
+MAX_MSG_QUEUE	lf_threadpool.h	16;"	d
+MS_TP_Interface	cluscom-daemon.h	/^				MS_TP_Interface(ClusCom_Daemon* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom_Daemon::SE_TP_Interface	access:public	signature:(ClusCom_Daemon* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+PACKAGE_DELIVERY_TIMEOUT	socket_pipe.h	20;"	d
+QUOTIENT	crc32.cpp	3;"	d	file:
+REPLY_PORT	cluscom-config.h	17;"	d
+REPLY_SIZE	cluscom-config.h	6;"	d
+REQUEST_PORT	cluscom-config.h	16;"	d
+REQUEST_SIZE	cluscom-config.h	5;"	d
+SEND_FAIL	socket_pipe.h	27;"	d
+SEND_IS_FAIL	socket_pipe.h	29;"	d
+SEND_IS_SUCCESS	socket_pipe.h	30;"	d
+SEND_SUCCESS	socket_pipe.h	28;"	d
+SERVER_EVENT_CLOSE	server_event.h	20;"	d
+SERVER_EVENT_CONTINUE	server_event.h	21;"	d
+SERVER_EVENT_IS_CLOSE	server_event.h	23;"	d
+SERVER_EVENT_IS_CONTINUE	server_event.h	24;"	d
+SERVER_EVENT_IS_PENDING	server_event.h	25;"	d
+SERVER_EVENT_PENDING	server_event.h	22;"	d
+SE_TP_Interface	cluscom-daemon.h	/^		class SE_TP_Interface : public frl_server_event$/;"	c	class:ClusCom_Daemon	inherits:frl_server_event	access:private
+SE_TP_Manipulator	cluscom.h	/^				SE_TP_Manipulator(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SE_TP_Manipulator	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SE_TP_Manipulator	cluscom.h	/^		class SE_TP_Manipulator : public frl_server_event$/;"	c	class:ClusCom	inherits:frl_server_event	access:private
+SIZEOF_FRL_EVENTINFO_T	server_event.h	/^const apr_uint32_t SIZEOF_FRL_EVENTINFO_T = sizeof(frl_eventinfo_t);$/;"	v
+SIZEOF_FRL_HASH_T	frl_hash.h	/^const apr_uint32_t SIZEOF_FRL_HASH_T = sizeof(frl_hash_t);$/;"	v
+SIZEOF_FRL_LIST_ENTRY_T	frl_list.h	/^const apr_uint32_t SIZEOF_FRL_LIST_ENTRY_T = sizeof(frl_list_entry_t);$/;"	v
+SIZEOF_FRL_LIST_T	frl_list.h	/^const apr_uint32_t SIZEOF_FRL_LIST_T = sizeof(frl_list_t);$/;"	v
+SIZEOF_FRL_MAP_TIMESTAMP_T	cluscom.h	/^const apr_uint32_t SIZEOF_FRL_MAP_TIMESTAMP_T = sizeof(frl_map_timestamp_t);$/;"	v
+SIZEOF_FRL_MEM_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_MEM_T = sizeof(frl_mem_t);$/;"	v
+SIZEOF_FRL_PIPEBUF_T	socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPEBUF_T = sizeof(frl_pipebuf_t);$/;"	v
+SIZEOF_FRL_PIPEINFO_T	socket_pipe.h	/^const apr_uint32_t SIZEOF_FRL_PIPEINFO_T = sizeof(frl_pipeinfo_t);$/;"	v
+SIZEOF_FRL_SLAB_BLOCK_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_SLAB_BLOCK_T = sizeof(frl_slab_block_t);$/;"	v
+SIZEOF_FRL_SLAB_POOL_T	frl_slab_pool.h	/^const apr_uint32_t SIZEOF_FRL_SLAB_POOL_T = sizeof(frl_slab_pool_t);$/;"	v
+SIZEOF_POINTER	cluscom.h	/^const apr_uint32_t SIZEOF_POINTER = sizeof(void*);$/;"	v
+SOCKET_PIPE_CLOSE	socket_pipe.h	23;"	d
+SOCKET_PIPE_CONTINUE	socket_pipe.h	24;"	d
+SOCKET_PIPE_IS_CLOSE	socket_pipe.h	25;"	d
+SOCKET_PIPE_IS_CONTINUE	socket_pipe.h	26;"	d
+SOCKET_PIPE_POLL_TIMEOUT	server_event.h	18;"	d
+SOCKET_PIPE_POLL_TIMEOUT	socket_pipe.h	19;"	d
+SOCKET_PIPE_RECEIVER	socket_pipe.h	22;"	d
+SOCKET_PIPE_SENDER	socket_pipe.h	21;"	d
+SP_ST_Dispatch	cluscom-daemon.h	/^				SP_ST_Dispatch(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom_Daemon::SP_ST_Dispatch	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SP_ST_Dispatch	cluscom-daemon.h	/^		class SP_ST_Dispatch : public frl_socket_pipe$/;"	c	class:ClusCom_Daemon	inherits:frl_socket_pipe	access:private
+SP_ST_Dispatch	cluscom.h	/^				SP_ST_Dispatch(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Dispatch	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SP_ST_Dispatch	cluscom.h	/^		class SP_ST_Dispatch : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+SP_ST_Repeater	cluscom.h	/^				SP_ST_Repeater(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Repeater	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SP_ST_Repeater	cluscom.h	/^		class SP_ST_Repeater : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+SP_ST_Reply	cluscom-daemon.h	/^				SP_ST_Reply(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom_Daemon::SP_ST_Reply	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SP_ST_Reply	cluscom-daemon.h	/^		class SP_ST_Reply : public frl_socket_pipe$/;"	c	class:ClusCom_Daemon	inherits:frl_socket_pipe	access:private
+SP_ST_Reply	cluscom.h	/^				SP_ST_Reply(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Reply	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SP_ST_Reply	cluscom.h	/^		class SP_ST_Reply : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+SP_ST_Request	cluscom.h	/^				SP_ST_Request(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:ClusCom::SP_ST_Request	access:public	signature:(ClusCom* manager, apr_uint32_t maximum, apr_pool_t* mempool)
+SP_ST_Request	cluscom.h	/^		class SP_ST_Request : public frl_socket_pipe$/;"	c	class:ClusCom	inherits:frl_socket_pipe	access:private
+_accept	multi_sock.h	/^		apr_thread_t* _accept;$/;"	m	class:frl_multi_sock	access:private
+_bufpool	socket_pipe.h	/^		frl_slab_pool_t* _bufpool;$/;"	m	class:frl_socket_pipe	access:private
+_child_addr	cluscom-daemon.h	/^		char* _child_addr;$/;"	m	class:ClusCom_Daemon	access:private
+_child_addrs	cluscom.h	/^		char** _child_addrs;$/;"	m	class:ClusCom	access:private
+_cla_queue	cluscom.h	/^		apr_queue_t* _cla_queue;$/;"	m	class:ClusCom	access:private
+_dispatcher	cluscom-daemon.h	/^		SP_ST_Dispatch* _dispatcher;$/;"	m	class:ClusCom_Daemon	access:private
+_dispatcher_thd	cluscom-daemon.h	/^		apr_thread_t* _dispatcher_thd;$/;"	m	class:ClusCom_Daemon	access:private
+_dispatchers	cluscom.h	/^		SP_ST_Dispatch** _dispatchers;$/;"	m	class:ClusCom	access:private
+_eventpool	server_event.h	/^		frl_slab_pool_t* _eventpool;$/;"	m	class:frl_server_event	access:private
+_handler	cluscom.h	/^		LF_TP_Handler* _handler;$/;"	m	class:ClusCom	access:private
+_hash	cluscom.h	/^		frl_hash_t* _hash;$/;"	m	class:ClusCom	access:private
+_hash_pool	cluscom.h	/^		frl_slab_pool_t* _hash_pool;$/;"	m	class:ClusCom	access:private
+_in_active	lf_threadpool.h	/^		int _in_active;$/;"	m	class:frl_lf_threadpool	access:private
+_in_active_mutex	lf_threadpool.h	/^		apr_thread_mutex_t* _in_active_mutex;$/;"	m	class:frl_lf_threadpool	access:private
+_interface	cluscom-daemon.h	/^		SE_TP_Interface* _interface;$/;"	m	class:ClusCom_Daemon	access:private
+_leader	lf_threadpool.h	/^		int _leader;$/;"	m	class:frl_lf_threadpool	access:private
+_loader	server_event.h	/^		apr_uint32_t _loader;$/;"	m	class:frl_server_event	access:private
+_loadroll	server_event.h	/^		apr_uint32_t* _loadroll;$/;"	m	class:frl_server_event	access:private
+_manager	cluscom-daemon.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom_Daemon::SP_ST_Dispatch	access:private
+_manager	cluscom-daemon.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom_Daemon::SP_ST_Reply	access:private
+_manager	cluscom-daemon.h	/^				ClusCom_Daemon* _manager;$/;"	m	class:ClusCom_Daemon::SE_TP_Interface	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::LF_TP_Handler	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::LF_TP_Synthesizer	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SE_TP_Manipulator	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Dispatch	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Repeater	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Reply	access:private
+_manager	cluscom.h	/^				ClusCom* _manager;$/;"	m	class:ClusCom::SP_ST_Request	access:private
+_manipulator	cluscom.h	/^		SE_TP_Manipulator* _manipulator;$/;"	m	class:ClusCom	access:private
+_map_pool	cluscom.h	/^		frl_slab_pool_t* _map_pool;$/;"	m	class:ClusCom	access:private
+_maximum	cluscom.h	/^		apr_uint32_t _maximum;$/;"	m	class:ClusCom	access:private
+_maximum	server_event.h	/^		apr_uint32_t _maximum;$/;"	m	class:frl_server_event	access:private
+_mempool	lf_threadpool.h	/^		apr_pool_t* _mempool;$/;"	m	class:frl_lf_threadpool	access:private
+_mempool	server_event.h	/^		apr_pool_t* _mempool;$/;"	m	class:frl_server_event	access:private
+_mempool	socket_pipe.h	/^		apr_pool_t* _mempool;$/;"	m	class:frl_socket_pipe	access:private
+_msg_ptr_queue	lf_threadpool.h	/^		apr_queue_t* _msg_ptr_queue;$/;"	m	class:frl_lf_threadpool	access:private
+_package_filter_thd	cluscom.h	/^		apr_thread_t* _package_filter_thd;$/;"	m	class:ClusCom	access:private
+_parent_addr	cluscom.h	/^		char* _parent_addr;$/;"	m	class:ClusCom	access:private
+_pipepool	socket_pipe.h	/^		frl_slab_pool_t* _pipepool;$/;"	m	class:frl_socket_pipe	access:private
+_pollsets	server_event.h	/^		apr_pollset_t** _pollsets;$/;"	m	class:frl_server_event	access:private
+_pool_cond	lf_threadpool.h	/^		apr_thread_cond_t* _pool_cond;$/;"	m	class:frl_lf_threadpool	access:private
+_pool_mutex	lf_threadpool.h	/^		apr_thread_mutex_t* _pool_mutex;$/;"	m	class:frl_lf_threadpool	access:private
+_prc_pool	cluscom.h	/^				frl_slab_pool_t* _prc_pool;$/;"	m	class:ClusCom::SE_TP_Manipulator	access:private
+_reader_queue	multi_sock.h	/^		apr_queue_t* _reader_queue;$/;"	m	class:frl_multi_sock	access:private
+_reader_tasks	multi_sock.h	/^		frl_task_t* _reader_tasks;$/;"	m	class:frl_multi_sock	access:private
+_readers	multi_sock.h	/^		apr_thread_t** _readers;$/;"	m	class:frl_multi_sock	access:private
+_receive_reply_thd	cluscom-daemon.h	/^		apr_thread_t* _receive_reply_thd;$/;"	m	class:ClusCom_Daemon	access:private
+_recv	socket_pipe.h	/^		apr_queue_t* _recv;$/;"	m	class:frl_socket_pipe	access:private
+_rep_pool	cluscom-daemon.h	/^				frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom_Daemon::SP_ST_Reply	access:private
+_rep_pool	cluscom-daemon.h	/^		frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom_Daemon	access:private
+_rep_pool	cluscom.h	/^				frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom::SP_ST_Reply	access:private
+_rep_pool	cluscom.h	/^		frl_slab_pool_t* _rep_pool;$/;"	m	class:ClusCom	access:private
+_repeater	cluscom.h	/^		SP_ST_Repeater* _repeater;$/;"	m	class:ClusCom	access:private
+_replies	cluscom.h	/^		SP_ST_Reply** _replies;$/;"	m	class:ClusCom	access:private
+_reply	cluscom-daemon.h	/^		SP_ST_Reply* _reply;$/;"	m	class:ClusCom_Daemon	access:private
+_req_pool	cluscom-daemon.h	/^				frl_slab_pool_t* _req_pool;$/;"	m	class:ClusCom_Daemon::SE_TP_Interface	access:private
+_req_pool	cluscom.h	/^				frl_slab_pool_t* _req_pool;$/;"	m	class:ClusCom::SE_TP_Manipulator	access:private
+_req_pool	cluscom.h	/^				frl_slab_pool_t* _req_pool;$/;"	m	class:ClusCom::SP_ST_Request	access:private
+_request	cluscom.h	/^		SP_ST_Request* _request;$/;"	m	class:ClusCom	access:private
+_send	socket_pipe.h	/^		apr_queue_t* _send;$/;"	m	class:frl_socket_pipe	access:private
+_server_event_handler_thds	server_event.h	/^		apr_thread_t** _server_event_handler_thds;$/;"	m	class:frl_server_event	access:private
+_server_event_listen_thd	server_event.h	/^		apr_thread_t* _server_event_listen_thd;$/;"	m	class:frl_server_event	access:private
+_signal_pool	cluscom.h	/^		frl_slab_pool_t* _signal_pool;$/;"	m	class:ClusCom	access:private
+_socket_pipe_thd	socket_pipe.h	/^		apr_thread_t* _socket_pipe_thd;$/;"	m	class:frl_socket_pipe	access:private
+_sockpool	multi_sock.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_multi_sock	access:private
+_sockpool	server_event.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_server_event	access:private
+_sockpool	socket_pipe.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_socket_pipe	access:private
+_syn_pool	cluscom.h	/^		frl_slab_pool_t* _syn_pool;$/;"	m	class:ClusCom	access:private
+_synthesizer	cluscom.h	/^		LF_TP_Synthesizer* _synthesizer;$/;"	m	class:ClusCom	access:private
+_thd_attr	cluscom.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:ClusCom	access:private
+_thd_attr	lf_threadpool.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_lf_threadpool	access:private
+_thd_attr	multi_sock.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_multi_sock	access:private
+_thd_attr	server_event.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_server_event	access:private
+_thd_attr	socket_pipe.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_socket_pipe	access:private
+_thds	lf_threadpool.h	/^		apr_thread_t** _thds;$/;"	m	class:frl_lf_threadpool	access:private
+_timer_guard_thd	cluscom.h	/^		apr_thread_t* _timer_guard_thd;$/;"	m	class:ClusCom	access:private
+_timer_pool	cluscom.h	/^		frl_slab_pool_t* _timer_pool;$/;"	m	class:ClusCom	access:private
+_timer_queue	cluscom.h	/^		apr_queue_t* _timer_queue;$/;"	m	class:ClusCom	access:private
+_total	lf_threadpool.h	/^		int _total;$/;"	m	class:frl_lf_threadpool	access:private
+arena	frl_slab_pool.h	/^	apr_byte_t* arena;$/;"	m	struct:frl_slab_block_t	access:public
+assign_task	lf_threadpool.cpp	/^int frl_lf_threadpool::assign_task( void* pointer )$/;"	f	class:frl_lf_threadpool	signature:( void* pointer )
+assign_task	lf_threadpool.h	/^		int assign_task( void* pointer );$/;"	p	class:frl_lf_threadpool	access:public	signature:( void* pointer )
+block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_mem_t	access:public
+block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_slab_pool_t	access:public
+block_size	frl_slab_pool.h	/^	apr_size_t block_size;$/;"	m	struct:frl_slab_pool_t	access:public
+buf	server_event.h	/^	char* buf;$/;"	m	struct:frl_eventinfo_t	access:public
+buf	server_event.h	/^	char* buf;$/;"	m	struct:frl_notify_t	access:public
+buf	socket_pipe.h	/^	char* buf;$/;"	m	struct:frl_pipebuf_t	access:public
+buf_now	socket_pipe.h	/^	frl_pipebuf_t* buf_now;$/;"	m	struct:frl_pipeinfo_t	access:public
+chk_len	socket_pipe.h	/^	bool chk_len;$/;"	m	struct:frl_pipebuf_t	access:public
+cluscom_query	cluscom-interface.cpp	/^cluscom_query( char* host,$/;"	f	signature:( char* host, int port, char* input, int len_in, char* output, int len_out, apr_pool_t* mempool )
+cluscom_query	cluscom-interface.h	/^int cluscom_query( char* host, int port, char* input, int len_in, char* output, int len_out, apr_pool_t* mempool );$/;"	p	signature:( char* host, int port, char* input, int len_in, char* output, int len_out, apr_pool_t* mempool )
+cond	multi_sock.h	/^	apr_thread_cond_t* cond;$/;"	m	struct:frl_task_t	access:public
+count	cluscom.h	/^	apr_uint32_t count;$/;"	m	struct:frl_map_timestamp_t	access:public
+crc32	crc32.cpp	/^unsigned int crc32(unsigned char *data, int len)$/;"	f	signature:(unsigned char *data, int len)
+crc32	crc32.h	/^unsigned int crc32(unsigned char *data, int len);$/;"	p	signature:(unsigned char *data, int len)
+crc32_init	crc32.cpp	/^void crc32_init(void)$/;"	f	signature:(void)
+crc_initilized	crc32.cpp	/^bool crc_initilized = 0;$/;"	v
+crctab	crc32.cpp	/^unsigned int crctab[256];$/;"	v
+def	frl_slab_pool.h	/^		apr_uint32_t def;$/;"	m	union:frl_mem_t::__anon1	access:public
+entry	frl_hash.h	/^	frl_list_t** entry;$/;"	m	struct:frl_hash_t	access:public
+free_index	frl_slab_pool.h	/^	apr_uint32_t free_index;$/;"	m	struct:frl_slab_block_t	access:public
+free_sign	frl_slab_pool.h	/^	apr_byte_t* free_sign;$/;"	m	struct:frl_slab_block_t	access:public
+free_space	frl_slab_pool.h	/^	apr_uint32_t free_space;$/;"	m	struct:frl_slab_block_t	access:public
+frl_eventinfo_t	server_event.h	/^struct frl_eventinfo_t$/;"	s
+frl_eventinfo_t::buf	server_event.h	/^	char* buf;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::len	server_event.h	/^	apr_size_t len;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::mem	server_event.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::notify	server_event.h	/^	frl_notify_t notify;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_eventinfo_t::offset	server_event.h	/^	apr_off_t offset;$/;"	m	struct:frl_eventinfo_t	access:public
+frl_hash_destroy	frl_hash.c	/^APR_DECLARE(void*) frl_hash_destroy(frl_hash_t* hash)$/;"	f	signature:(frl_hash_t* hash)
+frl_hash_get	frl_hash.c	/^APR_DECLARE(void*) frl_hash_get(frl_hash_t* hash, apr_uint32_t key)$/;"	f	signature:(frl_hash_t* hash, apr_uint32_t key)
+frl_hash_t	frl_hash.h	/^struct frl_hash_t$/;"	s
+frl_hash_t::entry	frl_hash.h	/^	frl_list_t** entry;$/;"	m	struct:frl_hash_t	access:public
+frl_hash_t::nelts	frl_hash.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_hash_t	access:public
+frl_lf_threadpool	lf_threadpool.h	/^		frl_lf_threadpool( apr_pool_t* mempool )$/;"	f	class:frl_lf_threadpool	access:public	signature:( apr_pool_t* mempool )
+frl_lf_threadpool	lf_threadpool.h	/^class frl_lf_threadpool$/;"	c
+frl_lf_threadpool::_in_active	lf_threadpool.h	/^		int _in_active;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_in_active_mutex	lf_threadpool.h	/^		apr_thread_mutex_t* _in_active_mutex;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_leader	lf_threadpool.h	/^		int _leader;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_mempool	lf_threadpool.h	/^		apr_pool_t* _mempool;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_msg_ptr_queue	lf_threadpool.h	/^		apr_queue_t* _msg_ptr_queue;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_pool_cond	lf_threadpool.h	/^		apr_thread_cond_t* _pool_cond;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_pool_mutex	lf_threadpool.h	/^		apr_thread_mutex_t* _pool_mutex;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_thd_attr	lf_threadpool.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_thds	lf_threadpool.h	/^		apr_thread_t** _thds;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::_total	lf_threadpool.h	/^		int _total;$/;"	m	class:frl_lf_threadpool	access:private
+frl_lf_threadpool::assign_task	lf_threadpool.cpp	/^int frl_lf_threadpool::assign_task( void* pointer )$/;"	f	class:frl_lf_threadpool	signature:( void* pointer )
+frl_lf_threadpool::assign_task	lf_threadpool.h	/^		int assign_task( void* pointer );$/;"	p	class:frl_lf_threadpool	access:public	signature:( void* pointer )
+frl_lf_threadpool::frl_lf_threadpool	lf_threadpool.h	/^		frl_lf_threadpool( apr_pool_t* mempool )$/;"	f	class:frl_lf_threadpool	access:public	signature:( apr_pool_t* mempool )
+frl_lf_threadpool::proc	lf_threadpool.h	/^		virtual int proc( void* pointer ) = 0;$/;"	p	class:frl_lf_threadpool	access:private	signature:( void* pointer )
+frl_lf_threadpool::spawn	lf_threadpool.cpp	/^apr_thread_t** frl_lf_threadpool::spawn( int n )$/;"	f	class:frl_lf_threadpool	signature:( int n )
+frl_lf_threadpool::spawn	lf_threadpool.h	/^		apr_thread_t** spawn( int n );$/;"	p	class:frl_lf_threadpool	access:public	signature:( int n )
+frl_lf_threadpool::thread_work	lf_threadpool.h	/^	friend void* thread_work( apr_thread_t* thd, void* data );$/;"	p	class:frl_lf_threadpool	access:friend	signature:( apr_thread_t* thd, void* data )
+frl_lf_threadpool::~frl_lf_threadpool	lf_threadpool.h	/^		virtual ~frl_lf_threadpool()$/;"	f	class:frl_lf_threadpool	access:public	signature:()
+frl_list_add	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_add(frl_list_t* list, apr_uint32_t key, void* pointer)$/;"	f	signature:(frl_list_t* list, apr_uint32_t key, void* pointer)
+frl_list_destroy	frl_list.c	/^APR_DECLARE(void*) frl_list_destroy(frl_list_t* list)$/;"	f	signature:(frl_list_t* list)
+frl_list_entry_t	frl_list.h	/^struct frl_list_entry_t$/;"	s
+frl_list_entry_t::key	frl_list.h	/^	apr_uint32_t key;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::mem	frl_list.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::next	frl_list.h	/^	frl_list_entry_t* next;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::pointer	frl_list.h	/^	void* pointer;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_entry_t::prev	frl_list.h	/^	frl_list_entry_t* prev;$/;"	m	struct:frl_list_entry_t	access:public
+frl_list_get	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_get(frl_list_t* list, apr_uint32_t key)$/;"	f	signature:(frl_list_t* list, apr_uint32_t key)
+frl_list_set	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_set(frl_list_t* list, apr_uint32_t key, void* pointer)$/;"	f	signature:(frl_list_t* list, apr_uint32_t key, void* pointer)
+frl_list_t	frl_list.h	/^struct frl_list_t$/;"	s
+frl_list_t::head	frl_list.h	/^	frl_list_entry_t* head;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::mutex	frl_list.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::nelts	frl_list.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::pool	frl_list.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_list_t	access:public
+frl_list_t::tail	frl_list.h	/^	frl_list_entry_t* tail;$/;"	m	struct:frl_list_t	access:public
+frl_list_try_get	frl_list.c	/^APR_DECLARE(frl_list_entry_t*) frl_list_try_get(frl_list_t* list, apr_uint32_t key)$/;"	f	signature:(frl_list_t* list, apr_uint32_t key)
+frl_map_timestamp_t	cluscom.h	/^struct frl_map_timestamp_t$/;"	s
+frl_map_timestamp_t::count	cluscom.h	/^	apr_uint32_t count;$/;"	m	struct:frl_map_timestamp_t	access:public
+frl_map_timestamp_t::mem	cluscom.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_map_timestamp_t	access:public
+frl_map_timestamp_t::self	cluscom.h	/^	frl_mem_t* self;$/;"	m	struct:frl_map_timestamp_t	access:public
+frl_map_timestamp_t::table	cluscom.h	/^	apr_uint32_t table;$/;"	m	struct:frl_map_timestamp_t	access:public
+frl_mem_t	frl_slab_pool.h	/^struct frl_mem_t$/;"	s
+frl_mem_t::__anon1::def	frl_slab_pool.h	/^		apr_uint32_t def;$/;"	m	union:frl_mem_t::__anon1	access:public
+frl_mem_t::__anon1::next	frl_slab_pool.h	/^		frl_mem_t* next;$/;"	m	union:frl_mem_t::__anon1	access:public
+frl_mem_t::block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::index	frl_slab_pool.h	/^	apr_uint32_t index;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::mutex	frl_slab_pool.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_mem_t	access:public
+frl_mem_t::pointer	frl_slab_pool.h	/^	void* pointer;$/;"	m	struct:frl_mem_t	access:public
+frl_multi_sock	multi_sock.h	/^		frl_multi_sock( apr_uint32_t _port, apr_pool_t* _mempool )$/;"	f	class:frl_multi_sock	access:public	signature:( apr_uint32_t _port, apr_pool_t* _mempool )
+frl_multi_sock	multi_sock.h	/^class frl_multi_sock$/;"	c
+frl_multi_sock::_accept	multi_sock.h	/^		apr_thread_t* _accept;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_reader_queue	multi_sock.h	/^		apr_queue_t* _reader_queue;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_reader_tasks	multi_sock.h	/^		frl_task_t* _reader_tasks;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_readers	multi_sock.h	/^		apr_thread_t** _readers;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_sockpool	multi_sock.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::_thd_attr	multi_sock.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_multi_sock	access:private
+frl_multi_sock::frl_multi_sock	multi_sock.h	/^		frl_multi_sock( apr_uint32_t _port, apr_pool_t* _mempool )$/;"	f	class:frl_multi_sock	access:public	signature:( apr_uint32_t _port, apr_pool_t* _mempool )
+frl_multi_sock::mempool	multi_sock.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_multi_sock	access:public
+frl_multi_sock::port	multi_sock.h	/^		apr_uint32_t port;$/;"	m	class:frl_multi_sock	access:public
+frl_multi_sock::proc	multi_sock.h	/^		virtual int proc( apr_socket_t* reader, int who ) = 0;$/;"	p	class:frl_multi_sock	access:private	signature:( apr_socket_t* reader, int who )
+frl_multi_sock::spawn	multi_sock.cpp	/^apr_thread_t* frl_multi_sock::spawn( int n )$/;"	f	class:frl_multi_sock	signature:( int n )
+frl_multi_sock::spawn	multi_sock.h	/^		apr_thread_t* spawn( int n );$/;"	p	class:frl_multi_sock	access:public	signature:( int n )
+frl_multi_sock::thread_accept	multi_sock.h	/^	friend void* thread_accept( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+frl_multi_sock::thread_read	multi_sock.h	/^	friend void* thread_read( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+frl_multi_sock::~frl_multi_sock	multi_sock.h	/^		virtual ~frl_multi_sock()$/;"	f	class:frl_multi_sock	access:public	signature:()
+frl_notify_t	server_event.h	/^struct frl_notify_t$/;"	s
+frl_notify_t::buf	server_event.h	/^	char* buf;$/;"	m	struct:frl_notify_t	access:public
+frl_notify_t::len	server_event.h	/^	apr_size_t len;$/;"	m	struct:frl_notify_t	access:public
+frl_notify_t::timeout	server_event.h	/^	apr_time_t timeout;$/;"	m	struct:frl_notify_t	access:public
+frl_pipebuf_t	socket_pipe.h	/^struct frl_pipebuf_t$/;"	s
+frl_pipebuf_t::buf	socket_pipe.h	/^	char* buf;$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipebuf_t::chk_len	socket_pipe.h	/^	bool chk_len;$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipebuf_t::len	socket_pipe.h	/^	apr_size_t len;$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipebuf_t::mem	socket_pipe.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipebuf_t::offset	socket_pipe.h	/^	apr_off_t offset;$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipebuf_t::return_buf	socket_pipe.h	/^	char return_buf[4];$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipebuf_t::return_len	socket_pipe.h	/^	apr_size_t return_len;$/;"	m	struct:frl_pipebuf_t	access:public
+frl_pipeinfo_t	socket_pipe.h	/^struct frl_pipeinfo_t$/;"	s
+frl_pipeinfo_t::buf_now	socket_pipe.h	/^	frl_pipebuf_t* buf_now;$/;"	m	struct:frl_pipeinfo_t	access:public
+frl_pipeinfo_t::mem	socket_pipe.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_pipeinfo_t	access:public
+frl_reply_size	cluscom.h	/^const apr_uint32_t frl_reply_size = frl_uint64_size+REPLY_SIZE;$/;"	v
+frl_request_size	cluscom.h	/^const apr_uint32_t frl_request_size = frl_uint32_size+REQUEST_SIZE;$/;"	v
+frl_server_event	server_event.h	/^		frl_server_event(apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:frl_server_event	access:public	signature:(apr_uint32_t maximum, apr_pool_t* mempool)
+frl_server_event	server_event.h	/^class frl_server_event$/;"	c
+frl_server_event::_eventpool	server_event.h	/^		frl_slab_pool_t* _eventpool;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_loader	server_event.h	/^		apr_uint32_t _loader;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_loadroll	server_event.h	/^		apr_uint32_t* _loadroll;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_maximum	server_event.h	/^		apr_uint32_t _maximum;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_mempool	server_event.h	/^		apr_pool_t* _mempool;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_pollsets	server_event.h	/^		apr_pollset_t** _pollsets;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_server_event_handler_thds	server_event.h	/^		apr_thread_t** _server_event_handler_thds;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_server_event_listen_thd	server_event.h	/^		apr_thread_t* _server_event_listen_thd;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_sockpool	server_event.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_server_event	access:private
+frl_server_event::_thd_attr	server_event.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_server_event	access:private
+frl_server_event::frl_server_event	server_event.h	/^		frl_server_event(apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:frl_server_event	access:public	signature:(apr_uint32_t maximum, apr_pool_t* mempool)
+frl_server_event::quit_signal	server_event.h	/^		bool quit_signal;$/;"	m	class:frl_server_event	access:public
+frl_server_event::recv_before	server_event.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len)
+frl_server_event::recv_send	server_event.h	/^		virtual apr_status_t recv_send(char** buf, apr_size_t* len, frl_notify_t* notify);$/;"	p	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len, frl_notify_t* notify)
+frl_server_event::send_after	server_event.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:frl_server_event	access:private	signature:(char* buf, apr_size_t len)
+frl_server_event::sock_addr	server_event.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_server_event	access:public
+frl_server_event::spawn	server_event.cpp	/^apr_thread_t* frl_server_event::spawn(apr_uint32_t n, apr_sockaddr_t* _sock_addr)$/;"	f	class:frl_server_event	signature:(apr_uint32_t n, apr_sockaddr_t* _sock_addr)
+frl_server_event::spawn	server_event.h	/^		apr_thread_t* spawn(apr_uint32_t n, apr_sockaddr_t* _sock_addr);$/;"	p	class:frl_server_event	access:public	signature:(apr_uint32_t n, apr_sockaddr_t* _sock_addr)
+frl_server_event::thread_server_event_handler	server_event.h	/^	friend void* thread_server_event_handler(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_server_event::thread_server_event_listen	server_event.h	/^	friend void* thread_server_event_listen(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_server_event::~frl_server_event	server_event.h	/^		virtual ~frl_server_event()$/;"	f	class:frl_server_event	access:public	signature:()
+frl_slab_block_t	frl_slab_pool.h	/^struct frl_slab_block_t$/;"	s
+frl_slab_block_t::arena	frl_slab_pool.h	/^	apr_byte_t* arena;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::free_index	frl_slab_pool.h	/^	apr_uint32_t free_index;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::free_sign	frl_slab_pool.h	/^	apr_byte_t* free_sign;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::free_space	frl_slab_pool.h	/^	apr_uint32_t free_space;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::n	frl_slab_pool.h	/^	apr_uint32_t n;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_block_t::next	frl_slab_pool.h	/^	frl_slab_block_t* next;$/;"	m	struct:frl_slab_block_t	access:public
+frl_slab_palloc	frl_slab_pool.c	/^APR_DECLARE(frl_mem_t*) frl_slab_palloc(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_pcalloc	frl_slab_pool.c	/^APR_DECLARE(frl_mem_t*) frl_slab_pcalloc(frl_slab_pool_t* pool)$/;"	f	signature:(frl_slab_pool_t* pool)
+frl_slab_pfree	frl_slab_pool.c	/^APR_DECLARE(void) frl_slab_pfree(frl_mem_t* mem)$/;"	f	signature:(frl_mem_t* mem)
+frl_slab_pool_t	frl_slab_pool.h	/^struct frl_slab_pool_t$/;"	s
+frl_slab_pool_t::block	frl_slab_pool.h	/^	frl_slab_block_t* block;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_pool_t::block_size	frl_slab_pool.h	/^	apr_size_t block_size;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_slab_pool_t::mutex	frl_slab_pool.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_slab_pool_t	access:public
+frl_socket_pipe	socket_pipe.h	/^		frl_socket_pipe(apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:frl_socket_pipe	access:public	signature:(apr_uint32_t maximum, apr_pool_t* mempool)
+frl_socket_pipe	socket_pipe.h	/^class frl_socket_pipe$/;"	c
+frl_socket_pipe::_bufpool	socket_pipe.h	/^		frl_slab_pool_t* _bufpool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_mempool	socket_pipe.h	/^		apr_pool_t* _mempool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_pipepool	socket_pipe.h	/^		frl_slab_pool_t* _pipepool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_recv	socket_pipe.h	/^		apr_queue_t* _recv;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_send	socket_pipe.h	/^		apr_queue_t* _send;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_socket_pipe_thd	socket_pipe.h	/^		apr_thread_t* _socket_pipe_thd;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_sockpool	socket_pipe.h	/^		apr_pool_t* _sockpool;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::_thd_attr	socket_pipe.h	/^		apr_threadattr_t* _thd_attr;$/;"	m	class:frl_socket_pipe	access:private
+frl_socket_pipe::frl_socket_pipe	socket_pipe.h	/^		frl_socket_pipe(apr_uint32_t maximum, apr_pool_t* mempool)$/;"	f	class:frl_socket_pipe	access:public	signature:(apr_uint32_t maximum, apr_pool_t* mempool)
+frl_socket_pipe::quit_signal	socket_pipe.h	/^		bool quit_signal;$/;"	m	class:frl_socket_pipe	access:public
+frl_socket_pipe::recv_after	socket_pipe.h	/^		virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::recv_before	socket_pipe.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:frl_socket_pipe	access:private	signature:(char** buf, apr_size_t* len)
+frl_socket_pipe::replicates	socket_pipe.h	/^		apr_uint32_t replicates;$/;"	m	class:frl_socket_pipe	access:public
+frl_socket_pipe::send	socket_pipe.cpp	/^void frl_socket_pipe::send(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::send	socket_pipe.h	/^		void send(char* buf, apr_size_t len);$/;"	p	class:frl_socket_pipe	access:public	signature:(char* buf, apr_size_t len)
+frl_socket_pipe::send_after	socket_pipe.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+frl_socket_pipe::sock_addr	socket_pipe.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_socket_pipe	access:public
+frl_socket_pipe::spawn	socket_pipe.cpp	/^apr_thread_t* frl_socket_pipe::spawn(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode)$/;"	f	class:frl_socket_pipe	signature:(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode)
+frl_socket_pipe::spawn	socket_pipe.h	/^		apr_thread_t* spawn(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode);$/;"	p	class:frl_socket_pipe	access:public	signature:(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode)
+frl_socket_pipe::thread_socket_pipe_receiver	socket_pipe.h	/^	friend void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_socket_pipe::thread_socket_pipe_sender	socket_pipe.h	/^	friend void* thread_socket_pipe_sender(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+frl_socket_pipe::~frl_socket_pipe	socket_pipe.h	/^		virtual ~frl_socket_pipe()$/;"	f	class:frl_socket_pipe	access:public	signature:()
+frl_task_t	multi_sock.h	/^struct frl_task_t$/;"	s
+frl_task_t::cond	multi_sock.h	/^	apr_thread_cond_t* cond;$/;"	m	struct:frl_task_t	access:public
+frl_task_t::mutex	multi_sock.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_task_t	access:public
+frl_task_t::socket	multi_sock.h	/^	apr_socket_t* socket;$/;"	m	struct:frl_task_t	access:public
+frl_task_t::status	multi_sock.h	/^	bool status;$/;"	m	struct:frl_task_t	access:public
+frl_uint32_size	cluscom.h	/^const apr_uint32_t frl_uint32_size = sizeof(unsigned int);$/;"	v
+frl_uint64_size	cluscom.h	/^const apr_uint32_t frl_uint64_size = frl_uint32_size*2;$/;"	v
+frl_uint96_size	cluscom.h	/^const apr_uint32_t frl_uint96_size = frl_uint32_size*3;$/;"	v
+handle	cluscom.h	/^		virtual int handle(char* to_request, char* to_reply) = 0;$/;"	p	class:ClusCom	access:private	signature:(char* to_request, char* to_reply)
+handle	main.cpp	/^		virtual int handle( char* to_retrieve, char* to_reply )$/;"	f	class:ClusComTest	file:	access:private	signature:( char* to_retrieve, char* to_reply )
+hash	frl_hash.h	/^APR_DECLARE(void*) frl_hash_destroy(frl_hash_t* hash);$/;"	v
+head	frl_list.h	/^	frl_list_entry_t* head;$/;"	m	struct:frl_list_t	access:public
+hold	cluscom-daemon.cpp	/^ClusCom_Daemon::hold()$/;"	f	class:ClusCom_Daemon	signature:()
+hold	cluscom-daemon.h	/^		int hold();$/;"	p	class:ClusCom_Daemon	access:public	signature:()
+hold	cluscom.cpp	/^ClusCom::hold()$/;"	f	class:ClusCom	signature:()
+hold	cluscom.h	/^		int hold();$/;"	p	class:ClusCom	access:public	signature:()
+htonl	crc32.cpp	/^unsigned int htonl(unsigned int hostlong)$/;"	f	signature:(unsigned int hostlong)
+id	cluscom.h	/^		apr_int32_t id;$/;"	m	class:ClusCom	access:public
+index	frl_slab_pool.h	/^	apr_uint32_t index;$/;"	m	struct:frl_mem_t	access:public
+key	frl_list.h	/^	apr_uint32_t key;$/;"	m	struct:frl_list_entry_t	access:public
+layer	cluscom.h	/^		apr_int32_t layer;$/;"	m	class:ClusCom	access:public
+len	server_event.h	/^	apr_size_t len;$/;"	m	struct:frl_eventinfo_t	access:public
+len	server_event.h	/^	apr_size_t len;$/;"	m	struct:frl_notify_t	access:public
+len	socket_pipe.h	/^	apr_size_t len;$/;"	m	struct:frl_pipebuf_t	access:public
+list	frl_list.h	/^APR_DECLARE(void*) frl_list_destroy(frl_list_t* list);$/;"	v
+load	main.cpp	/^		int load( const char* filename )$/;"	f	class:ClusComTest	access:public	signature:( const char* filename )
+main	main.cpp	/^int main()$/;"	f	signature:()
+main	server.cpp	/^int main()$/;"	f	signature:()
+main	simple-trigger.cpp	/^int main()$/;"	f	signature:()
+main	trigger.cpp	/^int main()$/;"	f	signature:()
+main	view.cpp	/^int main()$/;"	f	signature:()
+manipulate	cluscom.h	/^		virtual int manipulate(char* to_mani, apr_uint32_t& return_size, char* to_reply) = 0;$/;"	p	class:ClusCom	access:private	signature:(char* to_mani, apr_uint32_t& return_size, char* to_reply)
+manipulate	main.cpp	/^		virtual int manipulate( char* to_mani, apr_uint32_t& return_size, char* to_reply )$/;"	f	class:ClusComTest	file:	access:private	signature:( char* to_mani, apr_uint32_t& return_size, char* to_reply )
+mem	cluscom.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_map_timestamp_t	access:public
+mem	frl_list.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_list_entry_t	access:public
+mem	frl_slab_pool.h	/^APR_DECLARE(void) frl_slab_pfree(frl_mem_t* mem);$/;"	v
+mem	server_event.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_eventinfo_t	access:public
+mem	socket_pipe.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_pipebuf_t	access:public
+mem	socket_pipe.h	/^	frl_mem_t* mem;$/;"	m	struct:frl_pipeinfo_t	access:public
+mempool	cluscom-daemon.h	/^		apr_pool_t* mempool;$/;"	m	class:ClusCom_Daemon	access:public
+mempool	cluscom.h	/^		apr_pool_t* mempool;$/;"	m	class:ClusCom	access:public
+mempool	multi_sock.h	/^		apr_pool_t* mempool;$/;"	m	class:frl_multi_sock	access:public
+min	server_event.cpp	/^apr_size_t min(apr_size_t a, apr_size_t b)$/;"	f	signature:(apr_size_t a, apr_size_t b)
+min	socket_pipe.cpp	/^apr_size_t min(apr_size_t a, apr_size_t b)$/;"	f	signature:(apr_size_t a, apr_size_t b)
+mutex	frl_list.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_list_t	access:public
+mutex	frl_slab_pool.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_mem_t	access:public
+mutex	frl_slab_pool.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_slab_pool_t	access:public
+mutex	multi_sock.h	/^	apr_thread_mutex_t* mutex;$/;"	m	struct:frl_task_t	access:public
+n	frl_slab_pool.h	/^	apr_uint32_t n;$/;"	m	struct:frl_slab_block_t	access:public
+nelts	frl_hash.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_hash_t	access:public
+nelts	frl_list.h	/^	apr_uint32_t nelts;$/;"	m	struct:frl_list_t	access:public
+next	frl_list.h	/^	frl_list_entry_t* next;$/;"	m	struct:frl_list_entry_t	access:public
+next	frl_slab_pool.h	/^		frl_mem_t* next;$/;"	m	union:frl_mem_t::__anon1	access:public
+next	frl_slab_pool.h	/^	frl_slab_block_t* next;$/;"	m	struct:frl_slab_block_t	access:public
+node	cluscom.h	/^		apr_int32_t node;$/;"	m	class:ClusCom	access:public
+notify	server_event.h	/^	frl_notify_t notify;$/;"	m	struct:frl_eventinfo_t	access:public
+offset	server_event.h	/^	apr_off_t offset;$/;"	m	struct:frl_eventinfo_t	access:public
+offset	socket_pipe.h	/^	apr_off_t offset;$/;"	m	struct:frl_pipebuf_t	access:public
+pointer	frl_list.h	/^	void* pointer;$/;"	m	struct:frl_list_entry_t	access:public
+pointer	frl_slab_pool.h	/^	void* pointer;$/;"	m	struct:frl_mem_t	access:public
+pool	frl_list.h	/^	frl_slab_pool_t* pool;$/;"	m	struct:frl_list_t	access:public
+pool	frl_slab_pool.h	/^APR_DECLARE(apr_status_t) frl_slab_pool_destroy(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(frl_mem_t*) frl_slab_palloc(frl_slab_pool_t* pool);$/;"	v
+pool	frl_slab_pool.h	/^APR_DECLARE(frl_mem_t*) frl_slab_pcalloc(frl_slab_pool_t* pool);$/;"	v
+port	multi_sock.h	/^		apr_uint32_t port;$/;"	m	class:frl_multi_sock	access:public
+prev	frl_list.h	/^	frl_list_entry_t* prev;$/;"	m	struct:frl_list_entry_t	access:public
+proc	cluscom-daemon.cpp	/^ClusCom_Daemon::MS_TP_Interface::proc( apr_socket_t* reader,$/;"	f	class:ClusCom_Daemon::MS_TP_Interface	signature:( apr_socket_t* reader, int who )
+proc	cluscom-daemon.h	/^				virtual int proc(apr_socket_t* reader, int who);$/;"	p	class:ClusCom_Daemon::SE_TP_Interface	access:private	signature:(apr_socket_t* reader, int who)
+proc	cluscom.cpp	/^ClusCom::LF_TP_Handler::proc(void* pointer)$/;"	f	class:ClusCom::LF_TP_Handler	signature:(void* pointer)
+proc	cluscom.cpp	/^ClusCom::LF_TP_Synthesizer::proc(void* pointer)$/;"	f	class:ClusCom::LF_TP_Synthesizer	signature:(void* pointer)
+proc	cluscom.h	/^				virtual int proc(void* pointer);$/;"	p	class:ClusCom::LF_TP_Handler	access:private	signature:(void* pointer)
+proc	cluscom.h	/^				virtual int proc(void* pointer);$/;"	p	class:ClusCom::LF_TP_Synthesizer	access:private	signature:(void* pointer)
+proc	lf_threadpool.h	/^		virtual int proc( void* pointer ) = 0;$/;"	p	class:frl_lf_threadpool	access:private	signature:( void* pointer )
+proc	multi_sock.h	/^		virtual int proc( apr_socket_t* reader, int who ) = 0;$/;"	p	class:frl_multi_sock	access:private	signature:( apr_socket_t* reader, int who )
+quit_signal	server_event.h	/^		bool quit_signal;$/;"	m	class:frl_server_event	access:public
+quit_signal	socket_pipe.h	/^		bool quit_signal;$/;"	m	class:frl_socket_pipe	access:public
+recv_after	cluscom-daemon.cpp	/^ClusCom_Daemon::SP_ST_Reply::recv_after(char* buf,$/;"	f	class:ClusCom_Daemon::SP_ST_Reply	signature:(char* buf, apr_size_t len)
+recv_after	cluscom-daemon.h	/^				virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom_Daemon::SP_ST_Reply	access:private	signature:(char* buf, apr_size_t len)
+recv_after	cluscom.cpp	/^ClusCom::SP_ST_Reply::recv_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Reply	signature:(char* buf, apr_size_t len)
+recv_after	cluscom.cpp	/^ClusCom::SP_ST_Request::recv_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Request	signature:(char* buf, apr_size_t len)
+recv_after	cluscom.h	/^				virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom::SP_ST_Reply	access:private	signature:(char* buf, apr_size_t len)
+recv_after	cluscom.h	/^				virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom::SP_ST_Request	access:private	signature:(char* buf, apr_size_t len)
+recv_after	socket_pipe.h	/^		virtual apr_status_t recv_after(char* buf, apr_size_t len);$/;"	p	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len)
+recv_before	cluscom-daemon.cpp	/^ClusCom_Daemon::SE_TP_Interface::recv_before(char** buf,$/;"	f	class:ClusCom_Daemon::SE_TP_Interface	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom-daemon.cpp	/^ClusCom_Daemon::SP_ST_Reply::recv_before(char** buf,$/;"	f	class:ClusCom_Daemon::SP_ST_Reply	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom-daemon.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom_Daemon::SP_ST_Reply	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom.cpp	/^ClusCom::SE_TP_Manipulator::recv_before(char** buf,$/;"	f	class:ClusCom::SE_TP_Manipulator	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom.cpp	/^ClusCom::SP_ST_Reply::recv_before(char** buf,$/;"	f	class:ClusCom::SP_ST_Reply	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom.cpp	/^ClusCom::SP_ST_Request::recv_before(char** buf,$/;"	f	class:ClusCom::SP_ST_Request	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SE_TP_Manipulator	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SP_ST_Reply	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	cluscom.h	/^				virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SP_ST_Request	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	server_event.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len)
+recv_before	socket_pipe.h	/^		virtual apr_status_t recv_before(char** buf, apr_size_t* len);$/;"	p	class:frl_socket_pipe	access:private	signature:(char** buf, apr_size_t* len)
+recv_send	cluscom-daemon.cpp	/^ClusCom_Daemon::SE_TP_Interface::recv_send(char** buf,$/;"	f	class:ClusCom_Daemon::SE_TP_Interface	signature:(char** buf, apr_size_t* len, frl_notify_t* notify)
+recv_send	cluscom.cpp	/^ClusCom::SE_TP_Manipulator::recv_send(char** buf,$/;"	f	class:ClusCom::SE_TP_Manipulator	signature:(char** buf, apr_size_t* len)
+recv_send	cluscom.h	/^				virtual apr_status_t recv_send(char** buf, apr_size_t* len);$/;"	p	class:ClusCom::SE_TP_Manipulator	access:private	signature:(char** buf, apr_size_t* len)
+recv_send	server_event.h	/^		virtual apr_status_t recv_send(char** buf, apr_size_t* len, frl_notify_t* notify);$/;"	p	class:frl_server_event	access:private	signature:(char** buf, apr_size_t* len, frl_notify_t* notify)
+replicates	socket_pipe.h	/^		apr_uint32_t replicates;$/;"	m	class:frl_socket_pipe	access:public
+resource	main.cpp	/^		char* resource;$/;"	m	class:ClusComTest	file:	access:public
+return_buf	socket_pipe.h	/^	char return_buf[4];$/;"	m	struct:frl_pipebuf_t	access:public
+return_len	socket_pipe.h	/^	apr_size_t return_len;$/;"	m	struct:frl_pipebuf_t	access:public
+self	cluscom.h	/^	frl_mem_t* self;$/;"	m	struct:frl_map_timestamp_t	access:public
+send	socket_pipe.cpp	/^void frl_socket_pipe::send(char* buf, apr_size_t len)$/;"	f	class:frl_socket_pipe	signature:(char* buf, apr_size_t len)
+send	socket_pipe.h	/^		void send(char* buf, apr_size_t len);$/;"	p	class:frl_socket_pipe	access:public	signature:(char* buf, apr_size_t len)
+send_after	cluscom-daemon.cpp	/^ClusCom_Daemon::SP_ST_Dispatch::send_after(char* buf,$/;"	f	class:ClusCom_Daemon::SP_ST_Dispatch	signature:(char* buf, apr_size_t len, apr_status_t status)
+send_after	cluscom-daemon.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:ClusCom_Daemon::SP_ST_Dispatch	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+send_after	cluscom.cpp	/^ClusCom::SE_TP_Manipulator::send_after(char* buf,$/;"	f	class:ClusCom::SE_TP_Manipulator	signature:(char* buf, apr_size_t len)
+send_after	cluscom.cpp	/^ClusCom::SP_ST_Dispatch::send_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Dispatch	signature:(char* buf, apr_size_t len, apr_status_t status)
+send_after	cluscom.cpp	/^ClusCom::SP_ST_Repeater::send_after(char* buf,$/;"	f	class:ClusCom::SP_ST_Repeater	signature:(char* buf, apr_size_t len, apr_status_t status)
+send_after	cluscom.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:ClusCom::SE_TP_Manipulator	access:private	signature:(char* buf, apr_size_t len)
+send_after	cluscom.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:ClusCom::SP_ST_Dispatch	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+send_after	cluscom.h	/^				virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:ClusCom::SP_ST_Repeater	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+send_after	server_event.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len);$/;"	p	class:frl_server_event	access:private	signature:(char* buf, apr_size_t len)
+send_after	socket_pipe.h	/^		virtual apr_status_t send_after(char* buf, apr_size_t len, apr_uint32_t status);$/;"	p	class:frl_socket_pipe	access:private	signature:(char* buf, apr_size_t len, apr_uint32_t status)
+sock_addr	server_event.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_server_event	access:public
+sock_addr	socket_pipe.h	/^		apr_sockaddr_t* sock_addr;$/;"	m	class:frl_socket_pipe	access:public
+socket	multi_sock.h	/^	apr_socket_t* socket;$/;"	m	struct:frl_task_t	access:public
+spawn	cluscom-daemon.cpp	/^ClusCom_Daemon::spawn(int n)$/;"	f	class:ClusCom_Daemon	signature:(int n)
+spawn	cluscom-daemon.h	/^		int spawn(int n);$/;"	p	class:ClusCom_Daemon	access:public	signature:(int n)
+spawn	cluscom.cpp	/^ClusCom::spawn(int n)$/;"	f	class:ClusCom	signature:(int n)
+spawn	cluscom.h	/^		int spawn(int n);$/;"	p	class:ClusCom	access:public	signature:(int n)
+spawn	lf_threadpool.cpp	/^apr_thread_t** frl_lf_threadpool::spawn( int n )$/;"	f	class:frl_lf_threadpool	signature:( int n )
+spawn	lf_threadpool.h	/^		apr_thread_t** spawn( int n );$/;"	p	class:frl_lf_threadpool	access:public	signature:( int n )
+spawn	multi_sock.cpp	/^apr_thread_t* frl_multi_sock::spawn( int n )$/;"	f	class:frl_multi_sock	signature:( int n )
+spawn	multi_sock.h	/^		apr_thread_t* spawn( int n );$/;"	p	class:frl_multi_sock	access:public	signature:( int n )
+spawn	server_event.cpp	/^apr_thread_t* frl_server_event::spawn(apr_uint32_t n, apr_sockaddr_t* _sock_addr)$/;"	f	class:frl_server_event	signature:(apr_uint32_t n, apr_sockaddr_t* _sock_addr)
+spawn	server_event.h	/^		apr_thread_t* spawn(apr_uint32_t n, apr_sockaddr_t* _sock_addr);$/;"	p	class:frl_server_event	access:public	signature:(apr_uint32_t n, apr_sockaddr_t* _sock_addr)
+spawn	socket_pipe.cpp	/^apr_thread_t* frl_socket_pipe::spawn(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode)$/;"	f	class:frl_socket_pipe	signature:(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode)
+spawn	socket_pipe.h	/^		apr_thread_t* spawn(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode);$/;"	p	class:frl_socket_pipe	access:public	signature:(apr_uint32_t _replicates, apr_sockaddr_t* _sock_addr, int mode)
+status	multi_sock.h	/^	bool status;$/;"	m	struct:frl_task_t	access:public
+synthesize	cluscom.h	/^		virtual int synthesize(apr_uint32_t &node, char** to_synthe, char* to_reply) = 0;$/;"	p	class:ClusCom	access:private	signature:(apr_uint32_t &node, char** to_synthe, char* to_reply)
+synthesize	main.cpp	/^		virtual int synthesize( apr_uint32_t &node, char** to_synthe, char* to_reply )$/;"	f	class:ClusComTest	file:	access:private	signature:( apr_uint32_t &node, char** to_synthe, char* to_reply )
+table	cluscom.h	/^	apr_uint32_t table;$/;"	m	struct:frl_map_timestamp_t	access:public
+tail	frl_list.h	/^	frl_list_entry_t* tail;$/;"	m	struct:frl_list_t	access:public
+thread_accept	multi_sock.cpp	/^void* thread_accept( apr_thread_t* thd, void* data )$/;"	f	signature:( apr_thread_t* thd, void* data )
+thread_accept	multi_sock.h	/^	friend void* thread_accept( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+thread_accept	multi_sock.h	/^void* thread_accept( apr_thread_t* thd, void* data );$/;"	p	signature:( apr_thread_t* thd, void* data )
+thread_dispatch_request	cluscom.h	/^void* thread_dispatch_request(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_listen_request	cluscom.h	/^void* thread_listen_request(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_package_filter	cluscom.cpp	/^thread_package_filter(apr_thread_t* thd,$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_package_filter	cluscom.h	/^	friend void* thread_package_filter(apr_thread_t* thd, void* data);$/;"	p	class:ClusCom	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_package_filter	cluscom.h	/^void* thread_package_filter(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_read	multi_sock.cpp	/^void* thread_read( apr_thread_t* thd, void* data )$/;"	f	signature:( apr_thread_t* thd, void* data )
+thread_read	multi_sock.h	/^	friend void* thread_read( apr_thread_t* thd, void* data );$/;"	p	class:frl_multi_sock	access:friend	signature:( apr_thread_t* thd, void* data )
+thread_read	multi_sock.h	/^void* thread_read( apr_thread_t* thd, void* data );$/;"	p	signature:( apr_thread_t* thd, void* data )
+thread_receive_reply	cluscom.h	/^void* thread_receive_reply(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_repeater	cluscom.h	/^void* thread_repeater(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_server_event_handler	server_event.cpp	/^void* thread_server_event_handler(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_server_event_handler	server_event.h	/^	friend void* thread_server_event_handler(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_server_event_handler	server_event.h	/^void* thread_server_event_handler(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_server_event_listen	server_event.cpp	/^void* thread_server_event_listen(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_server_event_listen	server_event.h	/^	friend void* thread_server_event_listen(apr_thread_t* thd, void* data);$/;"	p	class:frl_server_event	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_server_event_listen	server_event.h	/^void* thread_server_event_listen(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_receiver	socket_pipe.cpp	/^void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_receiver	socket_pipe.h	/^	friend void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_receiver	socket_pipe.h	/^void* thread_socket_pipe_receiver(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_sender	socket_pipe.cpp	/^void* thread_socket_pipe_sender(apr_thread_t* thd, void* data)$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_sender	socket_pipe.h	/^	friend void* thread_socket_pipe_sender(apr_thread_t* thd, void* data);$/;"	p	class:frl_socket_pipe	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_socket_pipe_sender	socket_pipe.h	/^void* thread_socket_pipe_sender(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_timer_guard	cluscom.cpp	/^thread_timer_guard(apr_thread_t* thd,$/;"	f	signature:(apr_thread_t* thd, void* data)
+thread_timer_guard	cluscom.h	/^	friend void* thread_timer_guard(apr_thread_t* thd, void* data);$/;"	p	class:ClusCom	access:friend	signature:(apr_thread_t* thd, void* data)
+thread_timer_guard	cluscom.h	/^void* thread_timer_guard(apr_thread_t* thd, void* data);$/;"	p	signature:(apr_thread_t* thd, void* data)
+thread_work	lf_threadpool.cpp	/^void* thread_work( apr_thread_t* thd, void* data )$/;"	f	signature:( apr_thread_t* thd, void* data )
+thread_work	lf_threadpool.h	/^	friend void* thread_work( apr_thread_t* thd, void* data );$/;"	p	class:frl_lf_threadpool	access:friend	signature:( apr_thread_t* thd, void* data )
+thread_work	lf_threadpool.h	/^void* thread_work( apr_thread_t* thd, void* data );$/;"	p	signature:( apr_thread_t* thd, void* data )
+timeout	server_event.h	/^	apr_time_t timeout;$/;"	m	struct:frl_notify_t	access:public
+~ClusCom	cluscom.h	/^		virtual ~ClusCom()$/;"	f	class:ClusCom	access:public	signature:()
+~ClusComTest	main.cpp	/^		virtual ~ClusComTest()$/;"	f	class:ClusComTest	access:public	signature:()
+~ClusCom_Daemon	cluscom-daemon.h	/^		~ClusCom_Daemon()$/;"	f	class:ClusCom_Daemon	access:public	signature:()
+~frl_lf_threadpool	lf_threadpool.h	/^		virtual ~frl_lf_threadpool()$/;"	f	class:frl_lf_threadpool	access:public	signature:()
+~frl_multi_sock	multi_sock.h	/^		virtual ~frl_multi_sock()$/;"	f	class:frl_multi_sock	access:public	signature:()
+~frl_server_event	server_event.h	/^		virtual ~frl_server_event()$/;"	f	class:frl_server_event	access:public	signature:()
+~frl_socket_pipe	socket_pipe.h	/^		virtual ~frl_socket_pipe()$/;"	f	class:frl_socket_pipe	access:public	signature:()
